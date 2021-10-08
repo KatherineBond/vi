@@ -16,9 +16,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/main.css">
-	<style>
-		.modal-open{position: fixed; overflow: hidden;}
-	</style>
 </head>
 
 <body class="body body-color">
@@ -160,7 +157,7 @@
             <div class="white-bg h-100 position-relative">
                 <img src="./images/icons/gift.svg" alt="">
                 <span class="gift-option-name">Julie will be leaving us to go on a new adventure in Australia</span>
-                <button type="button" name="edit" class="btn-edit" data-bs-target="#UploadModalToggle" data-bs-toggle="modal" role="button">
+                <button type="button" name="edit" class="btn-edit" data-bs-target="#UploadModalToggle" data-bs-toggle="modal">
                     <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
                             <path
@@ -749,7 +746,7 @@
     <div class="modal-dialog flex-column justify-content-center modal-dialog-centered">
         <div class="modal-content mb-3 ps-3 pe-3 border-0 m-modal__content">
             <div class="modal-header py-4 ps-0 pe-0 mb-4 justify-content-center c-modal__header position-relative">
-                <h5 class="modal-title" id="UploadModalToggleLabel">Upload Logo 2</h5>
+                <h5 class="modal-title" id="UploadModalToggleLabel">Upload Logo</h5>
                 <button type="button" class="position-absolute btn-close m-0 p-0 top-50 end-0 translate-middle c-modal__close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
@@ -874,12 +871,24 @@
 						<label for="modalLoginEmail" class="form-label mb-1">E-Mail</label>
 						<input type="email" class="form-control" id="modalLoginEmail" required autocomplete="email" placeholder="Enter your email">
 					</div>
+					<div class="mb-4">
+						<label for="modalLoginPassword" class="form-label mb-1">Password</label>
+						<input type="password" class="form-control" id="modalLoginPassword" required autocomplete="current-password" placeholder="Enter your password">
+					</div>
+
+					<div class="text-center">
+						<button type="submit" class="btn main-cta main-cta--small py-2 px-5 rounded-pill">LOGIN</button>
+					</div>
 				</form>
       </div>
       <div class="modal-footer ps-0 pe-0 mb-4 d-block text-center border-0">
 				Forgot your password? <a class="primary-link" href="#">Click Here To Reset</a>
       </div>
     </div>
+
+		<div class="modal-content d-block text-center p-3 border-0 m-modal__content">
+			New to Viing? <a class="primary-link" href="#RegisterModalToggle" data-bs-target="#RegisterModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up!</a>
+		</div>
   </div>
 </div>
 <footer class="footer bg-accented-footer py-3 z-index--2p">
