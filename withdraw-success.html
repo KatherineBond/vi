@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Dashboard">
+  <link rel="shortcut icon" href="images/icons/fav.png" type="image/x-icon">
+  <link rel="icon" href="images/icons/fav.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body bg-accented-gray">
+  
+  <header class="header fixed-top shadow-sm bg-white py-2">
+    <div class="container-lg">
+      <nav class="navbar navbar-light justify-content-center">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="./images/icons/logo.png" alt="Logo">
+        </a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+
+    <!-- main content -->
+    <div class="container-lg my-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-7 mb-4 mb-md-0">
+          <div class="p-4 p-md-5 border--rounded-26 shadow--regular-sm bg-accented-white text-center">
+            <img class="mb-4 mb-lg-5" src="./images/common/withdraw-success.svg" alt="withdraw occasion complete">
+
+            <h5 class="fs-125 mb-3">Your occasion has been successfully completed</h5>
+            <p class="mb-4 opacity-07">A confirmation email will be sent to your registered email address. <br>
+              Your reference ID is: </p>
+
+            <div class="position-relative text-center mx-auto" style="width: 230px;">
+              <input style="width: 100%;" class="py-3 px-5 text-center border-0 border--rounded-10 bg-accented-gray--light primary-color fs-4 lh-1 copy-text" value="xxxxxxxx" disabled/>
+              <button class="btn position-absolute top-50 end-0 translate-middle-y copy-to-clip">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M15 13C15 10.7909 13.2091 9 11 9H6C3.79086 9 2 10.7909 2 13V18C2 20.2091 3.79086 22 6 22H11C13.2091 22 15 20.2091 15 18V13ZM11 11C12.1046 11 13 11.8954 13 13V18C13 19.1046 12.1046 20 11 20H6C4.89543 20 4 19.1046 4 18V13C4 11.8954 4.89543 11 6 11H11Z" fill="#E8E8E0"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22 6C22 3.79086 20.2091 2 18 2H13C10.7909 2 9 3.79086 9 6V6.20833C9 6.76062 9.44771 7.20833 10 7.20833C10.5523 7.20833 11 6.76062 11 6.20833V6C11 4.89543 11.8954 4 13 4H18C19.1046 4 20 4.89543 20 6V11C20 12.1046 19.1046 13 18 13H17.7917C17.2394 13 16.7917 13.4477 16.7917 14C16.7917 14.5523 17.2394 15 17.7917 15H18C20.2091 15 22 13.2091 22 11V6Z" fill="#E8E8E0"/>
+                </svg>
+              </button>
+            </div>
+            <p class="fs-075 opacity-05 mb-4">please keep this this for your records</p>
+
+            <div>
+              <a href="./index.html" class="btn main-cta border--rounded-16 px-4 py-3 lh-1" >Go Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // copy to clipboard
+      let range = document.createRange();
+
+      document.querySelector('.copy-to-clip').addEventListener('click', () => {
+        range.selectNode(document.querySelector('.copy-text'))
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+      })
+    </script>
+</main>
+
+<footer class="footer bg-accented-footer py-3 z-index--2p">
+	<div class="container">
+		<nav class="navbar navbar-expand-xl navbar-light align-items-center justify-content-between">
+			<ul class="navbar-nav">
+				<li>
+					<a href="index.html" class="navbar-brand me-4" aria-current="page">
+						<img src="./images/icons/logo-small.png" alt="Logo">
+					</a>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+				<li class="nav-item"><a href="how-it-work.html" class="nav-link">How it works</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="navbar-nav align-self-stretch">
+				<li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+				<li class="vr d-xl-block">&nbsp;</li>
+				<li class="nav-item d-flex align-items-center">
+					<span class="text-muted nav-link">Handcrafted in London © 2021 - All rights reserved.</span>
+				</li>
+				<li class="d-flex align-items-center">
+					<a class="text-muted ms-xl-3 ms-2" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M13.331 3.32083H15.1568V0.140833C14.8418 0.0975 13.7585 0 12.4968 0C9.86434 0 8.06101 1.65583 8.06101 4.69917V7.5H5.15601V11.055H8.06101V20H11.6227V11.0558H14.4102L14.8527 7.50083H11.6218V5.05167C11.6227 4.02417 11.8993 3.32083 13.331 3.32083Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					<a class="text-muted ms-xl-3" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

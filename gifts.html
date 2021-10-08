@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Dashboard">
+  <link rel="shortcut icon" href="images/icons/fav.png" type="image/x-icon">
+  <link rel="icon" href="images/icons/fav.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body bg-accented-gray">
+  
+  <header class="header fixed-top shadow-sm bg-white py-2">
+    <div class="container-lg">
+      <nav class="navbar navbar-light">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img class="d-none d-md-block" src="./images/icons/logo.png" alt="Logo">
+          <img class="d-md-none" src="./images/icons/logo-small.png" alt="Logo">
+        </a>
+
+        <div class="d-flex align-items-center ms-auto">
+          <img class="me-3" src="./images/icons/avatar-dash-1.png" alt="">
+          <span class="ff-accent fs-0875">KATE BATTEN</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<main>
+
+  <div class="my-4 d-flex position-relative with-sidebar">
+    <div id="left-sidebar" class=" z-index--2p" >
+  <aside
+  class=" d-flex justify-content-center mt-4 px-2 pb-2 pt-3 pt-lg-5 bg-body  border--start-0 shadow--regular border--rounded-26 m-sidebar"
+  > 
+  <ul class="nav flex-column flex-nowrap m-sidebar__list">
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link active rounded-3" aria-current="page" href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#dashboard"></use>
+        </svg>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#fireworks"></use>
+        </svg>
+        <span>Occasions</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#pen-ball"></use>
+        </svg>
+        <span>Contributions</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#fax-page"></use>
+        </svg>
+        <span>My&nbsp;Invites</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 mt-5 mt-xl-auto">
+      <a class="nav-link m-sidebar__link  m-sidebar__link--bigger border--rounded-16"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#gift-btn"></use>
+        </svg>
+        <span>Gifts</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  m-sidebar__link--bigger border--rounded-16"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#love-card"></use>
+        </svg>
+        <span>Our&nbsp;Cards</span>
+      </a>
+    </li>
+  </ul>
+  <button class="d-flex p-0 d-lg-none justify-content-center align-items-center border border-2 border-start-0 m-sidebar__activator rounded-pill border--start-0">
+    <svg id="Capa_1" enable-background="new 0 0 551.13 551.13"  viewBox="0 0 551.13 551.13" 
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m361.679 275.565-223.896 223.897v51.668l275.565-275.565-275.565-275.565v51.668z" />
+    </svg>
+  </button>
+
+</aside>
+  <div class="m-sidebar__deactivator"></div>
+</div>
+
+
+
+
+    <section class="flex-grow-1 ms-4 " >
+            <div class=" p-4 white-bg container-xl">
+                        <div class="mb-4 row">
+                            <div class="col-md-6">
+                                  <h1 class="font-primary ">   Gift Shop  </h1>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                <select class="form-select gifts__select me-3 fs-0875" aria-label=".form-select ">
+                                    <option selected>Sort by</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                               <button type="button" data-view="row gy-3 row-cols-2 row-cols-sm-3 row-cols-xl-4"  class="toggleview__js active view-btn mx-1">
+    <svg width="18"  height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1.5"  y="1.5" width="4.5" height="4.5" rx="1.5"   />
+      <rect x="1.5"  y="6.75" width="4.5" height="4.5" rx="1.5"  />
+      <rect x="1.5"  y="12" width="4.5" height="4.5" rx="1.5"    />
+      <rect x="12"   y="1.5" width="4.5" height="4.5" rx="1.5"   />
+      <rect x="12"   y="6.75" width="4.5" height="4.5" rx="1.5"  />
+      <rect x="12"   y="12" width="4.5" height="4.5" rx="1.5"    />
+      <rect x="6.75" y="1.5" width="4.5" height="4.5" rx="1.5"   />
+      <rect x="6.75" y="6.75" width="4.5" height="4.5" rx="1.5"  />
+      <rect x="6.75" y="12" width="4.5" height="4.5" rx="1.5"    />
+      </svg>
+  </button>
+  
+  <button type="button" data-view="row gy-3 row-cols-1 row-cols-sm-2  " class="toggleview__js view-btn">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+      <rect x="1.5" y="1.5" width="6.75" height="6.75" rx="1.5"   />
+      <rect x="1.5" y="9.75" width="6.75" height="6.75" rx="1.5"  />
+      <rect x="9.75" y="1.5" width="6.75" height="6.75" rx="1.5"  />
+      <rect x="9.75" y="9.75" width="6.75" height="6.75" rx="1.5" /> 
+      </svg> 
+  </button> 
+
+  <script>
+      
+           window.addEventListener('load', function(){
+                    const btns= document.querySelectorAll('.toggleview__js');
+                                const container = document.querySelector('#view-changed__js'); 
+                                btns.forEach((btn)=>{
+                                        btn.addEventListener('click', function(){
+                                            if(this.classList.contains('active')){
+                                                    return
+                                            } else{
+                                                btns.forEach((bt)=>{ 
+                                                    bt.classList.remove("active");
+                                                })
+                                                this.classList.add('active'); 
+                                                container.className=this.dataset.view;
+                                            }
+                                        })
+                                })
+           })
+            
+     
+ 
+  </script>
+                            </div>
+                        </div>
+                  <div class="row ">
+                   <div class="col-12 gifts-border"> </div>
+                    <div class="col-md-3">
+                        <div class="filter__gifts h-100">
+	<div class="filter__gifts_head py-4 pe-4">
+		<button type="button" class="filter__title p-0">
+			Filters <img src="images/gifts/select.svg" alt="">
+		</button>
+		<script>
+			{
+				const btn = document.querySelector(".filter__title");
+				const filter = document.querySelector(".filter__gifts");
+	
+				btn.addEventListener('click', () => {
+					btn.classList.toggle('close');
+					filter.classList.toggle('close');
+				})
+			}
+		</script>
+		<button type="button" class="filter__clear p-0">Clear filters</button>
+	</div>
+	
+	<div class="filter__container pe-4"> 
+		<p class="filter__category">
+			Brand
+		</p>
+
+		<div class="row filter__brand">
+			 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+				<label>
+					<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+					<span>
+						Brand</span>
+				</label>
+		</div>
+		
+	</div>
+
+	<p class="filter__category">
+		Price Range
+	</p>
+
+
+	 
+    <!-- styles -->
+    <link rel="stylesheet" href="css/nouislider.css">
+    <!-- styles -->
+      
+       <div class="mt-5"  id="inputRange"></div>
+       <div class="d-flex head-color opacity-05 justify-content-between"> <span>   £0 </span>  <span>£150  </span> </div>
+
+       <script src="js/nouislider.js"></script>
+
+<script> 
+// https://refreshless.com/nouislider/
+
+var inputRange = document.getElementById('inputRange');
+
+noUiSlider.create(inputRange, {
+    start: [20, 50],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 150
+    }, 
+    step:1,
+    handleAttributes: [
+        { 'aria-label': 'lower' },
+        { 'aria-label': 'upper' },
+    ],
+    tooltips: [true,  true],
+});
+
+ 
+//demo , how to use values
+inputRange.noUiSlider.on('change', ()=>{
+    console.log("slide" , inputRange.noUiSlider.get())
+})
+inputRange.noUiSlider.on('slide', ()=>{
+    console.log( "change !!!"  , inputRange.noUiSlider.get())
+})
+//demo , how to use values
+</script>
+
+
+	<p class="filter__category">
+		Occasion
+	</p>
+	<div class="row flex-wrap filter__brand">
+		 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  0
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  1
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  2
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  3
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  4
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  5
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  6
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  7
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  8
+				</span>
+
+			</label>
+	</div>
+	 <div class="mt-1 col-xl-6 col-md-12 col-6">
+			<label class="d-flex">
+				<input class="form-check-input me-2 styled-checkbox" type="checkbox">
+				<span>
+					ocation  9
+				</span>
+
+			</label>
+	</div>
+	
+</div>
+
+
+<p class="filter__category">
+	Recipient
+</p>
+<div class=mb-4>
+	<label class="mb-2">
+		<input type="radio" class="styled-radio" name="recipient">
+		<span class="ms-2">Female
+		</span>
+	</label>
+	<br>
+	<label>
+		<input type="radio" class="styled-radio" name="recipient">
+		<span class="ms-2">Male
+		</span>
+	</label>
+</div>
+
+<div class="text-center mb-4">
+	<button type="button" class="filter__show-more py-2 px-4 fs-0875 ff-accent">
+		Show more
+	</button>
+</div>
+
+
+
+</div>
+
+</div>
+                    </div>
+                    <div class="gifts__card__container gutter-20 pt-3 col-md-9 ">
+    <div id="view-changed__js" class="row gy-3 row-cols-2 row-cols-sm-3 row-cols-xl-4">
+        
+        
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+                <div class=" col">
+    <div class="gifts__card">
+        <div class="gifts__card__img__container">
+            <figure class="gifts__card__img">
+                <img src="images/gifts/Rectangle_150.jpg" alt="gift">
+            </figure>
+            <img class="gifts__card__icon-green" src="images/gifts/green-icon.svg" alt="icon">
+            <img class="gifts__card__icon-hend" src="images/gifts/hend-icon.svg" alt="hend">
+        </div>
+        <div class="gifts__card__text__container">
+            <p class="gifts__card__title" role="button" data-bs-target="#productModal" data-bs-toggle="modal">
+                Today is a good day ceramic mug
+            </p>
+             <p class="gifts__card__type">Manchester Ceramics</p>
+            <div class="gifts__card__price__container">
+                <p class="gifts__card__price"> £10 - £23.00 </p>
+                <p class="gifts__card__delivery">5-6 Business Days</p>
+            </div>
+        </div>
+    </div>
+</div>
+             
+        
+        
+    </div>
+</div> 
+
+                </div>
+            </div>
+    </section>
+  </div>
+</main>
+
+<!-- hidden blocks -->
+
+<div style="display: none;">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <symbol id="dashboard" viewBox="0 0 24 24" fill="none">
+      <path d="M10.5 0.75H2.25V13.5H10.5V0.75Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M10.5 16.5H2.25V23.25H10.5V16.5Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M21.75 0.75H13.5V7.5H21.75V0.75Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M21.75 10.5H13.5V23.25H21.75V10.5Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="fireworks" viewBox="0 0 24 24" fill="none">
+      <path d="M0.75 8.25C1.44619 8.25 2.11387 7.97344 2.60616 7.48116C3.09844 6.98887 3.375 6.32119 3.375 5.625C3.375 6.32119 3.65156 6.98887 4.14384 7.48116C4.63613 7.97344 5.30381 8.25 6 8.25" stroke-miterlimit="10"/>
+      <path d="M0.75 8.25C1.44619 8.25 2.11387 8.52656 2.60616 9.01884C3.09844 9.51113 3.375 10.1788 3.375 10.875C3.375 10.1788 3.65156 9.51113 4.14384 9.01884C4.63613 8.52656 5.30381 8.25 6 8.25" stroke-miterlimit="10"/>
+      <path d="M18 8.25C18.6962 8.25 19.3639 7.97344 19.8562 7.48116C20.3484 6.98887 20.625 6.32119 20.625 5.625C20.625 6.32119 20.9016 6.98887 21.3938 7.48116C21.8861 7.97344 22.5538 8.25 23.25 8.25" stroke-miterlimit="10"/>
+      <path d="M18 8.25C18.6962 8.25 19.3639 8.52656 19.8562 9.01884C20.3484 9.51113 20.625 10.1788 20.625 10.875C20.625 10.1788 20.9016 9.51113 21.3938 9.01884C21.8861 8.52656 22.5538 8.25 23.25 8.25" stroke-miterlimit="10"/>
+      <path d="M14.1693 3.45038L12.6708 3.2325L12.0007 1.875L11.3305 3.2325L9.83203 3.45038L10.9162 4.5075L10.6604 6L12.0007 5.29575L13.3409 6L13.0852 4.5075L14.1693 3.45038Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M22.029 18.0754L20.5305 17.8575L19.8604 16.5L19.1899 17.8575L17.6914 18.0754L18.7759 19.1325L18.5198 20.625L19.8604 19.9208L21.2007 20.625L20.9445 19.1325L22.029 18.0754Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.29428 17.7004L4.79578 17.4825L4.12566 16.125L3.45553 17.4825L1.95703 17.7004L3.04116 18.7575L2.78541 20.25L4.12566 19.5458L5.46591 20.25L5.21016 18.7575L6.29428 17.7004Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M17.625 10.875C16.9034 11.0359 16.2264 11.3548 15.6429 11.8087C15.0593 12.2626 14.5836 12.8402 14.25 13.5" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.375 10.875C7.0966 11.0359 7.77356 11.3548 8.35715 11.8087C8.94074 12.2626 9.41643 12.8402 9.75 13.5" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.375 15.7491C6.98119 15.5614 7.62079 15.5069 8.25 15.5893C9.88612 15.811 12 17.1366 12 22.4991" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M17.625 15.7491C17.0188 15.5614 16.3792 15.5069 15.75 15.5893C14.1139 15.811 12 17.1366 12 22.4991" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M12 8.25V15" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="pen-ball" viewBox="0 0 26 26" fill="none">
+      <path d="M14.034 2.8645L5.8 6.69431L3 21.3383L17.8 18.8976L21.3808 10.3358" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M3 21.3389L10.7856 13.8281" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M23.3992 12.3898L12.1992 1" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M13.6137 13.8288C14.3947 13.0345 14.3947 11.7467 13.6137 10.9525C12.8327 10.1582 11.5663 10.1582 10.7853 10.9525C10.0043 11.7467 10.0043 13.0345 10.7853 13.8288C11.5663 14.6231 12.8327 14.6231 13.6137 13.8288Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M1 25H25" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="fax-page" viewBox="0 0 26 26" fill="none">
+      <path d="M4.99997 9L1 11.32V24.9998H24.9998V11.32L20.9998 9" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M5 13.5598V1H20.9999V13.4798" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M1 11.3203L24.9998 25.0001" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M24.9996 11.3203L12.6797 17.9602" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M9 5.80078H16.9999" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M9 9.79956H16.9999" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="gift-btn" viewBox="0 0 36 36" fill="none">
+      <g>
+        <path d="M4.875 23.6248L15 13.4998" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M4.875 32.6248L24 13.4998" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M11.625 34.8752L31.875 14.6252" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M21.75 34.875L31.875 24.75" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M8.25 4.5C8.25 2.5875 9.7125 1.125 11.625 1.125C16.575 1.125 18.375 7.875 18.375 7.875C18.375 7.875 13.5375 7.875 11.625 7.875C9.7125 7.875 8.25 6.4125 8.25 4.5Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M28.5 4.5C28.5 2.5875 27.0375 1.125 25.125 1.125C20.175 1.125 18.375 7.875 18.375 7.875C18.375 7.875 23.2125 7.875 25.125 7.875C27.0375 7.875 28.5 6.4125 28.5 4.5Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M31.875 13.4998V34.8748H4.875V13.4998" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M35.25 7.875H1.5V13.5H35.25V7.875Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+      </g>
+    </symbol>
+      
+    <symbol id="love-card" viewBox="0 0 36 36" fill="none">
+      <path d="M23.6823 20.8693C24.3686 20.1831 24.7541 19.2523 24.7541 18.2818C24.7541 17.3113 24.3686 16.3806 23.6823 15.6943C22.9961 15.0081 22.0653 14.6226 21.0948 14.6226C20.1243 14.6226 19.1936 15.0081 18.5073 15.6943L18.5006 15.7016L18.0011 16.2056L17.4993 15.7039L17.4948 15.6943C16.8086 15.0081 15.8778 14.6226 14.9073 14.6226C13.9368 14.6226 13.0061 15.0081 12.3198 15.6943C11.6336 16.3806 11.248 17.3113 11.248 18.2818C11.248 19.2523 11.6336 20.1831 12.3198 20.8693L18.0011 26.5461L23.6823 20.8693Z" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M29.252 7.3125V1.6875L1.68945 7.3125V33.1875H34.3145V7.3125H1.68945" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M30.9395 10.6877H5.06445V29.8127H30.9395V10.6877Z" stroke-width="2" stroke-miterlimit="10"/>
+    </symbol>
+      
+
+  </svg>
+</div>
+
+<div class="modal-product modal m-modal fade p-2 show" id="productModal" aria-labelledby="groupCardDetailsLabel" tabindex="-1" aria-modal="true" role="dialog">
+	<div class="modal-dialog modal-xl flex-column justify-content-center modal-dialog-centered">
+		<div class="modal-content mb-3 ps-3 pe-3 border-0 position-relative m-modal__content">
+			<button type="button" class="position-absolute btn-close btn-close-white m-0 p-0 rounded-circle top-0 start-100 translate-middle m-modal__close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+
+			<div class="modal-body py-5">
+				<div class="row">
+					<div class="col-lg-6 mb-5 mb-lg-0">
+						<div id="carouselSlide" class="carousel slide" data-bs-ride="carousel">
+							<div class="col-12 px-3">
+								<figure class="border--rounded-26 overflow-hidden position-relative">
+									<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 1" class="active w-100" />
+
+									<!-- Remove class .d-none and add class d-block for showing signature icon -->
+									<img class="d-none position-absolute bottom-0 end-0 mb-3 me-3" src="images/gifts/hend-green-icon.svg" alt="hend">
+									<!-- end signature icon -->
+								</figure>
+
+							</div>
+							<div class="carousel-inner row py-3 mx-0">
+								<div class="carousel-item active px-3">
+									<div class="row mt-1">
+										<div class="col-3">
+											<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 1" class="w-100 border--rounded-10" />
+										</div>
+										<div class="col-3">
+											<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 2" class="w-100 border--rounded-10" />
+										</div>
+										<div class="col-3">
+											<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 3" class="w-100 border--rounded-10" />
+										</div>
+										<div class="col-3">
+											<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 4" class="w-100 border--rounded-10" />
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item px-3">
+									<div class="row mt-1">
+										<div class=" col-3">
+											<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 5" class="w-100 border--rounded-10" />
+										</div>
+
+										<div class="col-3">
+											<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 6" class="w-100 border--rounded-10" />
+										</div>
+
+										<div class="col-3">
+											<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 7" class="w-100 border--rounded-10" />
+										</div>
+
+										<div class="col-3">
+											<img src="./images/gifts/product-lg-1x1.jpg" alt="Gallery image 8" class="w-100 border--rounded-10" />
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev w-auto" type="button" data-bs-target="#carouselSlide" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next w-auto" type="button" data-bs-target="#carouselSlide" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+							<div class="card justify-content-center flex-row align-items-center border--rounded-10 p-3 mx-3 mt-1 text-center">
+								<div class="me-3">
+									<img src="./images/brands/brand-sm-1.png" alt="Manchester Ceramics">
+								</div>
+								<span class="gray-color fs-3 fw-bold">Manchester Ceramics</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<form class="ms-lg-5 h-100 d-flex flex-column justify-content-between" action="/">
+							<div>
+								<h2 class="modal-title lh-sm" id="groupCardDetailsLabel">Today is a good day ceramic mug</h2>
+								<p class="gray-color">Delivery in 5-8 working days</p>
+								<hr>
+								<p class="fs-2 lh-sm fw-bold primary-color mb-1">£10 - £30.00</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus luctus enim, sed posuere tortor varius at. Sed lorem diam, suscipit eu orci ut, imperdiet pretium ipsum. Suspendisse potenti. </p>
+								<hr>
+								<div class="d-flex align-items-center">
+									<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M15.5755 13.1784C14.66 13.2296 13.741 13.1585 12.8444 12.9671L11.8607 12.7572C11.8365 12.7521 11.8119 12.7495 11.7871 12.7495L8.61182 12.7494C8.54254 12.7494 8.47476 12.7698 8.417 12.8081L6.32836 14.1927C5.8277 14.5246 5.16323 14.401 4.81551 13.9111C4.49947 13.4659 4.55267 12.8649 4.94209 12.4822L7.05821 10.4023L10.0266 8.72373C10.0475 8.71189 10.0672 8.69797 10.0853 8.68213L10.3265 8.47095C10.3446 8.45511 10.361 8.43744 10.3755 8.41826L12.8946 5.08591L13.9545 5.67212C14.0085 5.70206 14.0671 5.71621 14.1248 5.71621C14.2489 5.71621 14.3692 5.65059 14.4335 5.53426C14.5278 5.36393 14.4661 5.14941 14.2957 5.05522L13.3242 4.5178L14.6428 2.77341C14.8145 2.54634 14.8875 2.26598 14.8483 1.98406C14.8091 1.70209 14.6625 1.45232 14.4354 1.28063L13.7535 0.76506C13.5264 0.593409 13.2463 0.520462 12.9641 0.559614C12.6821 0.598814 12.4323 0.745461 12.2607 0.972527L10.6844 3.05768L10.3659 2.88152C10.2401 2.81195 10.0977 2.77515 9.95401 2.77515H7.44673C7.05154 2.77515 6.66777 2.91573 6.36615 3.17105L4.30309 4.91694C4.15447 5.04272 4.13595 5.26508 4.26168 5.4137C4.33144 5.4961 4.43089 5.53849 4.53096 5.53849C4.61138 5.53849 4.69232 5.51109 4.7585 5.45507L6.82156 3.70917C6.99608 3.56149 7.21811 3.48018 7.44673 3.48018H9.95401C9.97864 3.48018 10.0031 3.48648 10.0247 3.49846L10.2549 3.62579L7.99026 6.62152L4.89118 8.35251C4.79088 8.40849 4.72418 8.50987 4.71243 8.62409L4.35649 12.0764C4.05882 12.4143 3.90536 12.8374 3.90405 13.2642L3.87006 13.3474C3.74762 13.6469 3.45945 13.8404 3.13589 13.8404C2.69854 13.8404 2.34273 13.4846 2.34273 13.0472V8.46174C2.34273 7.85015 2.61046 7.27282 3.07733 6.87777L3.60892 6.42796C3.75754 6.30218 3.77611 6.07977 3.65033 5.93115C3.5246 5.78262 3.30223 5.76406 3.15352 5.88974L2.62192 6.3396C1.99642 6.86893 1.63775 7.64245 1.63775 8.46174V13.0472C1.63775 13.5335 1.87078 13.9662 2.23087 14.2401L0.635194 16.3509C0.564503 16.4444 0.513976 16.5543 0.488971 16.6689L0.0115242 18.8577C-0.0290386 19.0438 0.0391614 19.2321 0.189568 19.3489C0.277885 19.4175 0.383028 19.4526 0.4893 19.4526C0.499923 19.4526 12.8971 19.4523 12.8971 19.4523C13.0919 19.4523 13.2497 19.2945 13.2497 19.0998C13.2497 18.905 13.0919 18.7472 12.8971 18.7472H2.0116L2.73628 18.384C2.84758 18.3281 2.94614 18.2461 3.02121 18.1467L5.3628 15.0493C5.47857 15.0724 5.59645 15.0848 5.71499 15.0848C6.05928 15.0848 6.40785 14.986 6.71801 14.7803L8.71809 13.4544L11.75 13.4545L12.6972 13.6566C13.6551 13.8611 14.6367 13.937 15.615 13.8823C15.8093 13.8715 15.9581 13.7051 15.9472 13.5107C15.9364 13.3163 15.7698 13.1679 15.5755 13.1784ZM9.835 7.96427L9.64812 8.12784L6.67073 9.81145C6.64389 9.82663 6.61912 9.84529 6.59712 9.86691L5.91056 10.5417L10.4402 4.5499L11.7047 5.49098L9.835 7.96427ZM11.5398 3.09528L12.8043 4.03636L12.1298 4.9286L10.8653 3.98752L11.5398 3.09528ZM12.8231 1.39775C12.8812 1.32086 12.9658 1.27127 13.0612 1.25797C13.078 1.25562 13.0949 1.25449 13.1116 1.25449C13.1895 1.25449 13.265 1.27964 13.3283 1.32749L14.0102 1.84305C14.1689 1.963 14.2004 2.1896 14.0805 2.34828L13.2295 3.47398L11.965 2.5329L12.8231 1.39775ZM6.93366 8.01931L5.25456 10.2404L5.39495 8.87874L6.93366 8.01931ZM1.09459 17.2007L1.95999 17.9845L0.796411 18.5678L1.09459 17.2007ZM2.56496 17.5812L1.39207 16.5189L2.89825 14.5265C2.97571 14.5389 3.055 14.5455 3.13589 14.5455C3.51642 14.5455 3.8703 14.403 4.13934 14.1593C4.17012 14.2137 4.20359 14.2672 4.24053 14.3191C4.36819 14.499 4.52217 14.6481 4.69307 14.7661L2.56496 17.5812Z" fill="#00C0C3"/>
+										<path d="M23.6479 13.6311H20.4142C20.2386 13.6311 20.0901 13.4265 20.0901 13.1844V6.72397C20.0901 6.48191 20.2386 6.27736 20.4142 6.27736H23.6479C23.8426 6.27736 24.0004 6.11957 24.0004 5.92484C24.0004 5.73011 23.8426 5.57233 23.6479 5.57233H20.4142C19.9574 5.57233 19.5694 5.90722 19.4353 6.36906H16.6702L15.6179 5.78703C15.4476 5.69289 15.233 5.75465 15.1388 5.92494C15.0446 6.09532 15.1063 6.30979 15.2767 6.40403L16.4086 7.03005C16.4608 7.05891 16.5195 7.07409 16.5792 7.07409H19.3851V12.5759H18.5947C18.5572 12.5759 18.52 12.5819 18.4844 12.5936L18.2315 12.6769C17.8381 12.8065 17.431 12.9136 17.0215 12.9953C16.8306 13.0334 16.7067 13.2191 16.7447 13.41C16.7782 13.5776 16.9255 13.6936 17.0901 13.6936C17.1129 13.6936 17.1362 13.6914 17.1595 13.6867C17.5969 13.5994 18.0318 13.4849 18.4521 13.3465L18.6513 13.2809H19.389C19.4331 13.8708 19.8759 14.336 20.4143 14.336H23.648C23.8427 14.336 24.0005 14.1782 24.0005 13.9834C24.0005 13.7887 23.8426 13.6311 23.6479 13.6311Z" fill="#00C0C3"/>
+									</svg>
+									<p class="mb-0 ms-2">Can be personalised</p>
+								</div>
+								<hr>
+								<div class="d-flex align-items-center">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="12" cy="12" r="11.5" stroke="#00C0C3"/>
+										<path d="M10 18.1875V17.2031L11.2734 16.9844V10.9453L10 10.7266V9.73438H12.8125V16.9844L14.0859 17.2031V18.1875H10ZM11.1953 7.64844V6H12.8125V7.64844H11.1953Z" fill="#00C0C3"/>
+									</svg>
+									<p class="mb-0 ms-2">Final delivery time will be calculated upon checkout</p>
+								</div>
+								<hr>
+
+								<!-- Dropdown-select button (This shit requires JS) -->
+								<div class="dropdown dropdown-select__demojs">
+									<button class="w-100 d-flex align-items-center justify-content-between dropdown-toggle btn border-0 p-0" id="dropdownSelect" data-bs-toggle="dropdown" aria-expanded="false">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="12" cy="12" r="11.5" stroke="#00C0C3"/>
+											<path d="M10 18.1875V17.2031L11.2734 16.9844V10.9453L10 10.7266V9.73438H12.8125V16.9844L14.0859 17.2031V18.1875H10ZM11.1953 7.64844V6H12.8125V7.64844H11.1953Z" fill="#00C0C3"/>
+										</svg>
+										<span   class="ms-2 flex-grow-1 text-start">
+											
+											<span data-typeplace>
+												Delivery
+											</span>
+											<small id="days" data-timeplace class="d-block gray-color fs-075">Final delivery time will be calculated upon checkout</small>
+										</span>
+										<span id="price" data-priceplace class="primary-color fw-semibold me-3">  </span>
+									</button>
+									<hr>
+									<div class="dropdown-menu w-100 p-3 mt-3 border-0 border--rounded-26 shadow--regular-sm" aria-labelledby="dropdownSelect">
+										<div class="form-check d-flex justify-content-between py-1 px-0">
+											<input class="form-check-input d-none" data-type="Standart" data-time="7-10 days" data-price="+£10" type="radio"  name="radio" id="radio1">
+											<label class="form-check-label col-6" for="radio1" >Standart</label>
+											<label class="form-check-label col-4 gray-color" for="radio1" >7-10 days</label>
+											<label class="form-check-label col-2 text-end" for="radio1"  >+£10</label>
+										</div>
+
+										<div class="form-check d-flex justify-content-between py-1 px-0">
+											<input class="form-check-input d-none" data-type="Express" data-time="2-3 days" data-price="+£15" type="radio" name="radio" id="radio2">
+											<label class="form-check-label col-6" for="radio2"  >Express</label>
+											<label class="form-check-label col-4 gray-color" for="radio2" >2-3 days</label>
+											<label class="form-check-label col-2 text-end" for="radio2"  >+£15</label>
+										</div>
+
+										<div class="form-check d-flex justify-content-between py-1 px-0">
+											<input class="form-check-input d-none" type="radio" name="radio" id="radio3" data-type="International" data-time="10-14 days" data-price="+£25">
+											<label class="form-check-label col-6" for="radio3" >International</label>
+											<label class="form-check-label col-4 gray-color" for="radio3" >10-14 days</label>
+											<label class="form-check-label col-2 text-end" for="radio3"  >+£25</label>
+										</div>
+									</div>
+								</div>
+
+
+								<script>
+								// demo js
+										{
+											const parent = document.querySelector(".dropdown-select__demojs") ;
+											const radio = parent.querySelectorAll("input[type='radio']");
+											const params = ["type","price","time"];
+											radio.forEach(item=>{
+												 item.addEventListener('change' , function(){
+													console.log();
+													 const d= this.dataset;
+												 	 params.forEach(param=>{  
+														parent.querySelector(`[data-${param}place]`).innerHTML=this.dataset[param];
+													  })
+													 
+												 })
+											})
+
+										}
+								
+
+
+								</script>
+								<!-- END Dropdown-select button -->
+
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<label>
+										<input type="checkbox" class="form-check-input styled-checkbox" data-bs-toggle="collapse" data-bs-target="#collapseTextarea" aria-controls="collapseTextarea">
+											<span class="ms-2">Personalisation</span>
+									</label>
+									<span class="primary-color">£10</span>
+								</div>
+								<hr>
+								<div class="collapse" id="collapseTextarea">
+									<div class="form-group">
+										<textarea class="form-control border--rounded-16" rows="4"></textarea>
+										<label class="text-secondary text-end w-100 my-1">Max 50 characters</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-buttons d-flex flex-wrap flex-sm-nowrap">
+
+								<!-- remove .d-none and add .d-flex class for .input-spinner for show this button -->
+								<div class="input-spinner d-none w-100 mb-3 mb-sm-0 mx-auto me-sm-3 mx-auto align-items-center justify-content-center border--rounded-16 border--primary-05 border-1 py-2 ">
+									<button class="btn p-0 btn-minus rounded-circle bg-accented-primary" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">
+										<svg width="10" height="4" viewBox="0 0 10 4" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.499023" width="9" height="3" rx="1.5" fill="white"/></svg>
+									</button>
+
+									<input type="number" class="w-100 border-0 fw-bold mx-1 px-0 fs-5 primary-color text-center" min="1" value="1">
+
+									<button class="btn p-0 btn-plus rounded-circle bg-accented-primary" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">
+										<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="3.49902" width="9" height="3" rx="1.5" fill="white"/><rect x="6.50024" y="0.5" width="9" height="3" rx="1.5" transform="rotate(90 6.50024 0.5)" fill="white"/></svg>
+									</button>
+								</div>
+								<!-- end .input-spinner -->
+
+								<button type="button" class="btn w-100 main-cta border--rounded-16 p-3" data-bs-target="#verificationModal" data-bs-toggle="modal">Add to Basket</button>
+							</div>
+
+							<!-- Popup Verification -->
+							<div class="modal-product modal m-modal fade show" id="verificationModal" aria-labelledby="groupCardDetailsLabel" tabindex="-1" aria-modal="true" role="dialog">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content border-0 position-relative border--rounded-16">
+										<div class="modal-body p-5 text-center">
+											<figure class="mb-3">
+												<img src="./images/icons/verification-icon.svg" alt="Verification" />
+											</figure>
+											<p class="fs-5 fw-semibold">Are you over 18 years old?</p>
+											<p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+											<div class="form-group col-sm-6 offset-sm-3 mt-4">
+												<button type="submit" class="btn rounded-pill fs-0875 text-white bg-accented-primary bg-accented-primary--hover w-100 mb-3">Yes, I’m already 18 y.o.</button>
+												<button data-bs-dismiss="modal" aria-label="Close" class="btn rounded-pill fs-0875 primary-link main-cta--outline w-100">No</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END Popup Verification -->
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- hidden blocks -->
+<footer class="footer bg-accented-footer py-3 z-index--2p">
+	<div class="container">
+		<nav class="navbar navbar-expand-xl navbar-light align-items-center justify-content-between">
+			<ul class="navbar-nav">
+				<li>
+					<a href="index.html" class="navbar-brand me-4" aria-current="page">
+						<img src="./images/icons/logo-small.png" alt="Logo">
+					</a>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+				<li class="nav-item"><a href="how-it-work.html" class="nav-link">How it works</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="navbar-nav align-self-stretch">
+				<li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+				<li class="vr d-xl-block">&nbsp;</li>
+				<li class="nav-item d-flex align-items-center">
+					<span class="text-muted nav-link">Handcrafted in London © 2021 - All rights reserved.</span>
+				</li>
+				<li class="d-flex align-items-center">
+					<a class="text-muted ms-xl-3 ms-2" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M13.331 3.32083H15.1568V0.140833C14.8418 0.0975 13.7585 0 12.4968 0C9.86434 0 8.06101 1.65583 8.06101 4.69917V7.5H5.15601V11.055H8.06101V20H11.6227V11.0558H14.4102L14.8527 7.50083H11.6218V5.05167C11.6227 4.02417 11.8993 3.32083 13.331 3.32083Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					<a class="text-muted ms-xl-3" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

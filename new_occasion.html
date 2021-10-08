@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gift</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Make gifts">
+  <link rel="shortcut icon" href="images/icons/fav.png" type="image/x-icon">
+  <link rel="icon" href="images/icons/fav.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body body-color">
+
+<header class="w-100">
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <img src="./images/icons/logo_white.png" alt="Logo" class="logo">
+                <img src="./images/icons/logo.png" alt="Logo" class="logo-scrolled">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse justify-content-end header__menu" id="navbarSupportedContent">
+				<ul class="navbar-nav align-items-center text-center text-uppercase">
+					<li class="nav-item"><a href="how-it-work.html" class="nav-link header__link px-2">How it works</a></li>
+					<li class="nav-item"><a href="#LoginModalToggle" class="nav-link btn header__link px-3 py-1 login ms-4"
+							data-bs-toggle="modal" role="button">LOGIN</a></li>
+					<li class="nav-item dropdown">
+                        <a href="#" class="nav-link header__link px-2 account-link d-flex align-items-center ms-4 dropdown-toggle" role="button" id="UserMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="user-img me-2"><img src="./images/icons/user.jpeg" alt="" class=" me-3"></div>
+                            Kate Batten
+                        </a>
+                        <ul class="dropdown-menu w-100 p-3 mt-3 border-0 border--rounded-26 shadow--regular-sm dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item danger-color" href="#">Logout</a></li>
+                          </ul>
+                    </li>
+				</ul>
+			</div>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <div class="page-bg-lg position-absolute w-100 top-0 start-0" style="background-image: url('./images/bg-elements/bg-new-occasion.svg');"></div>
+
+    <div class="mt-5">
+        <section class="new_occasion mt-5">
+            <div class="container-lg position-relative ">
+                
+                    <div class="just-for-demo">
+                        <h2>demo navigation</h2>
+                        <button class="demo-prev">PREV</button>
+                        <button class="demo-next">NEXT</button>
+                            <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>New Occasion</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps d-flex justify-content-center pb-4 bb-dashed">
+            <div class="steps-item m-1 steps-item-active text-center position-relative mb-3">
+                <div class="steps-item-round">1</div>
+                <span class="primary-color">Start</span>
+            </div>
+            <span class="hr d-block my-4"></span>
+            <div class="steps-item m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">2</div>
+                <span class="primary-color"></span>
+            </div>
+            <span class="hr d-block my-4"></span>
+            <div class="steps-item m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">3</div>
+                <span class="primary-color"></span>
+            </div>
+        </div>
+        <form action="/" class="pt-4 pb-2">
+            <div class="mb-3"><b>New occasion</b></div>
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label d-flex flex-column" for="flexRadioDefault1">
+                    <span class="tl d-block mb-0">Group Card Only</span>
+                </label>
+            </div>
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label d-flex flex-column" for="flexRadioDefault2">
+                    <span class="tl d-block mb-0">Card and Collection</span>
+                    <span>For occasions where you’d like friends to chip in towards a gift and leave a message for a group card.</span>
+                </label>
+            </div>
+            <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label d-flex flex-column" for="flexRadioDefault3">
+                    <span class="tl d-block mb-0">Collection only</span>
+                </label>
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit" class="btn main-cta main-cta--small py-2 px-4 rounded-pill">NEXT</button>
+            </div>
+        </form>
+    </div>
+</div>
+                            <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>New Occasion</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps d-flex justify-content-center pb-4 bb-dashed">
+            <div class="steps-item m-1 steps-item-active text-center position-relative mb-3">
+                <div class="steps-item-round">1</div>
+                <span class="primary-color">Start</span>
+            </div>
+            <span class="hr d-block my-4"></span>
+            <div class="steps-item m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">2</div>
+                <span class="primary-color"></span>
+            </div>
+            <span class="hr d-block my-4"></span>
+            <div class="steps-item m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">3</div>
+                <span class="primary-color"></span>
+            </div>
+        </div>
+        <form action="/" class="pt-4 pb-2">
+            <div class="mb-4">
+                <label for="occasionName" class="form-label mb-1">Recipient Name</label>
+                <input type="text" class="form-control" id="occasionName" required="" placeholder="">
+            </div>
+            <div class="mb-4">
+                <label for="occasionTitle" class="form-label mb-1">Title of Occasion</label>
+                <input type="text" class="form-control" id="occasionTitle" required="" placeholder="">
+            </div>
+            <div class="mb-4">
+                <label for="occasionType" class="form-label mb-1">Occasion Type</label>
+                <select class="form-control form-select form-select-lg">
+                    <option value="1">Anniversary</option>
+                    <option value="2">Birthday</option>
+                    <option value="3">Christening</option>
+                    <option value="4">Christmas</option>
+                    <option value="5">Congrats</option>
+                    <option value="6" selected>Engagement</option>
+                    <option value="7">Father’s Day</option>
+                    <option value="8">Get Well</option>
+                    <option value="9">Good Luck</option>
+                    <option value="10">Leaving</option>
+                    <option value="11">Maternity</option>
+                    <option value="12">Mothers Day</option>
+                    <option value="13">New Baby</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage" required="" placeholder=""></textarea>
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit" class="btn main-cta main-cta--small main-cta--outline py-2 px-4 rounded-pill mb-2 me-4">PREVIOUS</button>
+                <button type="submit" class="btn main-cta main-cta--small py-2 px-4 rounded-pill mb-2">NEXT</button>
+            </div>
+        </form>
+    </div>
+</div>
+                            <div class="col-12 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>New Occasion</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps d-flex justify-content-center pb-4 bb-dashed">
+            <div class="steps-item m-1 steps-item-done text-center position-relative mb-3">
+                <div class="steps-item-round">1</div>
+                <span class="primary-color">Start</span>
+            </div>
+            <span class="hr d-block my-4 "></span>
+            <div class="steps-item steps-item-active m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">2</div>
+                <span class="primary-color">Group Messages</span>
+            </div>
+            <span class="hr d-block my-4"></span>
+            <div class="steps-item m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">3</div>
+                <span class="primary-color"></span>
+            </div>
+        </div>
+        <form action="/" class="pt-4 pb-2">
+            <div class="mb-4 new_occasion-tabs d-flex justify-content-center flex-column flex-sm-row">
+                <div class="new_occasion-tab w-100 w-sm-50 mb-3 mb-sm-0">
+                    <input type="radio" name="GroupMessage" id="newOccasionGroupMessage1" checked>
+                    <label for="newOccasionGroupMessage1" class="new_occasion-tabs-label w-100">
+                        <div class="new_occasion-tab-title position-relative mb-3 p-1 text-center">
+                            <div class="p-2">Classic Viing Group Card</div>
+                        </div>
+                        <div class="new_occasion-tab-text position-relative p-1">
+                            <div class="py-3 px-4">
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7489 0.292893C12.0837 0.683417 12.0837 1.31658 11.7489 1.70711L4.89181 9.70711C4.55707 10.0976 4.01436 10.0976 3.67962 9.70711L0.251051 5.70711C-0.0836838 5.31658 -0.0836838 4.68342 0.251051 4.29289C0.585786 3.90237 1.1285 3.90237 1.46323 4.29289L4.28571 7.58579L10.5368 0.292893C10.8715 -0.0976311 11.4142 -0.0976311 11.7489 0.292893Z" fill="#00C0C3"/>
+                                    </svg>
+                                    Group Messages</p>
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.38149L10.0463 0.335205C10.4932 -0.111735 11.2179 -0.111735 11.6648 0.335205C12.1117 0.782145 12.1117 1.50678 11.6648 1.95372L7.61851 6L11.6648 10.0463C12.1117 10.4932 12.1117 11.2179 11.6648 11.6648C11.2179 12.1117 10.4932 12.1117 10.0463 11.6648L6 7.61851L1.95372 11.6648C1.50678 12.1117 0.782145 12.1117 0.335205 11.6648C-0.111735 11.2179 -0.111735 10.4932 0.335205 10.0463L4.38149 6L0.335205 1.95372C-0.111735 1.50678 -0.111735 0.782145 0.335205 0.335205C0.782145 -0.111735 1.50678 -0.111735 1.95372 0.335205L6 4.38149Z" fill="#F9565C"/>
+                                    </svg>
+                                        Add photos, videos and GIFS</p>
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7489 0.292893C12.0837 0.683417 12.0837 1.31658 11.7489 1.70711L4.89181 9.70711C4.55707 10.0976 4.01436 10.0976 3.67962 9.70711L0.251051 5.70711C-0.0836838 5.31658 -0.0836838 4.68342 0.251051 4.29289C0.585786 3.90237 1.1285 3.90237 1.46323 4.29289L4.28571 7.58579L10.5368 0.292893C10.8715 -0.0976311 11.4142 -0.0976311 11.7489 0.292893Z" fill="#00C0C3"/>
+                                    </svg>
+                                        Instant eDelivery option</p>
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7489 0.292893C12.0837 0.683417 12.0837 1.31658 11.7489 1.70711L4.89181 9.70711C4.55707 10.0976 4.01436 10.0976 3.67962 9.70711L0.251051 5.70711C-0.0836838 5.31658 -0.0836838 4.68342 0.251051 4.29289C0.585786 3.90237 1.1285 3.90237 1.46323 4.29289L4.28571 7.58579L10.5368 0.292893C10.8715 -0.0976311 11.4142 -0.0976311 11.7489 0.292893Z" fill="#00C0C3"/>
+                                    </svg>
+                                        Physical Card Printed and Posted</p>
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.38149L10.0463 0.335205C10.4932 -0.111735 11.2179 -0.111735 11.6648 0.335205C12.1117 0.782145 12.1117 1.50678 11.6648 1.95372L7.61851 6L11.6648 10.0463C12.1117 10.4932 12.1117 11.2179 11.6648 11.6648C11.2179 12.1117 10.4932 12.1117 10.0463 11.6648L6 7.61851L1.95372 11.6648C1.50678 12.1117 0.782145 12.1117 0.335205 11.6648C-0.111735 11.2179 -0.111735 10.4932 0.335205 10.0463L4.38149 6L0.335205 1.95372C-0.111735 1.50678 -0.111735 0.782145 0.335205 0.335205C0.782145 -0.111735 1.50678 -0.111735 1.95372 0.335205L6 4.38149Z" fill="#F9565C"/>
+                                    </svg>                                           
+                                    Slideshow</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="new_occasion-tab w-100 w-sm-50 mb-3 mb-sm-0">
+                    <input type="radio" name="GroupMessage" id="newOccasionGroupMessage2">
+                    <label for="newOccasionGroupMessage2" class="new_occasion-tabs-label w-100">
+                        <div class="new_occasion-tab-title position-relative mb-3 p-1 text-center">
+                            <div class="p-2"><span class="color-red">NEW!</span> Online Viing Board</div>
+                        </div>
+                        <div class="new_occasion-tab-text position-relative p-1">
+                            <div class="py-3 px-4">
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7489 0.292893C12.0837 0.683417 12.0837 1.31658 11.7489 1.70711L4.89181 9.70711C4.55707 10.0976 4.01436 10.0976 3.67962 9.70711L0.251051 5.70711C-0.0836838 5.31658 -0.0836838 4.68342 0.251051 4.29289C0.585786 3.90237 1.1285 3.90237 1.46323 4.29289L4.28571 7.58579L10.5368 0.292893C10.8715 -0.0976311 11.4142 -0.0976311 11.7489 0.292893Z" fill="#00C0C3"/>
+                                    </svg>
+                                    Group Messages</p>
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7489 0.292893C12.0837 0.683417 12.0837 1.31658 11.7489 1.70711L4.89181 9.70711C4.55707 10.0976 4.01436 10.0976 3.67962 9.70711L0.251051 5.70711C-0.0836838 5.31658 -0.0836838 4.68342 0.251051 4.29289C0.585786 3.90237 1.1285 3.90237 1.46323 4.29289L4.28571 7.58579L10.5368 0.292893C10.8715 -0.0976311 11.4142 -0.0976311 11.7489 0.292893Z" fill="#00C0C3"/>
+                                    </svg>
+                                        Add photos, videos and GIFS</p>
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7489 0.292893C12.0837 0.683417 12.0837 1.31658 11.7489 1.70711L4.89181 9.70711C4.55707 10.0976 4.01436 10.0976 3.67962 9.70711L0.251051 5.70711C-0.0836838 5.31658 -0.0836838 4.68342 0.251051 4.29289C0.585786 3.90237 1.1285 3.90237 1.46323 4.29289L4.28571 7.58579L10.5368 0.292893C10.8715 -0.0976311 11.4142 -0.0976311 11.7489 0.292893Z" fill="#00C0C3"/>
+                                    </svg>
+                                        Instant eDelivery option</p>
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.38149L10.0463 0.335205C10.4932 -0.111735 11.2179 -0.111735 11.6648 0.335205C12.1117 0.782145 12.1117 1.50678 11.6648 1.95372L7.61851 6L11.6648 10.0463C12.1117 10.4932 12.1117 11.2179 11.6648 11.6648C11.2179 12.1117 10.4932 12.1117 10.0463 11.6648L6 7.61851L1.95372 11.6648C1.50678 12.1117 0.782145 12.1117 0.335205 11.6648C-0.111735 11.2179 -0.111735 10.4932 0.335205 10.0463L4.38149 6L0.335205 1.95372C-0.111735 1.50678 -0.111735 0.782145 0.335205 0.335205C0.782145 -0.111735 1.50678 -0.111735 1.95372 0.335205L6 4.38149Z" fill="#F9565C"/>
+                                    </svg>
+                                        Physical Card Printed and Posted</p>
+                                <p class="d-flex align-items-center mb-3">
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.7489 0.292893C12.0837 0.683417 12.0837 1.31658 11.7489 1.70711L4.89181 9.70711C4.55707 10.0976 4.01436 10.0976 3.67962 9.70711L0.251051 5.70711C-0.0836838 5.31658 -0.0836838 4.68342 0.251051 4.29289C0.585786 3.90237 1.1285 3.90237 1.46323 4.29289L4.28571 7.58579L10.5368 0.292893C10.8715 -0.0976311 11.4142 -0.0976311 11.7489 0.292893Z" fill="#00C0C3"/>
+                                    </svg>                                            
+                                    Slideshow</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit" class="btn main-cta main-cta--small main-cta--outline py-2 px-4 rounded-pill mb-2 me-4">PREVIOUS</button>
+                <button type="submit" class="btn main-cta main-cta--small py-2 px-4 rounded-pill mb-2">NEXT</button>
+            </div>
+        </form>
+    </div>
+</div>
+                            <div class="col-12 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>New Occasion</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps d-flex justify-content-center pb-4 bb-dashed">
+            <div class="steps-item m-1 steps-item-done text-center position-relative mb-3">
+                <div class="steps-item-round">1</div>
+                <span class="primary-color">Start</span>
+            </div>
+            <span class="hr d-block my-4 "></span>
+            <div class="steps-item steps-item-active m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">2</div>
+                <span class="primary-color">Occasion Info</span>
+            </div>
+            <span class="hr d-block my-4"></span>
+            <div class="steps-item m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">3</div>
+                <span class="primary-color"></span>
+            </div>
+        </div>
+        <form action="/" class="pt-4 pb-2">
+            <div class="form-check form-switch d-flex align-items-center justify-content-between mb-5">
+                <label class="form-check-label d-flex flex-column w-100" for="settings">
+                    <b>Collection</b>
+                    <span>Would you like the option to collect money from your group?</span>
+                </label>
+                <input class="form-check-input" type="checkbox" id="settings" checked="">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit" class="btn main-cta main-cta--small main-cta--outline py-2 px-4 rounded-pill mb-2 me-4">PREVIOUS</button>
+                <button type="submit" class="btn main-cta main-cta--small py-2 px-4 rounded-pill mb-2">NEXT</button>
+            </div>
+        </form>
+    </div>
+</div>
+                            <div class="col-12 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>New Occasion</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps d-flex justify-content-center pb-4 bb-dashed">
+            <div class="steps-item m-1 steps-item-done text-center position-relative mb-3">
+                <div class="steps-item-round">1</div>
+                <span class="primary-color">Start</span>
+            </div>
+            <span class="hr d-block my-4 "></span>
+            <div class="steps-item steps-item-done m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">2</div>
+                <span class="primary-color">Occasion Info</span>
+            </div>
+            <span class="hr d-block my-4"></span>
+            <div class="steps-item steps-item-active m-1 text-center position-relative mb-3">
+                <div class="steps-item-round">3</div>
+                <span class="primary-color">Collection</span>
+            </div>
+        </div>
+        <form action="/" class="pt-4 pb-2">
+            <div class="form-check form-switch d-flex align-items-center justify-content-between mb-4">
+                <label class="form-check-label d-flex flex-column w-100" for="settings3">
+                    <b>Collection</b>
+                    <span>Would you like the option to collect money from your group?</span>
+                </label>
+                <input class="form-check-input" type="checkbox" id="settings3" checked="">
+            </div>
+            <div class="mb-3 position-relative">
+                <label for="CollectionDate" class="form-label mb-1">End Date</label>
+                <input type="text" class="form-control form-date" id="CollectionDate" name="collection_date" value="" placeholder="DD/MM/YYYY">
+            </div>
+            <div class="mb-3">
+                <button type="button" class="mb-0 d-flex align-items-center btn-popover" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+                    <span class="d-block me-1">Delivery timelines guide</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.66675 4.00012C8.66675 4.36829 8.36829 4.66675 8.00012 4.66675C7.63196 4.66675 7.3335 4.36829 7.3335 4.00012C7.3335 3.63196 7.63196 3.3335 8.00012 3.3335C8.36829 3.3335 8.66675 3.63196 8.66675 4.00012Z" fill="#33353D"/>
+                        <path d="M8.00012 12.6666C7.72412 12.6666 7.50012 12.4426 7.50012 12.1666V7H6.8335C6.5575 7 6.3335 6.776 6.3335 6.5C6.3335 6.224 6.5575 6 6.8335 6H8.00012C8.27612 6 8.50012 6.224 8.50012 6.5V12.1666C8.50012 12.4426 8.27612 12.6666 8.00012 12.6666Z" fill="#33353D"/>
+                        <path d="M8 16C3.58862 16 0 12.4114 0 8C0 3.58862 3.58862 0 8 0C12.4114 0 16 3.58862 16 8C16 12.4114 12.4114 16 8 16ZM8 1C4.14001 1 1 4.14001 1 8C1 11.86 4.14001 15 8 15C11.86 15 15 11.86 15 8C15 4.14001 11.86 1 8 1Z" fill="#33353D"/>
+                        <path d="M9.5 12.6665H6.5C6.224 12.6665 6 12.4425 6 12.1665C6 11.8905 6.224 11.6665 6.5 11.6665H9.5C9.776 11.6665 10 11.8905 10 12.1665C10 12.4425 9.776 12.6665 9.5 12.6665Z" fill="#33353D"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    I agree to Viing <a href="#" target="_blank">Terms & Conditions</a> and <a href="#" target="_blank">Privacy Policy</a>
+                </label>
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked disabled>
+                <label class="form-check-label" for="flexCheckChecked">
+                        I agree to Stripe's <a href="#" target="_blank">Terms & Conditions</a>
+                </label>
+            </div>
+            <div class="more-option mb-5 position-relative d-flex justify-content-center bb-dashed">
+                <a class="d-block text-decoration-none text-center fs-075 primary-color position-absolute top-50 start-50 translate-middle collapsed" data-bs-toggle="collapse" href="#MoreInfocollapse" role="button" aria-expanded="false" aria-controls="MoreInfocollapse">
+                    <span class="more-option1">More Options</span>
+                    <span class="more-option2">Less Options</span>
+                </a>
+            </div>
+            <div class="collapse" id="MoreInfocollapse">
+                <div class="bb-dashed pb-4 mb-4">
+                    <div class="mb-4">
+                        <label for="SuggestAmount" class="form-label mb-1">Suggest Amount to Contribute</label>
+                        <input type="text" class="form-control" id="SuggestAmount" required="" placeholder="">
+                    </div>
+                    <div class="form-check form-switch d-flex align-items-center justify-content-between mb-4">
+                        <label class="form-check-label d-flex flex-column w-100" for="ContributionsOptional">
+                            <b>Contributions Optional</b>
+                            <span>Friends will have the choice to leave a message without a financial contribution.</span>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="ContributionsOptional" checked="">
+                    </div>
+                    <div class="form-check form-switch d-flex align-items-center justify-content-between mb-4">
+                        <label class="form-check-label d-flex flex-column w-100" for="totalcollection">
+                            <b>Show total collection</b>
+                            <span>We never show individual amounts contributed</span>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="totalcollection">
+                    </div>
+                    <div class="form-check form-switch d-flex align-items-center justify-content-between">
+                        <label class="form-check-label d-flex flex-column w-100" for="AutomatedReminders">
+                            <b>Automated Reminders</b>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="AutomatedReminders">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit" class="btn main-cta main-cta--small main-cta--outline py-2 px-4 rounded-pill mb-2 me-4">PREVIOUS</button>
+                <button type="submit" class="btn main-cta main-cta--small py-2 px-4 rounded-pill mb-2">NEXT</button>
+            </div>
+        </form>
+    </div>
+</div>
+                            <div class="col-12 col-sm-7 col-lg-5 col-xl-4 mx-auto pt-5">
+    <div class="white-bg py-5 px-4 d-flex flex-column align-items-center steps-success">
+        <img src="./images/icons/new_occasion_last_step.svg" alt="" class="d-block mb-3">
+        <h1>Congratulations!</h1>   
+        <p class="mt-1 mb-4 text-center">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p> 
+        <div class="px-5">
+            <button type="button" class="btn main-cta main-cta--small py-1 px-4 rounded-pill m-2 w-100">Invite friends now</button>
+            <button type="button" class="btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill m-2 w-100">Take me to my occasion</button>
+        </div>
+    </div>
+</div>
+                    </div>
+    
+    
+                    <!-- just demo , remove it  -->
+                        <script> 
+                            console.error('that errors only for demo navigation' );
+                            const step= document.querySelectorAll(".just-for-demo>div");
+                            const next= document.querySelector(".demo-next");
+                            const prev= document.querySelector(".demo-prev");
+    
+                           let  i=0;
+                           const render = ()=>{
+                               step.forEach((st)=>{
+                                   st.style.display='none';
+                               })
+                               step[i].style.display='block'
+                           }
+                           render();
+                           next.addEventListener('click', ()=>{
+                               i++
+                               if(i>step.length-1){
+                                    i=step.length-1;
+                                }
+                            render();
+                           })
+                           prev.addEventListener('click', ()=>{
+                               i--;
+                                if(i<1){
+                                    i=0;
+                                }
+                            render();
+                           })
+                        </script>
+                           <!-- just demo , remove it  -->
+            </div>
+        </section>
+    </div>
+</main>
+
+
+
+<div class="modal m-modal fade p-2" id="LoginModalToggle" aria-hidden="true" aria-labelledby="LoginModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog flex-column justify-content-center modal-dialog-centered">
+    <div class="modal-content mb-3 ps-3 pe-3 border-0 position-relative m-modal__content">				
+			<button type="button" class="position-absolute btn-close btn-close-white m-0 p-0 rounded-circle top-0 start-100 translate-middle m-modal__close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      <div class="modal-header ps-0 pe-0 mb-4 justify-content-center m-modal__header">
+        <h5 class="modal-title fs-2" id="LoginModalToggleLabel">Login</h5>
+      </div>
+
+      <div class="modal-body ps-0 pe-0 pb-3">
+        <form action="/">
+					<div class="mb-3">
+						<label for="modalLoginEmail" class="form-label mb-1">E-Mail</label>
+						<input type="email" class="form-control" id="modalLoginEmail" required autocomplete="email" placeholder="Enter your email">
+					</div>
+					<div class="mb-4">
+						<label for="modalLoginPassword" class="form-label mb-1">Password</label>
+						<input type="password" class="form-control" id="modalLoginPassword" required autocomplete="current-password" placeholder="Enter your password">
+					</div>
+
+					<div class="text-center">
+						<button type="submit" class="btn main-cta main-cta--small py-2 px-5 rounded-pill">LOGIN</button>
+					</div>
+				</form>
+      </div>
+      <div class="modal-footer ps-0 pe-0 mb-4 d-block text-center border-0">
+				Forgot your password? <a class="primary-link" href="#">Click Here To Reset</a>
+      </div>
+    </div>
+
+		<div class="modal-content d-block text-center p-3 border-0 m-modal__content">
+			New to Viing? <a class="primary-link" href="#RegisterModalToggle" data-bs-target="#RegisterModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up!</a>
+		</div>
+  </div>
+</div>
+<footer class="footer bg-accented-footer py-3 z-index--2p">
+	<div class="container">
+		<nav class="navbar navbar-expand-xl navbar-light align-items-center justify-content-between">
+			<ul class="navbar-nav">
+				<li>
+					<a href="index.html" class="navbar-brand me-4" aria-current="page">
+						<img src="./images/icons/logo-small.png" alt="Logo">
+					</a>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+				<li class="nav-item"><a href="how-it-work.html" class="nav-link">How it works</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="navbar-nav align-self-stretch">
+				<li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+				<li class="vr d-xl-block">&nbsp;</li>
+				<li class="nav-item d-flex align-items-center">
+					<span class="text-muted nav-link">Handcrafted in London © 2021 - All rights reserved.</span>
+				</li>
+				<li class="d-flex align-items-center">
+					<a class="text-muted ms-xl-3 ms-2" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M13.331 3.32083H15.1568V0.140833C14.8418 0.0975 13.7585 0 12.4968 0C9.86434 0 8.06101 1.65583 8.06101 4.69917V7.5H5.15601V11.055H8.06101V20H11.6227V11.0558H14.4102L14.8527 7.50083H11.6218V5.05167C11.6227 4.02417 11.8993 3.32083 13.331 3.32083Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					<a class="text-muted ms-xl-3" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
+
+<!-- settings date picker https://xdsoft.net/jqplugins/datetimepicker/ -->
+<script src="./js/jquery.js"></script>
+<script defer src="./js/jquery.datetimepicker.full.min.js"></script>
+<script defer>
+    $(document).ready(function(){
+        $.datetimepicker.setLocale('en');
+        $('#CollectionDate').datetimepicker({
+            dayOfWeekStart: 1,
+            minDate:'2021/09/01',
+            allowTimes:[
+            '0:00', '1:00', '2:00', '3:00', '4:00', '5:00', '6:00', '7:00',
+            '8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00',
+            '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00'
+            ],
+            format:'d.m.Y H:i'
+        });
+    });
+</script>

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Dashboard">
+  <link rel="shortcut icon" href="images/icons/fav.png" type="image/x-icon">
+  <link rel="icon" href="images/icons/fav.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body bg-accented-gray">
+  
+  <header class="header fixed-top shadow-sm bg-white py-2">
+    <div class="container-lg">
+      <nav class="navbar navbar-light">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img class="d-none d-md-block" src="./images/icons/logo.png" alt="Logo">
+          <img class="d-md-none" src="./images/icons/logo-small.png" alt="Logo">
+        </a>
+
+        <div class="d-flex align-items-center ms-auto">
+          <img class="me-3" src="./images/icons/avatar-dash-1.png" alt="">
+          <span class="ff-accent fs-0875">KATE BATTEN</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<main>
+
+  <div class="my-4 d-flex position-relative with-sidebar">
+    <div id="left-sidebar" class=" z-index--2p" >
+  <aside
+  class=" d-flex justify-content-center mt-4 px-2 pb-2 pt-3 pt-lg-5 bg-body  border--start-0 shadow--regular border--rounded-26 m-sidebar"
+  > 
+  <ul class="nav flex-column flex-nowrap m-sidebar__list">
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link active rounded-3" aria-current="page" href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#dashboard"></use>
+        </svg>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#fireworks"></use>
+        </svg>
+        <span>Occasions</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#pen-ball"></use>
+        </svg>
+        <span>Contributions</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#fax-page"></use>
+        </svg>
+        <span>My&nbsp;Invites</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 mt-5 mt-xl-auto">
+      <a class="nav-link m-sidebar__link  m-sidebar__link--bigger border--rounded-16"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#gift-btn"></use>
+        </svg>
+        <span>Gifts</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  m-sidebar__link--bigger border--rounded-16"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#love-card"></use>
+        </svg>
+        <span>Our&nbsp;Cards</span>
+      </a>
+    </li>
+  </ul>
+  <button class="d-flex p-0 d-lg-none justify-content-center align-items-center border border-2 border-start-0 m-sidebar__activator rounded-pill border--start-0">
+    <svg id="Capa_1" enable-background="new 0 0 551.13 551.13"  viewBox="0 0 551.13 551.13" 
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m361.679 275.565-223.896 223.897v51.668l275.565-275.565-275.565-275.565v51.668z" />
+    </svg>
+  </button>
+
+</aside>
+  <div class="m-sidebar__deactivator"></div>
+</div>
+
+
+
+
+    <section class="flex-grow-1 ms-lg-4 overflow-hidden" data-main-sidebar>
+      <div class="container-xxl pb-3">
+        <div class="head-color pe-4">
+          <span class="fs-4">Welcome back,</span>
+          <h1 class="ff-primary fw-black mb-4">Kate Batten</h1>
+        </div>
+
+        <!-- occassion -->
+        
+
+<div class="occassion mb-4">
+  <div class="d-flex justify-content-between mb-3">
+    <span class=" fw-bold opacity-05">My Active Occasions</span>
+    <button class="btn primary-link primary-link--underline p-0 occassion__view-btn">View All</button>
+  </div>
+
+    <div class="row flex-xl-nowrap g-4">
+      
+      <div class="occassion__item">
+        <div class=" shadow--regular p-3 border--rounded-16 border--primary-05 bg-accented-white">
+          <div class="row g-3 mb-4">
+            <div class="col-3 col-sm-2 col-xl-3">
+              <img class="img-fluid rounded-circle" src="./images/icons/avatar-occassion-1.jpg" alt="">
+            </div>
+            <div class="col-9 col-sm-10 col-xl-9">
+              <span class="mb-2 d-block">Julie will be leaving us to go on a new adventure in Australia</span>
+
+              <!-- price -->
+              <div class="row mb-2">
+                <div class="col-4 d-flex flex-wrap head-color opacity-07">
+                  <svg class=" me-2" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.7358 3.22971L9.21462 0.101608C9.07755 0.0445813 8.92351 0.0445813 8.78644 0.101608L1.26531 3.22971C1.05735 3.3162 0.921875 3.5193 0.921875 3.74446V17.5013C0.921875 17.8092 1.17149 18.0588 1.4794 18.0588H16.5217C16.8296 18.0588 17.0792 17.8092 17.0792 17.5013V3.74454C17.0792 3.5193 16.9437 3.3162 16.7358 3.22971ZM15.9641 16.9438H2.03692V4.11648L9.00053 1.22024L15.9641 4.11648V16.9438Z" fill="#454B63"/>
+                    <path d="M6.12774 7.66709L3.76488 10.03C3.54712 10.2477 3.54712 10.6007 3.76488 10.8184C3.87375 10.9272 4.0164 10.9816 4.15912 10.9816C4.30185 10.9816 4.4445 10.9272 4.55337 10.8184L6.91623 8.45551C7.31597 8.05577 7.94781 8.02367 8.3861 8.38096C9.26937 9.10112 10.5432 9.03645 11.349 8.23067L13.2831 6.29662V6.92638C13.2831 7.2343 13.5327 7.48391 13.8406 7.48391C14.1485 7.48391 14.3981 7.2343 14.3981 6.92638V4.95889C14.3981 4.65098 14.1485 4.40137 13.8406 4.40137H11.8731C11.5652 4.40137 11.3156 4.65098 11.3156 4.95889C11.3156 5.2668 11.5652 5.51641 11.8731 5.51641H12.4864L10.5605 7.44225C10.1608 7.842 9.52878 7.87409 9.09065 7.51688C8.20737 6.79656 6.93359 6.86115 6.12774 7.66709Z" fill="#454B63"/>
+                    <path d="M2.80859 12.0626C2.80859 12.3706 3.0582 12.6202 3.36612 12.6202H14.635C14.9429 12.6202 15.1925 12.3706 15.1925 12.0626C15.1925 11.7547 14.9429 11.5051 14.635 11.5051H3.36612C3.0582 11.5051 2.80859 11.7547 2.80859 12.0626Z" fill="#454B63"/>
+                    <path d="M14.6351 13.1316H3.36612C3.0582 13.1316 2.80859 13.3812 2.80859 13.6891C2.80859 13.997 3.0582 14.2466 3.36612 14.2466H14.635C14.9429 14.2466 15.1925 13.997 15.1925 13.6891C15.1925 13.3812 14.943 13.1316 14.6351 13.1316Z" fill="#454B63"/>
+                    <path d="M14.6351 14.7581H3.36612C3.0582 14.7581 2.80859 15.0077 2.80859 15.3156C2.80859 15.6235 3.0582 15.8731 3.36612 15.8731H14.635C14.9429 15.8731 15.1925 15.6235 15.1925 15.3156C15.1925 15.0077 14.943 14.7581 14.6351 14.7581Z" fill="#454B63"/>
+                  </svg>                    
+                  <span>£ 23.00</span>
+                </div>
+
+                <!-- people -->
+                <div class="col-4 d-flex flex-wrap justify-content-center head-color border-end border-start border--color-f9 opacity-07">
+                  <svg class=" me-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.4018 9.60889H14.0098C14.1517 9.99736 14.2292 10.4166 14.2292 10.8536V16.1147C14.2292 16.2969 14.1975 16.4717 14.1398 16.6344H16.4411C17.3008 16.6344 18.0002 15.935 18.0002 15.0753V12.2073C18.0002 10.7745 16.8346 9.60889 15.4018 9.60889Z" fill="#454B63"/>
+                    <path d="M3.77104 10.8536C3.77104 10.4166 3.84856 9.99736 3.99045 9.60889H2.5984C1.16564 9.60889 0 10.7745 0 12.2073V15.0754C0 15.935 0.699365 16.6344 1.55904 16.6344H3.86044C3.80275 16.4717 3.77104 16.2969 3.77104 16.1147V10.8536Z" fill="#454B63"/>
+                    <path d="M10.5914 8.25537H7.40895C5.97619 8.25537 4.81055 9.42101 4.81055 10.8538V16.1149C4.81055 16.4019 5.04321 16.6346 5.33023 16.6346H12.6701C12.9571 16.6346 13.1898 16.4019 13.1898 16.1149V10.8538C13.1898 9.42101 12.0241 8.25537 10.5914 8.25537Z" fill="#454B63"/>
+                    <path d="M8.9999 1.36572C7.27682 1.36572 5.875 2.76755 5.875 4.49066C5.875 5.65943 6.52008 6.6802 7.47275 7.21612C7.92461 7.4703 8.44555 7.61557 8.9999 7.61557C9.55424 7.61557 10.0752 7.4703 10.527 7.21612C11.4797 6.6802 12.1248 5.6594 12.1248 4.49066C12.1248 2.76758 10.723 1.36572 8.9999 1.36572Z" fill="#454B63"/>
+                    <path d="M3.5128 4.27759C2.22414 4.27759 1.17578 5.32595 1.17578 6.6146C1.17578 7.90326 2.22414 8.95162 3.5128 8.95162C3.83968 8.95162 4.15096 8.88391 4.43372 8.7622C4.9226 8.55172 5.3257 8.17913 5.57514 7.71243C5.75022 7.38488 5.84981 7.0112 5.84981 6.6146C5.84981 5.32598 4.80145 4.27759 3.5128 4.27759Z" fill="#454B63"/>
+                    <path d="M14.4874 4.27759C13.1988 4.27759 12.1504 5.32595 12.1504 6.6146C12.1504 7.01124 12.25 7.38491 12.4251 7.71243C12.6745 8.17917 13.0776 8.55175 13.5665 8.7622C13.8493 8.88391 14.1605 8.95162 14.4874 8.95162C15.7761 8.95162 16.8244 7.90326 16.8244 6.6146C16.8244 5.32595 15.7761 4.27759 14.4874 4.27759Z" fill="#454B63"/>
+                  </svg>
+                  <span>16</span>
+                </div>
+
+                <!-- time -->
+                <div class="col-4 d-flex flex-wrap justify-content-end opacity-07 text-svg--red">
+                  <svg class=" me-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.2067 10.5899L9.69703 8.70763V4.87342C9.69703 4.48789 9.38541 4.17627 8.99988 4.17627C8.61436 4.17627 8.30273 4.48789 8.30273 4.87342V9.05624C8.30273 9.27582 8.40592 9.48289 8.58159 9.61396L11.3701 11.7054C11.4956 11.7995 11.642 11.8448 11.7877 11.8448C12.0003 11.8448 12.2095 11.7493 12.3461 11.5652C12.5776 11.2578 12.5149 10.8207 12.2067 10.5899Z" fill="#454B63"/>
+                    <path d="M9 0C4.0371 0 0 4.0371 0 9C0 13.9629 4.0371 18 9 18C13.9629 18 18 13.9629 18 9C18 4.0371 13.9629 0 9 0ZM9 16.6057C4.80674 16.6057 1.39426 13.1933 1.39426 9C1.39426 4.80674 4.80674 1.39426 9 1.39426C13.194 1.39426 16.6057 4.80674 16.6057 9C16.6057 13.1933 13.1933 16.6057 9 16.6057Z" fill="#454B63"/>
+                  </svg>
+                  <span>Ended</span>  
+                </div>
+              </div>
+
+              <!-- progress -->
+              <div class="progress bg-accented-gray">
+                <div class="progress-bar w-100 bg-accented-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-2 mx-3 border-top">
+            <div class="col-6 text-center">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#groupCardDetails" class="btn rounded-pill btn--hover-primary px-3">Withdraw</button>
+            </div>
+            <div class="col-6 text-center border-start">
+              <button class="btn rounded-pill btn--hover-primary px-3">Extend</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="occassion__item">
+        <div class=" shadow--regular p-3 border--rounded-16  bg-accented-white">
+          <div class="row g-3 mb-4">
+            <div class="col-3 col-sm-2 col-xl-3">
+              <img class="img-fluid rounded-circle" src="./images/icons/avatar-occassion-2.jpg" alt="">
+            </div>
+            <div class="col-9 col-sm-10 col-xl-9">
+              <span class="mb-2 d-block">Julie will be leaving us to go on a new adventure in Australia</span>
+
+              <!-- price -->
+              <div class="row mb-2">
+                <div class="col-4 d-flex flex-wrap head-color opacity-07">
+                  <svg class=" me-2" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.7358 3.22971L9.21462 0.101608C9.07755 0.0445813 8.92351 0.0445813 8.78644 0.101608L1.26531 3.22971C1.05735 3.3162 0.921875 3.5193 0.921875 3.74446V17.5013C0.921875 17.8092 1.17149 18.0588 1.4794 18.0588H16.5217C16.8296 18.0588 17.0792 17.8092 17.0792 17.5013V3.74454C17.0792 3.5193 16.9437 3.3162 16.7358 3.22971ZM15.9641 16.9438H2.03692V4.11648L9.00053 1.22024L15.9641 4.11648V16.9438Z" fill="#454B63"/>
+                    <path d="M6.12774 7.66709L3.76488 10.03C3.54712 10.2477 3.54712 10.6007 3.76488 10.8184C3.87375 10.9272 4.0164 10.9816 4.15912 10.9816C4.30185 10.9816 4.4445 10.9272 4.55337 10.8184L6.91623 8.45551C7.31597 8.05577 7.94781 8.02367 8.3861 8.38096C9.26937 9.10112 10.5432 9.03645 11.349 8.23067L13.2831 6.29662V6.92638C13.2831 7.2343 13.5327 7.48391 13.8406 7.48391C14.1485 7.48391 14.3981 7.2343 14.3981 6.92638V4.95889C14.3981 4.65098 14.1485 4.40137 13.8406 4.40137H11.8731C11.5652 4.40137 11.3156 4.65098 11.3156 4.95889C11.3156 5.2668 11.5652 5.51641 11.8731 5.51641H12.4864L10.5605 7.44225C10.1608 7.842 9.52878 7.87409 9.09065 7.51688C8.20737 6.79656 6.93359 6.86115 6.12774 7.66709Z" fill="#454B63"/>
+                    <path d="M2.80859 12.0626C2.80859 12.3706 3.0582 12.6202 3.36612 12.6202H14.635C14.9429 12.6202 15.1925 12.3706 15.1925 12.0626C15.1925 11.7547 14.9429 11.5051 14.635 11.5051H3.36612C3.0582 11.5051 2.80859 11.7547 2.80859 12.0626Z" fill="#454B63"/>
+                    <path d="M14.6351 13.1316H3.36612C3.0582 13.1316 2.80859 13.3812 2.80859 13.6891C2.80859 13.997 3.0582 14.2466 3.36612 14.2466H14.635C14.9429 14.2466 15.1925 13.997 15.1925 13.6891C15.1925 13.3812 14.943 13.1316 14.6351 13.1316Z" fill="#454B63"/>
+                    <path d="M14.6351 14.7581H3.36612C3.0582 14.7581 2.80859 15.0077 2.80859 15.3156C2.80859 15.6235 3.0582 15.8731 3.36612 15.8731H14.635C14.9429 15.8731 15.1925 15.6235 15.1925 15.3156C15.1925 15.0077 14.943 14.7581 14.6351 14.7581Z" fill="#454B63"/>
+                  </svg>                    
+                  <span>£ 23.00</span>
+                </div>
+
+                <!-- people -->
+                <div class="col-4 d-flex flex-wrap justify-content-center head-color border-end border-start border--color-f9 opacity-07">
+                  <svg class=" me-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.4018 9.60889H14.0098C14.1517 9.99736 14.2292 10.4166 14.2292 10.8536V16.1147C14.2292 16.2969 14.1975 16.4717 14.1398 16.6344H16.4411C17.3008 16.6344 18.0002 15.935 18.0002 15.0753V12.2073C18.0002 10.7745 16.8346 9.60889 15.4018 9.60889Z" fill="#454B63"/>
+                    <path d="M3.77104 10.8536C3.77104 10.4166 3.84856 9.99736 3.99045 9.60889H2.5984C1.16564 9.60889 0 10.7745 0 12.2073V15.0754C0 15.935 0.699365 16.6344 1.55904 16.6344H3.86044C3.80275 16.4717 3.77104 16.2969 3.77104 16.1147V10.8536Z" fill="#454B63"/>
+                    <path d="M10.5914 8.25537H7.40895C5.97619 8.25537 4.81055 9.42101 4.81055 10.8538V16.1149C4.81055 16.4019 5.04321 16.6346 5.33023 16.6346H12.6701C12.9571 16.6346 13.1898 16.4019 13.1898 16.1149V10.8538C13.1898 9.42101 12.0241 8.25537 10.5914 8.25537Z" fill="#454B63"/>
+                    <path d="M8.9999 1.36572C7.27682 1.36572 5.875 2.76755 5.875 4.49066C5.875 5.65943 6.52008 6.6802 7.47275 7.21612C7.92461 7.4703 8.44555 7.61557 8.9999 7.61557C9.55424 7.61557 10.0752 7.4703 10.527 7.21612C11.4797 6.6802 12.1248 5.6594 12.1248 4.49066C12.1248 2.76758 10.723 1.36572 8.9999 1.36572Z" fill="#454B63"/>
+                    <path d="M3.5128 4.27759C2.22414 4.27759 1.17578 5.32595 1.17578 6.6146C1.17578 7.90326 2.22414 8.95162 3.5128 8.95162C3.83968 8.95162 4.15096 8.88391 4.43372 8.7622C4.9226 8.55172 5.3257 8.17913 5.57514 7.71243C5.75022 7.38488 5.84981 7.0112 5.84981 6.6146C5.84981 5.32598 4.80145 4.27759 3.5128 4.27759Z" fill="#454B63"/>
+                    <path d="M14.4874 4.27759C13.1988 4.27759 12.1504 5.32595 12.1504 6.6146C12.1504 7.01124 12.25 7.38491 12.4251 7.71243C12.6745 8.17917 13.0776 8.55175 13.5665 8.7622C13.8493 8.88391 14.1605 8.95162 14.4874 8.95162C15.7761 8.95162 16.8244 7.90326 16.8244 6.6146C16.8244 5.32595 15.7761 4.27759 14.4874 4.27759Z" fill="#454B63"/>
+                  </svg>
+                  <span>16</span>
+                </div>
+
+                <!-- time -->
+                <div class="col-4 d-flex flex-wrap justify-content-end opacity-07 ">
+                  <svg class=" me-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.2067 10.5899L9.69703 8.70763V4.87342C9.69703 4.48789 9.38541 4.17627 8.99988 4.17627C8.61436 4.17627 8.30273 4.48789 8.30273 4.87342V9.05624C8.30273 9.27582 8.40592 9.48289 8.58159 9.61396L11.3701 11.7054C11.4956 11.7995 11.642 11.8448 11.7877 11.8448C12.0003 11.8448 12.2095 11.7493 12.3461 11.5652C12.5776 11.2578 12.5149 10.8207 12.2067 10.5899Z" fill="#454B63"/>
+                    <path d="M9 0C4.0371 0 0 4.0371 0 9C0 13.9629 4.0371 18 9 18C13.9629 18 18 13.9629 18 9C18 4.0371 13.9629 0 9 0ZM9 16.6057C4.80674 16.6057 1.39426 13.1933 1.39426 9C1.39426 4.80674 4.80674 1.39426 9 1.39426C13.194 1.39426 16.6057 4.80674 16.6057 9C16.6057 13.1933 13.1933 16.6057 9 16.6057Z" fill="#454B63"/>
+                  </svg>
+                  <span>Ended</span>  
+                </div>
+              </div>
+
+              <!-- progress -->
+              <div class="progress bg-accented-gray">
+                <div class="progress-bar w-75 bg-accented-yellow" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-2 mx-3 border-top">
+            <div class="col-6 text-center">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#groupCardDetails" class="btn rounded-pill btn--hover-primary px-3">Amend</button>
+            </div>
+            <div class="col-6 text-center border-start">
+              <button class="btn rounded-pill btn--hover-primary px-3">Extend</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="occassion__item">
+        <div class=" shadow--regular p-3 border--rounded-16  bg-accented-white">
+          <div class="row g-3 mb-4">
+            <div class="col-3 col-sm-2 col-xl-3">
+              <img class="img-fluid rounded-circle" src="./images/icons/avatar-occassion-2.jpg" alt="">
+            </div>
+            <div class="col-9 col-sm-10 col-xl-9">
+              <span class="mb-2 d-block">Julie will be leaving us to go on a new adventure in Australia</span>
+
+              <!-- price -->
+              <div class="row mb-2">
+                <div class="col-4 d-flex flex-wrap head-color opacity-07">
+                  <svg class=" me-2" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.7358 3.22971L9.21462 0.101608C9.07755 0.0445813 8.92351 0.0445813 8.78644 0.101608L1.26531 3.22971C1.05735 3.3162 0.921875 3.5193 0.921875 3.74446V17.5013C0.921875 17.8092 1.17149 18.0588 1.4794 18.0588H16.5217C16.8296 18.0588 17.0792 17.8092 17.0792 17.5013V3.74454C17.0792 3.5193 16.9437 3.3162 16.7358 3.22971ZM15.9641 16.9438H2.03692V4.11648L9.00053 1.22024L15.9641 4.11648V16.9438Z" fill="#454B63"/>
+                    <path d="M6.12774 7.66709L3.76488 10.03C3.54712 10.2477 3.54712 10.6007 3.76488 10.8184C3.87375 10.9272 4.0164 10.9816 4.15912 10.9816C4.30185 10.9816 4.4445 10.9272 4.55337 10.8184L6.91623 8.45551C7.31597 8.05577 7.94781 8.02367 8.3861 8.38096C9.26937 9.10112 10.5432 9.03645 11.349 8.23067L13.2831 6.29662V6.92638C13.2831 7.2343 13.5327 7.48391 13.8406 7.48391C14.1485 7.48391 14.3981 7.2343 14.3981 6.92638V4.95889C14.3981 4.65098 14.1485 4.40137 13.8406 4.40137H11.8731C11.5652 4.40137 11.3156 4.65098 11.3156 4.95889C11.3156 5.2668 11.5652 5.51641 11.8731 5.51641H12.4864L10.5605 7.44225C10.1608 7.842 9.52878 7.87409 9.09065 7.51688C8.20737 6.79656 6.93359 6.86115 6.12774 7.66709Z" fill="#454B63"/>
+                    <path d="M2.80859 12.0626C2.80859 12.3706 3.0582 12.6202 3.36612 12.6202H14.635C14.9429 12.6202 15.1925 12.3706 15.1925 12.0626C15.1925 11.7547 14.9429 11.5051 14.635 11.5051H3.36612C3.0582 11.5051 2.80859 11.7547 2.80859 12.0626Z" fill="#454B63"/>
+                    <path d="M14.6351 13.1316H3.36612C3.0582 13.1316 2.80859 13.3812 2.80859 13.6891C2.80859 13.997 3.0582 14.2466 3.36612 14.2466H14.635C14.9429 14.2466 15.1925 13.997 15.1925 13.6891C15.1925 13.3812 14.943 13.1316 14.6351 13.1316Z" fill="#454B63"/>
+                    <path d="M14.6351 14.7581H3.36612C3.0582 14.7581 2.80859 15.0077 2.80859 15.3156C2.80859 15.6235 3.0582 15.8731 3.36612 15.8731H14.635C14.9429 15.8731 15.1925 15.6235 15.1925 15.3156C15.1925 15.0077 14.943 14.7581 14.6351 14.7581Z" fill="#454B63"/>
+                  </svg>                    
+                  <span>£ 23.00</span>
+                </div>
+
+                <!-- people -->
+                <div class="col-4 d-flex flex-wrap justify-content-center head-color border-end border-start border--color-f9 opacity-07">
+                  <svg class=" me-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.4018 9.60889H14.0098C14.1517 9.99736 14.2292 10.4166 14.2292 10.8536V16.1147C14.2292 16.2969 14.1975 16.4717 14.1398 16.6344H16.4411C17.3008 16.6344 18.0002 15.935 18.0002 15.0753V12.2073C18.0002 10.7745 16.8346 9.60889 15.4018 9.60889Z" fill="#454B63"/>
+                    <path d="M3.77104 10.8536C3.77104 10.4166 3.84856 9.99736 3.99045 9.60889H2.5984C1.16564 9.60889 0 10.7745 0 12.2073V15.0754C0 15.935 0.699365 16.6344 1.55904 16.6344H3.86044C3.80275 16.4717 3.77104 16.2969 3.77104 16.1147V10.8536Z" fill="#454B63"/>
+                    <path d="M10.5914 8.25537H7.40895C5.97619 8.25537 4.81055 9.42101 4.81055 10.8538V16.1149C4.81055 16.4019 5.04321 16.6346 5.33023 16.6346H12.6701C12.9571 16.6346 13.1898 16.4019 13.1898 16.1149V10.8538C13.1898 9.42101 12.0241 8.25537 10.5914 8.25537Z" fill="#454B63"/>
+                    <path d="M8.9999 1.36572C7.27682 1.36572 5.875 2.76755 5.875 4.49066C5.875 5.65943 6.52008 6.6802 7.47275 7.21612C7.92461 7.4703 8.44555 7.61557 8.9999 7.61557C9.55424 7.61557 10.0752 7.4703 10.527 7.21612C11.4797 6.6802 12.1248 5.6594 12.1248 4.49066C12.1248 2.76758 10.723 1.36572 8.9999 1.36572Z" fill="#454B63"/>
+                    <path d="M3.5128 4.27759C2.22414 4.27759 1.17578 5.32595 1.17578 6.6146C1.17578 7.90326 2.22414 8.95162 3.5128 8.95162C3.83968 8.95162 4.15096 8.88391 4.43372 8.7622C4.9226 8.55172 5.3257 8.17913 5.57514 7.71243C5.75022 7.38488 5.84981 7.0112 5.84981 6.6146C5.84981 5.32598 4.80145 4.27759 3.5128 4.27759Z" fill="#454B63"/>
+                    <path d="M14.4874 4.27759C13.1988 4.27759 12.1504 5.32595 12.1504 6.6146C12.1504 7.01124 12.25 7.38491 12.4251 7.71243C12.6745 8.17917 13.0776 8.55175 13.5665 8.7622C13.8493 8.88391 14.1605 8.95162 14.4874 8.95162C15.7761 8.95162 16.8244 7.90326 16.8244 6.6146C16.8244 5.32595 15.7761 4.27759 14.4874 4.27759Z" fill="#454B63"/>
+                  </svg>
+                  <span>16</span>
+                </div>
+
+                <!-- time -->
+                <div class="col-4 d-flex flex-wrap justify-content-end opacity-07 ">
+                  <svg class=" me-2" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.2067 10.5899L9.69703 8.70763V4.87342C9.69703 4.48789 9.38541 4.17627 8.99988 4.17627C8.61436 4.17627 8.30273 4.48789 8.30273 4.87342V9.05624C8.30273 9.27582 8.40592 9.48289 8.58159 9.61396L11.3701 11.7054C11.4956 11.7995 11.642 11.8448 11.7877 11.8448C12.0003 11.8448 12.2095 11.7493 12.3461 11.5652C12.5776 11.2578 12.5149 10.8207 12.2067 10.5899Z" fill="#454B63"/>
+                    <path d="M9 0C4.0371 0 0 4.0371 0 9C0 13.9629 4.0371 18 9 18C13.9629 18 18 13.9629 18 9C18 4.0371 13.9629 0 9 0ZM9 16.6057C4.80674 16.6057 1.39426 13.1933 1.39426 9C1.39426 4.80674 4.80674 1.39426 9 1.39426C13.194 1.39426 16.6057 4.80674 16.6057 9C16.6057 13.1933 13.1933 16.6057 9 16.6057Z" fill="#454B63"/>
+                  </svg>
+                  <span>Ended</span>  
+                </div>
+              </div>
+
+              <!-- progress -->
+              <div class="progress bg-accented-gray">
+                <div class="progress-bar w-75 bg-accented-yellow" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-2 mx-3 border-top">
+            <div class="col-6 text-center">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#groupCardDetails" class="btn rounded-pill btn--hover-primary px-3">Amend</button>
+            </div>
+            <div class="col-6 text-center border-start">
+              <button class="btn rounded-pill btn--hover-primary px-3">Extend</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- to show elements below comment occassion__item  ^^-->
+      <div class="col-12 col-md-6 occassion__item--if-empty" style="display: none;">
+  <div class="p-5 h-100 border--rounded-16 d-flex flex-column justify-content-center border--primary-dashed-2p">
+
+    <div class="text-center order-1">
+      <button class="btn p-4 bg-accented-primary bg-accented-primary--hover rounded-circle mb-3">
+        <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.7015 0.756836V13.4369H0V16.6744H12.7015V29.4624H16.2985V16.6744H29V13.4369H16.2985V0.756836H12.7015Z" fill="#F7F7F3"/></svg>
+      </button>
+    </div>
+    
+    <span class="fs-125 text-center primary-color order-2">Create your first occasion now</span>
+  </div>
+</div>
+      <div class="col-12 col-md-6 occassion__item--if-empty" style="display: none;">
+  <div class="p-5 h-100 border--rounded-16 d-flex flex-column justify-content-center shadow--regular bg-accented-white">
+
+    <div class="text-center order-2">
+      <button class="btn p-4 bg-accented-primary bg-accented-primary--hover px-4 py-3 border--rounded-16 text-light fs-0875 ff-accent mt-3">
+        <span class="">Yes, I want!</span>
+      </button>
+    </div>
+    
+    <span class="fs-125 text-center primary-color order-1">Create your first occasion now</span>
+  </div>
+</div>
+    </div>
+  </div>
+
+        <!-- contributions & pending -->
+        
+  <div class="row mb-4">
+    <!-- contribution -->
+    <div class="col-12 col-md-6 mb-4 mb-md-0 contribution d-flex flex-column justify-content-start">
+      <div class="d-flex justify-content-between mb-3">
+        <span class=" fw-bold opacity-05">My Contributions</span>
+        <button class="btn primary-link contribution__view-btn primary-link--underline p-0">View All</button>
+      </div>
+
+      <div class="px-3 py-4 border--rounded-16 d-flex flex-column justify-content-start flex-grow-1 bg-accented-white shadow--regular">
+        <div class="contribution__item pb-3 mb-3 border-bottom">
+  <div class="d-flex flex-column flex-sm-row justify-content-between">
+    <div class="d-flex flex-column pb-3 pb-sm-0">
+      <div class="d-flex align-items-center mb-2">
+        <img width="30" height="30" src="./images/icons/avatar-contr-men.jpg" alt="avatar icon">
+        <div class="d-flex flex-column ms-2">
+          <span class="fs-075 lh-1 opacity-05">Organizer</span>
+          <span class="fw-black">John Maxwell</span>
+        </div>
+      </div>
+      <div class="mt-auto">         
+        <span>Julie will be leaving us to go on a new adventure in Australia</span>
+      </div>
+    </div>
+
+    <div class="d-flex flex-sm-column justify-content-around ps-sm-4">
+      <div class="primary-color d-flex">
+        <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.8751 2.81879L8.18969 0.0382618C8.06785 -0.0124284 7.93093 -0.0124284 7.80909 0.0382618L1.12363 2.81879C0.938784 2.89568 0.818359 3.07621 0.818359 3.27635V15.5047C0.818359 15.7784 1.04024 16.0002 1.31393 16.0002H14.6848C14.9585 16.0002 15.1804 15.7784 15.1804 15.5047V3.27642C15.1804 3.07621 15.06 2.89568 14.8751 2.81879ZM14.1893 15.0091H1.80951V3.60704L7.99939 1.0326L14.1893 3.60704V15.0091Z" fill="#00C0C3"/>
+          <path d="M5.44666 6.76346L3.34634 8.86378C3.15278 9.05734 3.15278 9.37111 3.34634 9.5646C3.44312 9.66138 3.56992 9.70973 3.69678 9.70973C3.82365 9.70973 3.95045 9.6613 4.04722 9.5646L6.14754 7.46428C6.50287 7.10895 7.0645 7.08042 7.45409 7.39801C8.23922 8.03815 9.37147 7.98067 10.0878 7.26442L11.8069 5.54527V6.10506C11.8069 6.37875 12.0288 6.60063 12.3025 6.60063C12.5762 6.60063 12.7981 6.37875 12.7981 6.10506V4.35617C12.7981 4.08247 12.5762 3.8606 12.3025 3.8606H10.5536C10.2799 3.8606 10.0581 4.08247 10.0581 4.35617C10.0581 4.62987 10.2799 4.85175 10.5536 4.85175H11.0988L9.38691 6.5636C9.03158 6.91893 8.46981 6.94746 8.08036 6.62994C7.29522 5.98966 6.16298 6.04707 5.44666 6.76346Z" fill="#00C0C3"/>
+          <path d="M2.49609 10.6704C2.49609 10.9441 2.71797 11.166 2.99167 11.166H13.0084C13.2821 11.166 13.504 10.9441 13.504 10.6704C13.504 10.3967 13.2821 10.1748 13.0084 10.1748H2.99167C2.71797 10.1748 2.49609 10.3966 2.49609 10.6704Z" fill="#00C0C3"/>
+          <path d="M13.0085 11.6208H2.99167C2.71797 11.6208 2.49609 11.8427 2.49609 12.1164C2.49609 12.3901 2.71797 12.612 2.99167 12.612H13.0084C13.2821 12.612 13.504 12.3901 13.504 12.1164C13.504 11.8427 13.2822 11.6208 13.0085 11.6208Z" fill="#00C0C3"/>
+          <path d="M13.0085 13.0662H2.99167C2.71797 13.0662 2.49609 13.288 2.49609 13.5617C2.49609 13.8354 2.71797 14.0573 2.99167 14.0573H13.0084C13.2821 14.0573 13.504 13.8354 13.504 13.5617C13.504 13.288 13.2822 13.0662 13.0085 13.0662Z" fill="#00C0C3"/>
+        </svg>
+        <span class="fs-0875 ms-2">£ 23.00</span>
+      </div>
+      <span class="text-end fs-075">2 days ago</span>
+    </div>
+  </div>
+</div>
+        <div class="contribution__item pb-3 mb-3 border-bottom">
+  <div class="d-flex flex-column flex-sm-row justify-content-between">
+    <div class="d-flex flex-column pb-3 pb-sm-0">
+      <div class="d-flex align-items-center mb-2">
+        <img width="30" height="30" src="./images/icons/avatar-contr-men.jpg" alt="avatar icon">
+        <div class="d-flex flex-column ms-2">
+          <span class="fs-075 lh-1 opacity-05">Organizer</span>
+          <span class="fw-black">John Maxwell</span>
+        </div>
+      </div>
+      <div class="mt-auto">         
+        <span>Julie will be leaving us to go on a new adventure in Australia</span>
+      </div>
+    </div>
+
+    <div class="d-flex flex-sm-column justify-content-around ps-sm-4">
+      <div class="primary-color d-flex">
+        <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.8751 2.81879L8.18969 0.0382618C8.06785 -0.0124284 7.93093 -0.0124284 7.80909 0.0382618L1.12363 2.81879C0.938784 2.89568 0.818359 3.07621 0.818359 3.27635V15.5047C0.818359 15.7784 1.04024 16.0002 1.31393 16.0002H14.6848C14.9585 16.0002 15.1804 15.7784 15.1804 15.5047V3.27642C15.1804 3.07621 15.06 2.89568 14.8751 2.81879ZM14.1893 15.0091H1.80951V3.60704L7.99939 1.0326L14.1893 3.60704V15.0091Z" fill="#00C0C3"/>
+          <path d="M5.44666 6.76346L3.34634 8.86378C3.15278 9.05734 3.15278 9.37111 3.34634 9.5646C3.44312 9.66138 3.56992 9.70973 3.69678 9.70973C3.82365 9.70973 3.95045 9.6613 4.04722 9.5646L6.14754 7.46428C6.50287 7.10895 7.0645 7.08042 7.45409 7.39801C8.23922 8.03815 9.37147 7.98067 10.0878 7.26442L11.8069 5.54527V6.10506C11.8069 6.37875 12.0288 6.60063 12.3025 6.60063C12.5762 6.60063 12.7981 6.37875 12.7981 6.10506V4.35617C12.7981 4.08247 12.5762 3.8606 12.3025 3.8606H10.5536C10.2799 3.8606 10.0581 4.08247 10.0581 4.35617C10.0581 4.62987 10.2799 4.85175 10.5536 4.85175H11.0988L9.38691 6.5636C9.03158 6.91893 8.46981 6.94746 8.08036 6.62994C7.29522 5.98966 6.16298 6.04707 5.44666 6.76346Z" fill="#00C0C3"/>
+          <path d="M2.49609 10.6704C2.49609 10.9441 2.71797 11.166 2.99167 11.166H13.0084C13.2821 11.166 13.504 10.9441 13.504 10.6704C13.504 10.3967 13.2821 10.1748 13.0084 10.1748H2.99167C2.71797 10.1748 2.49609 10.3966 2.49609 10.6704Z" fill="#00C0C3"/>
+          <path d="M13.0085 11.6208H2.99167C2.71797 11.6208 2.49609 11.8427 2.49609 12.1164C2.49609 12.3901 2.71797 12.612 2.99167 12.612H13.0084C13.2821 12.612 13.504 12.3901 13.504 12.1164C13.504 11.8427 13.2822 11.6208 13.0085 11.6208Z" fill="#00C0C3"/>
+          <path d="M13.0085 13.0662H2.99167C2.71797 13.0662 2.49609 13.288 2.49609 13.5617C2.49609 13.8354 2.71797 14.0573 2.99167 14.0573H13.0084C13.2821 14.0573 13.504 13.8354 13.504 13.5617C13.504 13.288 13.2822 13.0662 13.0085 13.0662Z" fill="#00C0C3"/>
+        </svg>
+        <span class="fs-0875 ms-2">£ 23.00</span>
+      </div>
+      <span class="text-end fs-075">2 days ago</span>
+    </div>
+  </div>
+</div>
+        <div class="contribution__item ">
+  <div class="d-flex flex-column flex-sm-row justify-content-between">
+    <div class="d-flex flex-column pb-3 pb-sm-0">
+      <div class="d-flex align-items-center mb-2">
+        <img width="30" height="30" src="./images/icons/avatar-contr-men.jpg" alt="avatar icon">
+        <div class="d-flex flex-column ms-2">
+          <span class="fs-075 lh-1 opacity-05">Organizer</span>
+          <span class="fw-black">John Maxwell</span>
+        </div>
+      </div>
+      <div class="mt-auto">         
+        <span>Julie will be leaving us to go on a new adventure in Australia</span>
+      </div>
+    </div>
+
+    <div class="d-flex flex-sm-column justify-content-around ps-sm-4">
+      <div class="primary-color d-flex">
+        <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.8751 2.81879L8.18969 0.0382618C8.06785 -0.0124284 7.93093 -0.0124284 7.80909 0.0382618L1.12363 2.81879C0.938784 2.89568 0.818359 3.07621 0.818359 3.27635V15.5047C0.818359 15.7784 1.04024 16.0002 1.31393 16.0002H14.6848C14.9585 16.0002 15.1804 15.7784 15.1804 15.5047V3.27642C15.1804 3.07621 15.06 2.89568 14.8751 2.81879ZM14.1893 15.0091H1.80951V3.60704L7.99939 1.0326L14.1893 3.60704V15.0091Z" fill="#00C0C3"/>
+          <path d="M5.44666 6.76346L3.34634 8.86378C3.15278 9.05734 3.15278 9.37111 3.34634 9.5646C3.44312 9.66138 3.56992 9.70973 3.69678 9.70973C3.82365 9.70973 3.95045 9.6613 4.04722 9.5646L6.14754 7.46428C6.50287 7.10895 7.0645 7.08042 7.45409 7.39801C8.23922 8.03815 9.37147 7.98067 10.0878 7.26442L11.8069 5.54527V6.10506C11.8069 6.37875 12.0288 6.60063 12.3025 6.60063C12.5762 6.60063 12.7981 6.37875 12.7981 6.10506V4.35617C12.7981 4.08247 12.5762 3.8606 12.3025 3.8606H10.5536C10.2799 3.8606 10.0581 4.08247 10.0581 4.35617C10.0581 4.62987 10.2799 4.85175 10.5536 4.85175H11.0988L9.38691 6.5636C9.03158 6.91893 8.46981 6.94746 8.08036 6.62994C7.29522 5.98966 6.16298 6.04707 5.44666 6.76346Z" fill="#00C0C3"/>
+          <path d="M2.49609 10.6704C2.49609 10.9441 2.71797 11.166 2.99167 11.166H13.0084C13.2821 11.166 13.504 10.9441 13.504 10.6704C13.504 10.3967 13.2821 10.1748 13.0084 10.1748H2.99167C2.71797 10.1748 2.49609 10.3966 2.49609 10.6704Z" fill="#00C0C3"/>
+          <path d="M13.0085 11.6208H2.99167C2.71797 11.6208 2.49609 11.8427 2.49609 12.1164C2.49609 12.3901 2.71797 12.612 2.99167 12.612H13.0084C13.2821 12.612 13.504 12.3901 13.504 12.1164C13.504 11.8427 13.2822 11.6208 13.0085 11.6208Z" fill="#00C0C3"/>
+          <path d="M13.0085 13.0662H2.99167C2.71797 13.0662 2.49609 13.288 2.49609 13.5617C2.49609 13.8354 2.71797 14.0573 2.99167 14.0573H13.0084C13.2821 14.0573 13.504 13.8354 13.504 13.5617C13.504 13.288 13.2822 13.0662 13.0085 13.0662Z" fill="#00C0C3"/>
+        </svg>
+        <span class="fs-0875 ms-2">£ 23.00</span>
+      </div>
+      <span class="text-end fs-075">2 days ago</span>
+    </div>
+  </div>
+</div>
+      
+        <!-- to show empty element below comment contribution__items -->
+        <div class="contribution__item--if-empty flex-column justify-content-center align-items-center p-5" style="display: none;">
+          <svg class="mb-4" width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M78.2112 54.088C79.842 51.4991 81.0696 48.5947 81.7828 45.4404C85.1527 30.5364 75.8025 15.7222 60.8983 12.3523C45.9941 8.98236 31.1802 18.3326 27.8102 33.2368C26.9473 37.0537 26.9203 40.8641 27.6054 44.4785L78.2112 54.088Z" fill="#A8E7EF"/>
+            <path d="M81.7814 45.441C81.0703 48.5941 79.8426 51.4987 78.21 54.0882L70.6681 52.6562C72.2987 50.0663 73.5263 47.1617 74.2395 44.009C77.3975 30.0523 69.3981 16.1734 56.127 11.6995C57.7069 11.7771 59.3016 11.9901 60.8994 12.3519C75.8015 15.7227 85.1528 30.5366 81.7814 45.441Z" fill="#70D9E6"/>
+            <path d="M107.851 53.8296C109.901 43.0641 87.4552 29.7461 57.7166 24.083C27.9781 18.42 2.20831 22.5564 0.158252 33.3219C-1.89181 44.0875 20.5541 57.4055 50.2927 63.0685C80.0313 68.7316 105.801 64.5952 107.851 53.8296Z" fill="#1C96F9"/>
+            <path d="M18.7445 31.9462C21.3362 31.9462 23.4372 29.8452 23.4372 27.2535C23.4372 24.6618 21.3362 22.5608 18.7445 22.5608C16.1528 22.5608 14.0518 24.6618 14.0518 27.2535C14.0518 29.8452 16.1528 31.9462 18.7445 31.9462Z" fill="#1785F8"/>
+            <path d="M107.87 53.762C105.825 64.5318 80.0495 68.6841 50.2959 63.0343C33.7793 59.8979 19.5098 54.4011 10.4336 48.2866C19.2715 52.9475 31.0842 56.9874 44.3471 59.506C74.0985 65.1555 99.8755 61.0058 101.921 50.2336C102.832 45.4384 98.885 40.1409 91.5977 35.2397C102.601 41.035 109.004 47.7895 107.87 53.762Z" fill="#1785F8"/>
+            <path d="M83.9984 59.0329C85.0601 53.4575 71.6905 46.2278 54.1367 42.8851C36.5828 39.5424 21.4919 41.3523 20.4302 46.9277C19.3685 52.5032 32.738 59.7328 50.2919 63.0755C67.8457 66.4183 82.9366 64.6083 83.9984 59.0329Z" fill="#D4F2F6"/>
+            <path d="M73.7608 102.483L14.005 91.1357C12.6929 90.8866 11.9142 89.5242 12.3649 88.2672L29.022 41.8285C35.2772 40.7164 44.3184 40.971 54.1322 42.8346C63.9461 44.6983 72.4513 47.7754 77.8633 51.103L76.3381 100.415C76.2969 101.75 75.0726 102.732 73.7608 102.483Z" fill="#D2F0A2"/>
+            <path d="M77.8635 51.102C72.4515 47.7744 63.9461 44.6971 54.1324 42.8336C44.3185 40.97 35.2773 40.7154 29.0222 41.8275L26.9189 47.6877C30.9019 46.84 36.1932 46.6014 42.1803 47.0444L35.8152 72.5334C35.5971 73.4067 36.1283 74.2914 37.0015 74.5095C37.1342 74.5426 37.2671 74.5584 37.3977 74.5584C38.1282 74.5584 38.7928 74.0638 38.9776 73.323L45.4639 47.3479C47.9163 47.62 50.46 48.0006 53.0575 48.4937C55.6556 48.9871 58.1622 49.5657 60.5441 50.2116L58.9468 62.3726C58.8298 63.2651 59.4582 64.0835 60.3506 64.2008C60.4226 64.2103 60.4941 64.2149 60.5649 64.2149C61.3705 64.2149 62.071 63.6175 62.1788 62.7972L63.7109 51.133C69.4435 52.9156 74.279 55.0769 77.6724 57.3253L77.8635 51.102Z" fill="#BCEA73"/>
+            <path d="M73.7608 102.482L68.167 101.42L69.8437 47.2297C72.9481 48.4346 75.6635 49.7475 77.8634 51.1019L76.3381 100.414C76.2969 101.749 75.0727 102.731 73.7608 102.482Z" fill="#BCEA73"/>
+            <path d="M16.5117 38.5296C16.8472 36.7676 15.4736 35.0258 13.4435 34.6393C11.4135 34.2527 9.4958 35.3677 9.16027 37.1297C8.82474 38.8917 10.1984 40.6334 12.2284 41.02C14.2585 41.4066 16.1762 40.2916 16.5117 38.5296Z" fill="#D4F2F6"/>
+            <path d="M36.2744 32.2549C36.6099 30.4929 35.2363 28.7512 33.2062 28.3646C31.1762 27.978 29.2585 29.093 28.923 30.855C28.5874 32.617 29.9611 34.3588 31.9911 34.7454C34.0212 35.1319 35.9389 34.0169 36.2744 32.2549Z" fill="#D4F2F6"/>
+            <path d="M59.5302 34.553C59.8658 32.791 58.4921 31.0493 56.4621 30.6627C54.432 30.2761 52.5144 31.3911 52.1788 33.1531C51.8433 34.9151 53.217 36.6569 55.247 37.0435C57.277 37.43 59.1947 36.315 59.5302 34.553Z" fill="#D4F2F6"/>
+            <path d="M98.081 54.0565C98.4166 52.2945 97.0429 50.5527 95.0128 50.1661C92.9828 49.7795 91.0651 50.8945 90.7296 52.6565C90.3941 54.4185 91.7677 56.1603 93.7978 56.5469C95.8278 56.9335 97.7455 55.8185 98.081 54.0565Z" fill="#D4F2F6"/>
+            <path d="M82.0049 40.9598C82.3404 39.1978 80.9667 37.456 78.9367 37.0694C76.9066 36.6829 74.989 37.7979 74.6534 39.5599C74.3179 41.3219 75.6916 43.0636 77.7216 43.4502C79.7517 43.8368 81.6693 42.7218 82.0049 40.9598Z" fill="#D4F2F6"/>
+            <path d="M28.6306 5.95565C27.9942 5.31925 26.9625 5.31904 26.3255 5.95565L25.4573 6.82387L24.5891 5.95565C23.9525 5.31925 22.9208 5.31925 22.2839 5.95565C21.6475 6.59226 21.6475 7.62395 22.2839 8.26056L23.1522 9.12878L22.2839 9.997C21.6475 10.6334 21.6475 11.6653 22.2839 12.3019C22.6022 12.6202 23.0193 12.7793 23.4365 12.7793C23.8535 12.7793 24.2708 12.62 24.5891 12.3019L25.4573 11.4337L26.3255 12.3019C26.6438 12.6202 27.061 12.7793 27.4781 12.7793C27.8951 12.7793 28.3123 12.62 28.6306 12.3019C29.267 11.6653 29.267 10.6336 28.6306 9.997L27.7624 9.12878L28.6306 8.26056C29.267 7.62395 29.267 6.59205 28.6306 5.95565Z" fill="#64B9FC"/>
+            <path d="M83.3368 12.6807C83.6551 12.999 84.0723 13.1581 84.4894 13.1581C84.9064 13.1581 85.3236 12.9988 85.6419 12.6807C86.2783 12.0443 86.2783 11.0124 85.6419 10.3758L84.7737 9.50761L85.6419 8.63939C86.2783 8.00299 86.2783 6.97109 85.6419 6.33448C85.0053 5.69808 83.9736 5.69808 83.3368 6.33448L82.4688 7.20248L81.6008 6.33448C80.9642 5.69808 79.9325 5.69808 79.2957 6.33448C78.6593 6.97088 78.6593 8.00278 79.2957 8.63939L80.1639 9.50761L79.2957 10.3758C78.6593 11.0122 78.6593 12.0441 79.2957 12.6807C79.614 12.999 80.0312 13.1581 80.4482 13.1581C80.8652 13.1581 81.2825 12.9988 81.6008 12.6807L82.4688 11.8127L83.3368 12.6807Z" fill="#64B9FC"/>
+            <path d="M88.8147 79.2535L89.6829 78.3853C90.3193 77.7487 90.3193 76.717 89.6829 76.0804C89.0463 75.444 88.0146 75.444 87.3778 76.0804L86.5098 76.9484L85.6418 76.0804C85.0054 75.444 83.9737 75.4438 83.3367 76.0804C82.7003 76.7168 82.7003 77.7487 83.3367 78.3853L84.2049 79.2535L83.3367 80.1218C82.7003 80.7584 82.7003 81.7901 83.3367 82.4267C83.655 82.745 84.0722 82.904 84.4892 82.904C84.9063 82.904 85.3235 82.7448 85.6418 82.4267L86.5098 81.5587L87.3778 82.4267C87.6961 82.745 88.1131 82.904 88.5304 82.904C88.9474 82.904 89.3646 82.7448 89.6829 82.4267C90.3193 81.7903 90.3193 80.7584 89.6829 80.1218L88.8147 79.2535Z" fill="#A8E7EF"/>
+            <path d="M92.6068 28.1416C95.1985 28.1416 97.2995 26.0406 97.2995 23.4488C97.2995 20.8571 95.1985 18.7561 92.6068 18.7561C90.0151 18.7561 87.9141 20.8571 87.9141 23.4488C87.9141 26.0406 90.0151 28.1416 92.6068 28.1416Z" fill="#A8E7EF"/>
+            <path d="M97.2991 23.4484C97.2991 26.0411 95.1975 28.1426 92.607 28.1426C91.7386 28.1426 90.9235 27.9068 90.2266 27.493C92.0687 27.0683 93.4412 25.4192 93.4412 23.4484C93.4412 21.4798 92.071 19.8285 90.2289 19.4039C90.9258 18.9922 91.7386 18.7563 92.6072 18.7563C95.1975 18.7561 97.2991 20.8577 97.2991 23.4484Z" fill="#70D9E6"/>
+            <path d="M18.7445 28.1416C21.3362 28.1416 23.4372 26.0406 23.4372 23.4488C23.4372 20.8571 21.3362 18.7561 18.7445 18.7561C16.1528 18.7561 14.0518 20.8571 14.0518 23.4488C14.0518 26.0406 16.1528 28.1416 18.7445 28.1416Z" fill="#BCEA73"/>
+            <path d="M23.4368 23.4484C23.4368 26.0411 21.3352 28.1426 18.7447 28.1426C17.8763 28.1426 17.0612 27.9068 16.3643 27.493C18.2064 27.0683 19.5789 25.4192 19.5789 23.4484C19.5789 21.4798 18.2087 19.8285 16.3666 19.4039C17.0635 18.9922 17.8763 18.7563 18.7449 18.7563C21.3352 18.7561 23.4368 20.8577 23.4368 23.4484Z" fill="#99D53B"/>
+          </svg>
+          <span class="fs-125 opacity-05 text-center">There are no any contributions.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- pending -->
+    <div class="col-12 col-md-6 pending d-flex flex-column justify-content-start">
+      <div class="d-flex justify-content-between mb-3">
+        <span class=" fw-bold opacity-05">Pending Invites</span>
+        <button class="btn primary-link primary-link--underline p-0 pending__view-btn">View All</button>
+      </div>
+
+      <div class="px-3 py-4 border--rounded-16 d-flex flex-column justify-content-start flex-grow-1 bg-accented-white shadow--regular">
+        <div class="pending__item pb-3 mb-3 border-bottom">
+  <div class="d-flex flex-column flex-sm-row justify-content-between">
+    <div class="d-flex flex-column pb-3 pb-sm-0">
+      <span>Julie will be leaving us to go on a new adventure in Australia</span>
+      <div class="opacity-05 mt-auto d-flex">
+        <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.8511 9.41194L8.62024 7.73881V4.33062C8.62024 3.98794 8.34324 3.71094 8.00055 3.71094C7.65786 3.71094 7.38086 3.98794 7.38086 4.33062V8.04869C7.38086 8.24388 7.47258 8.42794 7.62873 8.54444L10.1074 10.4035C10.219 10.4871 10.3491 10.5274 10.4786 10.5274C10.6676 10.5274 10.8535 10.4425 10.975 10.2789C11.1808 10.0056 11.125 9.61706 10.8511 9.41194Z" fill="#2A2C34"/>
+          <path d="M8 0C3.58853 0 0 3.58853 0 8C0 12.4115 3.58853 16 8 16C12.4115 16 16 12.4115 16 8C16 3.58853 12.4115 0 8 0ZM8 14.7607C4.27266 14.7607 1.23934 11.7273 1.23934 8C1.23934 4.27266 4.27266 1.23934 8 1.23934C11.728 1.23934 14.7607 4.27266 14.7607 8C14.7607 11.7273 11.7273 14.7607 8 14.7607Z" fill="#2A2C34"/>
+        </svg>          
+        <span class="fs-075">Received on 4th April, 2021</span>
+      </div>
+    </div>
+    <div class="d-flex flex-sm-column justify-content-around ps-sm-4">
+      <button class="btn rounded-pill primary-link main-cta--outline py-1">Contribute</button>
+      <button class="btn rounded-pill primary-hover fs-0875"><ins>Skip</ins></button>
+    </div>
+  </div>
+</div>
+        <div class="pending__item pb-3 mb-3 border-bottom">
+  <div class="d-flex flex-column flex-sm-row justify-content-between">
+    <div class="d-flex flex-column pb-3 pb-sm-0">
+      <span>Julie will be leaving us to go on a new adventure in Australia</span>
+      <div class="opacity-05 mt-auto d-flex">
+        <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.8511 9.41194L8.62024 7.73881V4.33062C8.62024 3.98794 8.34324 3.71094 8.00055 3.71094C7.65786 3.71094 7.38086 3.98794 7.38086 4.33062V8.04869C7.38086 8.24388 7.47258 8.42794 7.62873 8.54444L10.1074 10.4035C10.219 10.4871 10.3491 10.5274 10.4786 10.5274C10.6676 10.5274 10.8535 10.4425 10.975 10.2789C11.1808 10.0056 11.125 9.61706 10.8511 9.41194Z" fill="#2A2C34"/>
+          <path d="M8 0C3.58853 0 0 3.58853 0 8C0 12.4115 3.58853 16 8 16C12.4115 16 16 12.4115 16 8C16 3.58853 12.4115 0 8 0ZM8 14.7607C4.27266 14.7607 1.23934 11.7273 1.23934 8C1.23934 4.27266 4.27266 1.23934 8 1.23934C11.728 1.23934 14.7607 4.27266 14.7607 8C14.7607 11.7273 11.7273 14.7607 8 14.7607Z" fill="#2A2C34"/>
+        </svg>          
+        <span class="fs-075">Received on 4th April, 2021</span>
+      </div>
+    </div>
+    <div class="d-flex flex-sm-column justify-content-around ps-sm-4">
+      <button class="btn rounded-pill primary-link main-cta--outline py-1">Contribute</button>
+      <button class="btn rounded-pill primary-hover fs-0875"><ins>Skip</ins></button>
+    </div>
+  </div>
+</div>
+        <div class="pending__item ">
+  <div class="d-flex flex-column flex-sm-row justify-content-between">
+    <div class="d-flex flex-column pb-3 pb-sm-0">
+      <span>Julie will be leaving us to go on a new adventure in Australia</span>
+      <div class="opacity-05 mt-auto d-flex">
+        <svg class="me-2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.8511 9.41194L8.62024 7.73881V4.33062C8.62024 3.98794 8.34324 3.71094 8.00055 3.71094C7.65786 3.71094 7.38086 3.98794 7.38086 4.33062V8.04869C7.38086 8.24388 7.47258 8.42794 7.62873 8.54444L10.1074 10.4035C10.219 10.4871 10.3491 10.5274 10.4786 10.5274C10.6676 10.5274 10.8535 10.4425 10.975 10.2789C11.1808 10.0056 11.125 9.61706 10.8511 9.41194Z" fill="#2A2C34"/>
+          <path d="M8 0C3.58853 0 0 3.58853 0 8C0 12.4115 3.58853 16 8 16C12.4115 16 16 12.4115 16 8C16 3.58853 12.4115 0 8 0ZM8 14.7607C4.27266 14.7607 1.23934 11.7273 1.23934 8C1.23934 4.27266 4.27266 1.23934 8 1.23934C11.728 1.23934 14.7607 4.27266 14.7607 8C14.7607 11.7273 11.7273 14.7607 8 14.7607Z" fill="#2A2C34"/>
+        </svg>          
+        <span class="fs-075">Received on 4th April, 2021</span>
+      </div>
+    </div>
+    <div class="d-flex flex-sm-column justify-content-around ps-sm-4">
+      <button class="btn rounded-pill primary-link main-cta--outline py-1">Contribute</button>
+      <button class="btn rounded-pill primary-hover fs-0875"><ins>Skip</ins></button>
+    </div>
+  </div>
+</div>
+
+        <!-- to show empty element below comment pending__items -->
+        <div class="pending__item--if-empty flex-column justify-content-center align-items-center p-5" style="display: none;">
+          <svg class="mb-4" width="96" height="108" viewBox="0 0 96 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M82.5466 52.2495V87.9256C82.5466 89.01 81.9526 90.0073 80.9985 90.5243L49.409 107.64C48.5298 108.116 47.4696 108.116 46.5929 107.64L15.0008 90.5243C14.0493 90.0075 13.4551 89.01 13.4551 87.9256V52.2495H82.5466Z" fill="#A8E7EF"/>
+            <path d="M82.5468 58.6689V70.8073L64.2934 80.6971C63.5688 81.0884 62.7162 81.1608 61.9361 80.8975L48.001 76.1784V58.6689H82.5468Z" fill="#70D9E6"/>
+            <path d="M76.3008 52.2498V93.0695L80.9988 90.5239C81.9524 90.0071 82.5466 89.0096 82.5466 87.925V52.2498H76.3008Z" fill="#70D9E6"/>
+            <path d="M48.0009 52.2495V108C47.5156 108 47.0325 107.882 46.5904 107.643L15.0008 90.5241C14.0493 90.0048 13.4551 89.0098 13.4551 87.9254V52.2495H48.0009Z" fill="#70D9E6"/>
+            <path d="M48.0009 58.6689V76.1784L34.0632 80.8975C33.2855 81.1608 32.4306 81.0882 31.7086 80.6971L13.4551 70.8073V58.6689H48.0009Z" fill="#3AD1E0"/>
+            <path d="M41.873 52.2495V105.085L46.5911 107.641C47.0315 107.881 47.5163 107.999 48.001 107.999V52.2495H41.873Z" fill="#3AD1E0"/>
+            <path d="M48.0004 33.532L13.4541 52.2499L48.0004 70.9677L82.5467 52.2499L48.0004 33.532Z" fill="#756F6F"/>
+            <path d="M75.4387 56.1016L48.0006 70.9666L20.5625 56.1016L38.5356 46.3628C44.44 43.1636 51.561 43.1636 57.4654 46.3628L75.4387 56.1016Z" fill="#5B5555"/>
+            <path d="M93.5359 39.6418L82.5465 52.2499L48 33.532L59.4246 20.4254C59.8792 19.9039 60.6345 19.7675 61.2429 20.0969L93.1258 37.371C93.958 37.822 94.1577 38.9282 93.5359 39.6418Z" fill="#A8E7EF"/>
+            <path d="M63.262 25.0927C63.262 27.6697 61.1726 29.7612 58.5958 29.7612C56.5023 29.7612 54.7315 28.3838 54.1406 26.4879L59.3691 20.4905C61.5791 20.8594 63.262 22.7794 63.262 25.0927Z" fill="#70D9E6"/>
+            <path d="M2.46455 39.6418L13.454 52.2499L48.0005 33.532L36.5759 20.4254C36.1213 19.9039 35.366 19.7675 34.7576 20.0969L2.87483 37.3713C2.04247 37.822 1.84271 38.9282 2.46455 39.6418Z" fill="#D4F2F6"/>
+            <path d="M28.4282 27.6451C28.4282 30.89 25.7964 33.5195 22.5515 33.5195C20.0272 33.5195 17.8744 31.9267 17.0439 29.6925L27.2748 24.1497C27.9998 25.1252 28.4282 26.3358 28.4282 27.6451Z" fill="#A8E7EF"/>
+            <path d="M1.50316 56.2963L13.4538 52.2495L48.0001 70.9675L34.0639 75.6861C33.2847 75.95 32.431 75.8773 31.7077 75.4853L1.27303 58.9959C0.13882 58.3813 0.281203 56.7102 1.50316 56.2963Z" fill="#A8E7EF"/>
+            <path d="M94.497 56.2963L82.5463 52.2495L48 70.9675L61.9362 75.6861C62.7154 75.95 63.5691 75.8773 64.2924 75.4853L94.7269 58.9959C95.8613 58.3813 95.7189 56.7102 94.497 56.2963Z" fill="#D4F2F6"/>
+            <path d="M57.2283 95.7446C56.6495 95.7446 56.089 95.4356 55.7937 94.891C55.3651 94.0995 55.6589 93.1104 56.4504 92.6816L60.189 90.656C60.9811 90.2269 61.9697 90.5212 62.3986 91.3126C62.8272 92.1041 62.5334 93.0931 61.7419 93.522L58.0033 95.5476C57.7565 95.6813 57.4905 95.7446 57.2283 95.7446Z" fill="#31A7FB"/>
+            <path d="M16.6758 21.769C16.6758 18.5239 19.3064 15.8933 22.5514 15.8933C25.7965 15.8933 28.4271 18.5239 28.4271 21.769C28.4271 25.014 25.7965 27.6446 22.5514 27.6446C19.3064 27.6446 16.6758 25.014 16.6758 21.769Z" fill="#BCEA73"/>
+            <path d="M19.5713 26.8324C21.8777 26.3008 23.5962 24.2359 23.5962 21.7684C23.5962 19.3034 21.8804 17.236 19.574 16.7044C20.4467 16.1889 21.4642 15.8936 22.5518 15.8936C25.7954 15.8936 28.4267 18.525 28.4267 21.7684C28.4267 25.0145 25.7952 27.6459 22.5518 27.6459C21.4642 27.6459 20.4439 27.3506 19.5713 26.8324Z" fill="#99D53B"/>
+            <path d="M36.1096 4.79615C35.473 4.15975 34.4413 4.15975 33.8045 4.79615L32.4599 6.14066L31.1154 4.79615C30.4788 4.15975 29.4471 4.15975 28.8103 4.79615C28.1739 5.43254 28.1739 6.46445 28.8103 7.10106L30.1548 8.44558L28.8103 9.79009C28.1739 10.4265 28.1739 11.4584 28.8103 12.095C29.1286 12.4133 29.5458 12.5724 29.9629 12.5724C30.3799 12.5724 30.7971 12.4131 31.1154 12.095L32.4599 10.7505L33.8045 12.095C34.1228 12.4133 34.54 12.5724 34.957 12.5724C35.3741 12.5724 35.7913 12.4131 36.1096 12.095C36.746 11.4586 36.746 10.4267 36.1096 9.79009L34.7651 8.44558L36.1096 7.10106C36.746 6.46445 36.746 5.43254 36.1096 4.79615Z" fill="#BCEA73"/>
+            <path d="M83.0151 19.1216L84.3596 17.7771C84.996 17.1407 84.996 16.1088 84.3596 15.4722C83.723 14.8358 82.6913 14.8358 82.0545 15.4722L80.7099 16.8167L79.3654 15.4722C78.7288 14.8358 77.6971 14.8358 77.0603 15.4722C76.4239 16.1086 76.4239 17.1405 77.0603 17.7771L78.4048 19.1216L77.0603 20.4661C76.4239 21.1025 76.4239 22.1344 77.0603 22.771C77.3786 23.0893 77.7958 23.2484 78.2129 23.2484C78.6299 23.2484 79.0471 23.0891 79.3654 22.771L80.7099 21.4265L82.0545 22.771C82.3728 23.0893 82.79 23.2484 83.207 23.2484C83.624 23.2484 84.0413 23.0891 84.3596 22.771C84.996 22.1346 84.996 21.1027 84.3596 20.4661L83.0151 19.1216Z" fill="#BCEA73"/>
+            <path d="M58.5947 25.0938C61.1722 25.0938 63.2617 23.0043 63.2617 20.4268C63.2617 17.8492 61.1722 15.7598 58.5947 15.7598C56.0172 15.7598 53.9277 17.8492 53.9277 20.4268C53.9277 23.0043 56.0172 25.0938 58.5947 25.0938Z" fill="#64B9FC"/>
+            <path d="M63.2615 20.4254C63.2615 23.0039 61.1713 25.094 58.5949 25.094C57.7311 25.094 56.9207 24.8595 56.2275 24.4477C58.0595 24.0254 59.4245 22.3854 59.4245 20.4254C59.4245 18.4674 58.0616 16.8253 56.2297 16.403C56.9228 15.9936 57.7311 15.7588 58.5949 15.7588C61.1713 15.7588 63.2615 17.849 63.2615 20.4254Z" fill="#31A7FB"/>
+            <path d="M68.0634 10.9413C71.0848 10.9413 73.5341 8.49203 73.5341 5.47066C73.5341 2.4493 71.0848 0 68.0634 0C65.0421 0 62.5928 2.4493 62.5928 5.47066C62.5928 8.49203 65.0421 10.9413 68.0634 10.9413Z" fill="#A8E7EF"/>
+            <path d="M73.5342 5.47003C73.5342 8.49255 71.0842 10.9426 68.0642 10.9426C67.0517 10.9426 66.1016 10.6675 65.2891 10.1851C67.4366 9.69005 69.0366 7.76756 69.0366 5.47003C69.0366 3.17503 67.4391 1.25002 65.2916 0.754945C66.1039 0.275062 67.0514 0 68.0639 0C71.0842 0 73.5342 2.45004 73.5342 5.47003Z" fill="#70D9E6"/>
+            <path d="M62.9224 57.6182C62.9224 59.7237 62.4856 61.7295 61.6969 63.5461L48.0003 70.9671L34.3037 63.5461C33.515 61.7295 33.0781 59.7237 33.0781 57.6182C33.0781 49.3781 39.7602 42.6958 48.0003 42.6958C56.2403 42.6958 62.9224 49.3779 62.9224 57.6182Z" fill="#A3E440"/>
+            <path d="M62.9202 57.6183C62.9202 59.7238 62.4834 61.7296 61.6968 63.5462L52.0551 68.7703C55.1278 66.0366 57.064 62.0534 57.064 57.6183C57.064 50.38 51.9116 44.3476 45.0732 42.9851C46.0208 42.7961 46.9985 42.6982 48.0004 42.6982C56.2403 42.698 62.9202 49.3759 62.9202 57.6183Z" fill="#99D53B"/>
+            <path d="M50.9648 63.6895C50.5906 63.6895 50.2147 63.5613 49.9076 63.2993C49.3798 62.849 48.6215 62.5891 47.8269 62.5868C47.8233 62.5868 47.8197 62.5868 47.8161 62.5868C47.0255 62.5868 46.2699 62.8416 45.742 63.2869C45.0537 63.8669 44.0254 63.7796 43.4455 63.0913C42.865 62.4033 42.9527 61.3751 43.6408 60.7949C44.7638 59.848 46.2459 59.3271 47.8161 59.3271H47.8368C49.4148 59.332 50.9019 59.8621 52.0241 60.82C52.7086 61.4042 52.79 62.433 52.2055 63.1177C51.8828 63.4955 51.4253 63.6895 50.9648 63.6895Z" fill="#82B732"/>
+            <path d="M40.91 57.7603C40.9062 57.7603 40.9024 57.7603 40.8986 57.7603C39.9983 57.7539 39.2664 57.0193 39.2725 56.1192C39.2788 55.2191 40.0049 54.4874 40.9058 54.5007L40.921 54.5009C41.8213 54.5072 42.5456 55.2419 42.5395 56.142C42.5332 57.038 41.8048 57.7603 40.91 57.7603Z" fill="#82B732"/>
+            <path d="M55.1043 57.7601C55.1005 57.7601 55.0967 57.7601 55.0929 57.7601C54.1927 57.7538 53.4607 57.0191 53.4668 56.119C53.4732 55.2229 54.1941 54.5005 55.0887 54.5005H55.1001L55.1153 54.5007C56.0156 54.507 56.74 55.2417 56.7338 56.1418C56.7275 57.0379 55.9991 57.7601 55.1043 57.7601Z" fill="#82B732"/>
+          </svg>
+          <span class="fs-125 opacity-05 text-center">There are no any invites.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- news and updates -->
+        
+
+<div class="dash-news mb-4">
+  <div class="d-flex justify-content-between mb-3">
+    <span class=" fw-bold opacity-05">News and Updates</span>
+    <button class="btn primary-link primary-link--underline p-0 dash-news__view-btn">View All</button>
+  </div>
+
+    <div class="row flex-xl-nowrap g-4">
+      
+      <div class="dash-news__item">
+        <div class=" shadow--regular p-3 border--rounded-16 bg-accented-white">
+          <div class="d-flex g-3">
+            <div class="me-3">
+              <img width="64" height="64" class="rounded-circle" src="./images/icons/avatar-dash-news-1.png" alt="">
+            </div>
+            <div class="d-flex flex-column">
+              <span class="d-block">Julie will be leaving us to go on a new adventure in Australia</span>
+              <div class="d-flex mt-auto">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.2067 10.5899L9.69703 8.70763V4.87342C9.69703 4.48789 9.38541 4.17627 8.99988 4.17627C8.61436 4.17627 8.30273 4.48789 8.30273 4.87342V9.05624C8.30273 9.27582 8.40592 9.48289 8.58159 9.61396L11.3701 11.7054C11.4956 11.7995 11.642 11.8448 11.7877 11.8448C12.0003 11.8448 12.2095 11.7493 12.3461 11.5652C12.5776 11.2578 12.5149 10.8207 12.2067 10.5899Z" fill="#00C0C3"/>
+                  <path d="M9 0C4.0371 0 0 4.0371 0 9C0 13.9629 4.0371 18 9 18C13.9629 18 18 13.9629 18 9C18 4.0371 13.9629 0 9 0ZM9 16.6057C4.80674 16.6057 1.39426 13.1933 1.39426 9C1.39426 4.80674 4.80674 1.39426 9 1.39426C13.194 1.39426 16.6057 4.80674 16.6057 9C16.6057 13.1933 13.1933 16.6057 9 16.6057Z" fill="#00C0C3"/>
+                </svg>
+                  
+                <span class="ms-2 opacity-07">Update published 23m ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dash-news__item">
+        <div class=" shadow--regular p-3 border--rounded-16 bg-accented-white">
+          <div class="d-flex g-3">
+            <div class="me-3">
+              <img width="64" height="64" class="rounded-circle" src="./images/icons/avatar-dash-news-2.png" alt="">
+            </div>
+            <div class="d-flex flex-column">
+              <span class="d-block">Julie will be leaving us to go on a new adventure in Australia</span>
+              <div class="d-flex mt-auto">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.2067 10.5899L9.69703 8.70763V4.87342C9.69703 4.48789 9.38541 4.17627 8.99988 4.17627C8.61436 4.17627 8.30273 4.48789 8.30273 4.87342V9.05624C8.30273 9.27582 8.40592 9.48289 8.58159 9.61396L11.3701 11.7054C11.4956 11.7995 11.642 11.8448 11.7877 11.8448C12.0003 11.8448 12.2095 11.7493 12.3461 11.5652C12.5776 11.2578 12.5149 10.8207 12.2067 10.5899Z" fill="#00C0C3"/>
+                  <path d="M9 0C4.0371 0 0 4.0371 0 9C0 13.9629 4.0371 18 9 18C13.9629 18 18 13.9629 18 9C18 4.0371 13.9629 0 9 0ZM9 16.6057C4.80674 16.6057 1.39426 13.1933 1.39426 9C1.39426 4.80674 4.80674 1.39426 9 1.39426C13.194 1.39426 16.6057 4.80674 16.6057 9C16.6057 13.1933 13.1933 16.6057 9 16.6057Z" fill="#00C0C3"/>
+                </svg>
+                  
+                <span class="ms-2 opacity-07">Update published 23m ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dash-news__item">
+        <div class=" shadow--regular p-3 border--rounded-16 bg-accented-white">
+          <div class="d-flex g-3">
+            <div class="me-3">
+              <img width="64" height="64" class="rounded-circle" src="./images/icons/avatar-dash-news-3.png" alt="">
+            </div>
+            <div class="d-flex flex-column">
+              <span class="d-block">Julie will be leaving us to go on a new adventure in Australia</span>
+              <div class="d-flex mt-auto">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.2067 10.5899L9.69703 8.70763V4.87342C9.69703 4.48789 9.38541 4.17627 8.99988 4.17627C8.61436 4.17627 8.30273 4.48789 8.30273 4.87342V9.05624C8.30273 9.27582 8.40592 9.48289 8.58159 9.61396L11.3701 11.7054C11.4956 11.7995 11.642 11.8448 11.7877 11.8448C12.0003 11.8448 12.2095 11.7493 12.3461 11.5652C12.5776 11.2578 12.5149 10.8207 12.2067 10.5899Z" fill="#00C0C3"/>
+                  <path d="M9 0C4.0371 0 0 4.0371 0 9C0 13.9629 4.0371 18 9 18C13.9629 18 18 13.9629 18 9C18 4.0371 13.9629 0 9 0ZM9 16.6057C4.80674 16.6057 1.39426 13.1933 1.39426 9C1.39426 4.80674 4.80674 1.39426 9 1.39426C13.194 1.39426 16.6057 4.80674 16.6057 9C16.6057 13.1933 13.1933 16.6057 9 16.6057Z" fill="#00C0C3"/>
+                </svg>
+                  
+                <span class="ms-2 opacity-07">Update published 23m ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<!-- script for showing dashboard empty items -->
+<script>
+  if (document.querySelector('.occassion')) {
+    const occassBody = document.querySelector('.occassion'),
+      occassItems = occassBody.querySelectorAll('.occassion__item'),
+      occassEmptyItems = occassBody.querySelectorAll('.occassion__item--if-empty'),
+      occassViewBtn = occassBody.querySelector('.occassion__view-btn'),
+      pendingBody = document.querySelector('.pending'),
+      pendingItems = pendingBody.querySelectorAll('.pending__item'),
+      pendingEmptyItem = pendingBody.querySelector('.pending__item--if-empty'),
+      pendingViewBtn = pendingBody.querySelector('.pending__view-btn'),
+      contrBody = document.querySelector('.contribution'),
+      contrItems = contrBody.querySelectorAll('.contribution__item'),
+      contrEmptyItem = contrBody.querySelector('.contribution__item--if-empty'),
+      contrViewBtn = contrBody.querySelector('.contribution__view-btn');
+
+    const setDisplay = (item, val) => {
+      item.style.display = val;
+    }
+
+    const showHiddenItems = () => {
+      if (occassItems.length === 0) {
+        occassEmptyItems.forEach(item => {
+          setDisplay(item, 'block');
+        })
+        setDisplay(occassViewBtn, 'none');
+      }
+
+      if (pendingItems.length === 0) {
+        setDisplay(pendingEmptyItem, 'flex');
+        setDisplay(pendingViewBtn, 'none');
+      }
+
+      if (contrItems.length === 0) {
+        setDisplay(contrEmptyItem, 'flex');
+        setDisplay(contrViewBtn, 'none');
+      }
+    }
+
+    window.addEventListener('load', showHiddenItems)
+  }
+</script>
+
+<!-- hidden blocks -->
+
+<div style="display: none;">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <symbol id="dashboard" viewBox="0 0 24 24" fill="none">
+      <path d="M10.5 0.75H2.25V13.5H10.5V0.75Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M10.5 16.5H2.25V23.25H10.5V16.5Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M21.75 0.75H13.5V7.5H21.75V0.75Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M21.75 10.5H13.5V23.25H21.75V10.5Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="fireworks" viewBox="0 0 24 24" fill="none">
+      <path d="M0.75 8.25C1.44619 8.25 2.11387 7.97344 2.60616 7.48116C3.09844 6.98887 3.375 6.32119 3.375 5.625C3.375 6.32119 3.65156 6.98887 4.14384 7.48116C4.63613 7.97344 5.30381 8.25 6 8.25" stroke-miterlimit="10"/>
+      <path d="M0.75 8.25C1.44619 8.25 2.11387 8.52656 2.60616 9.01884C3.09844 9.51113 3.375 10.1788 3.375 10.875C3.375 10.1788 3.65156 9.51113 4.14384 9.01884C4.63613 8.52656 5.30381 8.25 6 8.25" stroke-miterlimit="10"/>
+      <path d="M18 8.25C18.6962 8.25 19.3639 7.97344 19.8562 7.48116C20.3484 6.98887 20.625 6.32119 20.625 5.625C20.625 6.32119 20.9016 6.98887 21.3938 7.48116C21.8861 7.97344 22.5538 8.25 23.25 8.25" stroke-miterlimit="10"/>
+      <path d="M18 8.25C18.6962 8.25 19.3639 8.52656 19.8562 9.01884C20.3484 9.51113 20.625 10.1788 20.625 10.875C20.625 10.1788 20.9016 9.51113 21.3938 9.01884C21.8861 8.52656 22.5538 8.25 23.25 8.25" stroke-miterlimit="10"/>
+      <path d="M14.1693 3.45038L12.6708 3.2325L12.0007 1.875L11.3305 3.2325L9.83203 3.45038L10.9162 4.5075L10.6604 6L12.0007 5.29575L13.3409 6L13.0852 4.5075L14.1693 3.45038Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M22.029 18.0754L20.5305 17.8575L19.8604 16.5L19.1899 17.8575L17.6914 18.0754L18.7759 19.1325L18.5198 20.625L19.8604 19.9208L21.2007 20.625L20.9445 19.1325L22.029 18.0754Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.29428 17.7004L4.79578 17.4825L4.12566 16.125L3.45553 17.4825L1.95703 17.7004L3.04116 18.7575L2.78541 20.25L4.12566 19.5458L5.46591 20.25L5.21016 18.7575L6.29428 17.7004Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M17.625 10.875C16.9034 11.0359 16.2264 11.3548 15.6429 11.8087C15.0593 12.2626 14.5836 12.8402 14.25 13.5" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.375 10.875C7.0966 11.0359 7.77356 11.3548 8.35715 11.8087C8.94074 12.2626 9.41643 12.8402 9.75 13.5" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.375 15.7491C6.98119 15.5614 7.62079 15.5069 8.25 15.5893C9.88612 15.811 12 17.1366 12 22.4991" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M17.625 15.7491C17.0188 15.5614 16.3792 15.5069 15.75 15.5893C14.1139 15.811 12 17.1366 12 22.4991" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M12 8.25V15" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="pen-ball" viewBox="0 0 26 26" fill="none">
+      <path d="M14.034 2.8645L5.8 6.69431L3 21.3383L17.8 18.8976L21.3808 10.3358" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M3 21.3389L10.7856 13.8281" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M23.3992 12.3898L12.1992 1" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M13.6137 13.8288C14.3947 13.0345 14.3947 11.7467 13.6137 10.9525C12.8327 10.1582 11.5663 10.1582 10.7853 10.9525C10.0043 11.7467 10.0043 13.0345 10.7853 13.8288C11.5663 14.6231 12.8327 14.6231 13.6137 13.8288Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M1 25H25" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="fax-page" viewBox="0 0 26 26" fill="none">
+      <path d="M4.99997 9L1 11.32V24.9998H24.9998V11.32L20.9998 9" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M5 13.5598V1H20.9999V13.4798" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M1 11.3203L24.9998 25.0001" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M24.9996 11.3203L12.6797 17.9602" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M9 5.80078H16.9999" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M9 9.79956H16.9999" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="gift-btn" viewBox="0 0 36 36" fill="none">
+      <g>
+        <path d="M4.875 23.6248L15 13.4998" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M4.875 32.6248L24 13.4998" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M11.625 34.8752L31.875 14.6252" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M21.75 34.875L31.875 24.75" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M8.25 4.5C8.25 2.5875 9.7125 1.125 11.625 1.125C16.575 1.125 18.375 7.875 18.375 7.875C18.375 7.875 13.5375 7.875 11.625 7.875C9.7125 7.875 8.25 6.4125 8.25 4.5Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M28.5 4.5C28.5 2.5875 27.0375 1.125 25.125 1.125C20.175 1.125 18.375 7.875 18.375 7.875C18.375 7.875 23.2125 7.875 25.125 7.875C27.0375 7.875 28.5 6.4125 28.5 4.5Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M31.875 13.4998V34.8748H4.875V13.4998" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M35.25 7.875H1.5V13.5H35.25V7.875Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+      </g>
+    </symbol>
+      
+    <symbol id="love-card" viewBox="0 0 36 36" fill="none">
+      <path d="M23.6823 20.8693C24.3686 20.1831 24.7541 19.2523 24.7541 18.2818C24.7541 17.3113 24.3686 16.3806 23.6823 15.6943C22.9961 15.0081 22.0653 14.6226 21.0948 14.6226C20.1243 14.6226 19.1936 15.0081 18.5073 15.6943L18.5006 15.7016L18.0011 16.2056L17.4993 15.7039L17.4948 15.6943C16.8086 15.0081 15.8778 14.6226 14.9073 14.6226C13.9368 14.6226 13.0061 15.0081 12.3198 15.6943C11.6336 16.3806 11.248 17.3113 11.248 18.2818C11.248 19.2523 11.6336 20.1831 12.3198 20.8693L18.0011 26.5461L23.6823 20.8693Z" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M29.252 7.3125V1.6875L1.68945 7.3125V33.1875H34.3145V7.3125H1.68945" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M30.9395 10.6877H5.06445V29.8127H30.9395V10.6877Z" stroke-width="2" stroke-miterlimit="10"/>
+    </symbol>
+      
+
+  </svg>
+</div>
+<!-- modal group-card details -->
+<div class="modal m-modal fade p-2" id="groupCardDetails" aria-hidden="true" aria-labelledby="groupCardDetailsLabel" tabindex="-1">
+  <div class="modal-dialog modal--600 flex-column justify-content-center modal-dialog-centered">
+    <div class="modal-content mb-3 ps-3 pe-3 border-0 position-relative m-modal__content">				
+			<button type="button" class="position-absolute btn-close m-0 p-0 rounded-circle shadow--regular-md top-0 start-100 translate-middle m-modal__close-btn m-modal__close-btn--light" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      <div class="modal-header ps-0 pe-0 mb-4 justify-content-center m-modal__header">
+        <h5 class="modal-title fs-2" id="groupCardDetailsLabel">Group Card</h5>
+      </div>
+
+      <div class="modal-body ps-0 pe-0 pb-3">
+        <div class="row">
+          <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+            <img class="img-fluid shadow--regular-xs" src="./images/cards/group-card-1.jpeg" alt="">
+          </div>
+          <div class="col-12 col-md-7 d-flex flex-column">
+            <p class="mb-2 text-center text-md-start">E-card — Instant delivery</p>
+            <form class="flex-grow-1 d-flex flex-column" action="/">
+              <div class="form-check ps-0 d-flex align-items-center mb-2">
+                <input class="mt-0 styled-radio" data-showECardOnChecked type="radio" name="flexRadioDefault" id="radioSwitch1">
+                <label class="form-check-label ms-2 flex-grow-1" for="radioSwitch1">
+                  <span>Small card — 5” x 7”</span>
+                  <span class="float-end">£4.00</span>
+                </label>
+              </div>
+              <div class="form-check ps-0 d-flex align-items-center mb-4">
+                <input class="mt-0 styled-radio" data-showECardOnChecked type="radio" name="flexRadioDefault" id="radioSwitch2" >
+                <label class="form-check-label ms-2 flex-grow-1" for="radioSwitch2">
+                  <span>Large card — A4</span>
+                  <span class="float-end">£7.00</span>
+                </label>
+              </div>
+
+
+              <select class="form-select border-start-0 border-end-0 rounded-0 py-2 mb-3" aria-label=".form-select ">
+                <option selected value="1">Standard Delivery (7-10 days) +£10</option>
+                <option value="2">Express Delivery (2-3 days) +£15</option>
+                <option value="3">International Delivery (10-14 days) +£25</option>
+              </select>
+
+
+              <div style="display: none;" data-showECardIfChecked class="p-2 bg-accented-gray--light border--rounded-10 mb-4">
+                <div class="form-check form-switch d-flex align-items-center justify-content-between">
+                  <label class="form-check-label d-flex flex-column w-100" for="e-check">
+                    <span class="fs-0875">E-card — £3.00</span>
+                    <span class="fs-075 opacity-05">Instant delivery</span>
+                  </label>
+                  <input class="form-check-input" type="checkbox" id="e-check"
+                    checked>
+                </div>
+              </div>
+
+              <div class="mt-auto ms-auto">
+                <button type="submit" class="btn main-cta main-cta--small py-2 px-3 rounded-pill">Add to Cart</button>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  {
+    const radioChoise = document.querySelectorAll('[data-showECardOnChecked]'),
+          hiddenECard = document.querySelector('[data-showECardIfChecked]');
+
+    radioChoise.forEach(radio => {
+      
+      radio.addEventListener('change', () => {
+        if (radio.checked) {
+          hiddenECard.style.display = 'block';
+        }
+      })
+    })
+  }
+</script>
+
+<footer class="footer bg-accented-footer py-3 z-index--2p">
+	<div class="container">
+		<nav class="navbar navbar-expand-xl navbar-light align-items-center justify-content-between">
+			<ul class="navbar-nav">
+				<li>
+					<a href="index.html" class="navbar-brand me-4" aria-current="page">
+						<img src="./images/icons/logo-small.png" alt="Logo">
+					</a>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+				<li class="nav-item"><a href="how-it-work.html" class="nav-link">How it works</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="navbar-nav align-self-stretch">
+				<li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+				<li class="vr d-xl-block">&nbsp;</li>
+				<li class="nav-item d-flex align-items-center">
+					<span class="text-muted nav-link">Handcrafted in London © 2021 - All rights reserved.</span>
+				</li>
+				<li class="d-flex align-items-center">
+					<a class="text-muted ms-xl-3 ms-2" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M13.331 3.32083H15.1568V0.140833C14.8418 0.0975 13.7585 0 12.4968 0C9.86434 0 8.06101 1.65583 8.06101 4.69917V7.5H5.15601V11.055H8.06101V20H11.6227V11.0558H14.4102L14.8527 7.50083H11.6218V5.05167C11.6227 4.02417 11.8993 3.32083 13.331 3.32083Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					<a class="text-muted ms-xl-3" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

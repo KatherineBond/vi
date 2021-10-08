@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Dashboard">
+  <link rel="shortcut icon" href="images/icons/fav.png" type="image/x-icon">
+  <link rel="icon" href="images/icons/fav.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body bg-accented-gray">
+  
+  <header class="header fixed-top shadow-sm bg-white py-2">
+    <div class="container-lg">
+      <nav class="navbar navbar-light">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img class="d-none d-md-block" src="./images/icons/logo.png" alt="Logo">
+          <img class="d-md-none" src="./images/icons/logo-small.png" alt="Logo">
+        </a>
+
+        <div class="d-flex align-items-center ms-auto">
+          <img class="me-3" src="./images/icons/avatar-dash-1.png" alt="">
+          <span class="ff-accent fs-0875">KATE BATTEN</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+<main>
+
+  <div class="my-4 d-flex position-relative with-sidebar">
+    <div id="left-sidebar" class=" z-index--2p" >
+  <aside
+  class=" d-flex justify-content-center mt-4 px-2 pb-2 pt-3 pt-lg-5 bg-body  border--start-0 shadow--regular border--rounded-26 m-sidebar"
+  > 
+  <ul class="nav flex-column flex-nowrap m-sidebar__list">
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3" aria-current="page" href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#dashboard"></use>
+        </svg>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link active rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#fireworks"></use>
+        </svg>
+        <span>Occasions</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#pen-ball"></use>
+        </svg>
+        <span>Contributions</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  rounded-3"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#fax-page"></use>
+        </svg>
+        <span>My&nbsp;Invites</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 mt-5 mt-xl-auto">
+      <a class="nav-link m-sidebar__link  m-sidebar__link--bigger border--rounded-16"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#gift-btn"></use>
+        </svg>
+        <span>Gifts</span>
+      </a>
+    </li>
+    
+    <li class="nav-item mb-2 ">
+      <a class="nav-link m-sidebar__link  m-sidebar__link--bigger border--rounded-16"  href="#">
+        <svg class="sprite-svg sprite-svg--24">
+          <use xlink:href="#love-card"></use>
+        </svg>
+        <span>Our&nbsp;Cards</span>
+      </a>
+    </li>
+  </ul>
+  <button class="d-flex p-0 d-lg-none justify-content-center align-items-center border border-2 border-start-0 m-sidebar__activator rounded-pill border--start-0">
+    <svg id="Capa_1" enable-background="new 0 0 551.13 551.13"  viewBox="0 0 551.13 551.13" 
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="m361.679 275.565-223.896 223.897v51.668l275.565-275.565-275.565-275.565v51.668z" />
+    </svg>
+  </button>
+
+</aside>
+  <div class="m-sidebar__deactivator"></div>
+</div>
+
+
+
+
+    <section class="flex-grow-1 ms-4 ">
+      <div class=" p-4 white-bg container-xl">
+        <div class="mb-4 row">
+          <div class="col-md-6">
+            <h1 class="font-primary "> Card Gallery </h1>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end align-items-center">
+            <div class="btn-group me-2">
+              <button type="button" data-bs-auto-close="outside" class="btn btn-link dropdown-toggle text-decoration-none filter__cards-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.0328 1.35536e-06H0.984873C0.701832 -0.000534035 0.442347 0.157584 0.312962 0.409395C0.181792 0.664596 0.204813 0.971909 0.37239 1.20498L6.25166 9.48708C6.25363 9.48993 6.25577 9.49261 6.25773 9.49546C6.47135 9.78386 6.58682 10.1331 6.58753 10.4922V17.2445C6.58628 17.4445 6.6648 17.6366 6.80579 17.7785C6.94677 17.9203 7.13844 17.9999 7.33832 17.9999C7.44005 17.9999 7.54052 17.9796 7.63439 17.9407L10.9381 16.6809C11.2342 16.5906 11.4306 16.3113 11.4306 15.9749V10.4922C11.4312 10.1333 11.5468 9.78386 11.7603 9.49546C11.7622 9.49261 11.7644 9.48993 11.7663 9.48708L17.6454 1.20462C17.813 0.971731 17.836 0.664596 17.7049 0.409395C17.5755 0.157584 17.316 -0.000534035 17.0328 1.35536e-06ZM11.0236 8.95419C10.6952 9.39981 10.5176 9.93859 10.5166 10.4922V15.8639L7.50126 17.0136V10.4922C7.50019 9.93859 7.32262 9.39981 6.99407 8.95419L1.2863 0.91373H16.7315L11.0236 8.95419Z"
+                    fill="#00C0C3" />
+                </svg>
+                Filter by
+              </button>
+              <div class="dropdown-menu dropdown-menu-end filter__cards bg-body border-0">
+                <div class="p-4 row g-3">
+                  <div class="col-12 col-lg-6 pb-3 pb-lg-0 pe-lg-4 filter__cards-item">
+                    <p class="fw-bold mb-4">General</p>
+                    <div class="row g-2 row-cols-lg-2">
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Birthday</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Wedding</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>New Baby</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox" checked>
+                        <span>New Home</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Maternity</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Retirement</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Christmas</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Good Luck</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Leaving</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Thank You</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Get Well</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Congrats</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Sympathy</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 pb-3 pb-lg-0 px-lg-4 filter__cards-item">
+                    <p class="fw-bold mb-4">Recipient</p>
+                    <div class="row g-2">
+                      <label class="mb-2">
+                        <input type="radio" class="styled-radio" name="recipient">
+                        <span class="ms-2">Female
+                        </span>
+                      </label>
+                      <label class="mb-2">
+                        <input type="radio" class="styled-radio" name="recipient" checked>
+                        <span class="ms-2">Male</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 pb-3 pb-lg-0 ps-lg-4 filter__cards-item">
+                    <p class="fw-bold mb-4">Style</p>
+                    <div class="row g-2">
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Funny</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Classic</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox" checked>
+                        <span>Minimal</span>
+                      </label>
+                      <label>
+                        <input class="form-check-input me-2 styled-checkbox" type="checkbox">
+                        <span>Cartoon</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" data-view="row gy-3 row-cols-2 row-cols-sm-3 row-cols-xl-6"  class="toggleview__js active view-btn mx-1">
+    <svg width="18"  height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1.5"  y="1.5" width="4.5" height="4.5" rx="1.5"   />
+      <rect x="1.5"  y="6.75" width="4.5" height="4.5" rx="1.5"  />
+      <rect x="1.5"  y="12" width="4.5" height="4.5" rx="1.5"    />
+      <rect x="12"   y="1.5" width="4.5" height="4.5" rx="1.5"   />
+      <rect x="12"   y="6.75" width="4.5" height="4.5" rx="1.5"  />
+      <rect x="12"   y="12" width="4.5" height="4.5" rx="1.5"    />
+      <rect x="6.75" y="1.5" width="4.5" height="4.5" rx="1.5"   />
+      <rect x="6.75" y="6.75" width="4.5" height="4.5" rx="1.5"  />
+      <rect x="6.75" y="12" width="4.5" height="4.5" rx="1.5"    />
+      </svg>
+  </button>
+  
+  <button type="button" data-view="row gy-3 row-cols-2 row-cols-sm-3 row-cols-xl-4 " class="toggleview__js view-btn">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+      <rect x="1.5" y="1.5" width="6.75" height="6.75" rx="1.5"   />
+      <rect x="1.5" y="9.75" width="6.75" height="6.75" rx="1.5"  />
+      <rect x="9.75" y="1.5" width="6.75" height="6.75" rx="1.5"  />
+      <rect x="9.75" y="9.75" width="6.75" height="6.75" rx="1.5" /> 
+      </svg> 
+  </button> 
+
+  <script>
+      
+           window.addEventListener('load', function(){
+                    const btns= document.querySelectorAll('.toggleview__js');
+                                const container = document.querySelector('#view-changed__js'); 
+                                btns.forEach((btn)=>{
+                                        btn.addEventListener('click', function(){
+                                            if(this.classList.contains('active')){
+                                                    return
+                                            } else{
+                                                btns.forEach((bt)=>{ 
+                                                    bt.classList.remove("active");
+                                                })
+                                                this.classList.add('active'); 
+                                                container.className=this.dataset.view;
+                                            }
+                                        })
+                                })
+           })
+            
+     
+ 
+  </script>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-12 gifts-border"> </div>
+          <div class="gifts__card__container gutter-20 pt-3 col-12 ">
+    <div id="view-changed__js" class="row gy-3 row-cols-2 row-cols-sm-3 row-cols-xl-6">
+        
+            <div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-1.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-2.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-3.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-4.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-5.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-6.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-7.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-8.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-9.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-10.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-1.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-2.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-3.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-4.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-5.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-6.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-7.png" alt="card">
+    </div>
+</div><div class="col">
+    <div class="gifts__cardimg" role="button" data-bs-target="#imgModal" data-bs-toggle="modal">
+        <img src="images/cards/pick-card-8.png" alt="card">
+    </div>
+</div>
+        
+        
+        
+    </div>
+</div> 
+
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<div class="modal-product modal m-modal fade p-2 show" id="imgModal" aria-labelledby="CardImgLabel" tabindex="-1" aria-modal="true" role="dialog">
+	<div class="modal-dialog flex-column justify-content-center modal-dialog-centered">
+		<div class="modal-content mb-3 border-0 position-relative m-modal__content">
+			<button type="button" class="position-absolute btn-close btn-close-white m-0 p-0 rounded-circle top-0 start-100 translate-middle m-modal__close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body p-1" id="CardImgLabel">
+				<img src="images/cards/pick-card-2.png" alt="" class="w-100 rounded-3">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- hidden blocks -->
+
+<div style="display: none;">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <symbol id="dashboard" viewBox="0 0 24 24" fill="none">
+      <path d="M10.5 0.75H2.25V13.5H10.5V0.75Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M10.5 16.5H2.25V23.25H10.5V16.5Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M21.75 0.75H13.5V7.5H21.75V0.75Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M21.75 10.5H13.5V23.25H21.75V10.5Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="fireworks" viewBox="0 0 24 24" fill="none">
+      <path d="M0.75 8.25C1.44619 8.25 2.11387 7.97344 2.60616 7.48116C3.09844 6.98887 3.375 6.32119 3.375 5.625C3.375 6.32119 3.65156 6.98887 4.14384 7.48116C4.63613 7.97344 5.30381 8.25 6 8.25" stroke-miterlimit="10"/>
+      <path d="M0.75 8.25C1.44619 8.25 2.11387 8.52656 2.60616 9.01884C3.09844 9.51113 3.375 10.1788 3.375 10.875C3.375 10.1788 3.65156 9.51113 4.14384 9.01884C4.63613 8.52656 5.30381 8.25 6 8.25" stroke-miterlimit="10"/>
+      <path d="M18 8.25C18.6962 8.25 19.3639 7.97344 19.8562 7.48116C20.3484 6.98887 20.625 6.32119 20.625 5.625C20.625 6.32119 20.9016 6.98887 21.3938 7.48116C21.8861 7.97344 22.5538 8.25 23.25 8.25" stroke-miterlimit="10"/>
+      <path d="M18 8.25C18.6962 8.25 19.3639 8.52656 19.8562 9.01884C20.3484 9.51113 20.625 10.1788 20.625 10.875C20.625 10.1788 20.9016 9.51113 21.3938 9.01884C21.8861 8.52656 22.5538 8.25 23.25 8.25" stroke-miterlimit="10"/>
+      <path d="M14.1693 3.45038L12.6708 3.2325L12.0007 1.875L11.3305 3.2325L9.83203 3.45038L10.9162 4.5075L10.6604 6L12.0007 5.29575L13.3409 6L13.0852 4.5075L14.1693 3.45038Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M22.029 18.0754L20.5305 17.8575L19.8604 16.5L19.1899 17.8575L17.6914 18.0754L18.7759 19.1325L18.5198 20.625L19.8604 19.9208L21.2007 20.625L20.9445 19.1325L22.029 18.0754Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.29428 17.7004L4.79578 17.4825L4.12566 16.125L3.45553 17.4825L1.95703 17.7004L3.04116 18.7575L2.78541 20.25L4.12566 19.5458L5.46591 20.25L5.21016 18.7575L6.29428 17.7004Z" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M17.625 10.875C16.9034 11.0359 16.2264 11.3548 15.6429 11.8087C15.0593 12.2626 14.5836 12.8402 14.25 13.5" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.375 10.875C7.0966 11.0359 7.77356 11.3548 8.35715 11.8087C8.94074 12.2626 9.41643 12.8402 9.75 13.5" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M6.375 15.7491C6.98119 15.5614 7.62079 15.5069 8.25 15.5893C9.88612 15.811 12 17.1366 12 22.4991" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M17.625 15.7491C17.0188 15.5614 16.3792 15.5069 15.75 15.5893C14.1139 15.811 12 17.1366 12 22.4991" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M12 8.25V15" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="pen-ball" viewBox="0 0 26 26" fill="none">
+      <path d="M14.034 2.8645L5.8 6.69431L3 21.3383L17.8 18.8976L21.3808 10.3358" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M3 21.3389L10.7856 13.8281" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M23.3992 12.3898L12.1992 1" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M13.6137 13.8288C14.3947 13.0345 14.3947 11.7467 13.6137 10.9525C12.8327 10.1582 11.5663 10.1582 10.7853 10.9525C10.0043 11.7467 10.0043 13.0345 10.7853 13.8288C11.5663 14.6231 12.8327 14.6231 13.6137 13.8288Z" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M1 25H25" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="fax-page" viewBox="0 0 26 26" fill="none">
+      <path d="M4.99997 9L1 11.32V24.9998H24.9998V11.32L20.9998 9" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M5 13.5598V1H20.9999V13.4798" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M1 11.3203L24.9998 25.0001" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M24.9996 11.3203L12.6797 17.9602" stroke-width="1.33333" stroke-miterlimit="10"/>
+      <path d="M9 5.80078H16.9999" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+      <path d="M9 9.79956H16.9999" stroke-width="1.33333" stroke-miterlimit="10" stroke-linecap="square"/>
+    </symbol>
+      
+    <symbol id="gift-btn" viewBox="0 0 36 36" fill="none">
+      <g>
+        <path d="M4.875 23.6248L15 13.4998" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M4.875 32.6248L24 13.4998" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M11.625 34.8752L31.875 14.6252" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M21.75 34.875L31.875 24.75" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M8.25 4.5C8.25 2.5875 9.7125 1.125 11.625 1.125C16.575 1.125 18.375 7.875 18.375 7.875C18.375 7.875 13.5375 7.875 11.625 7.875C9.7125 7.875 8.25 6.4125 8.25 4.5Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M28.5 4.5C28.5 2.5875 27.0375 1.125 25.125 1.125C20.175 1.125 18.375 7.875 18.375 7.875C18.375 7.875 23.2125 7.875 25.125 7.875C27.0375 7.875 28.5 6.4125 28.5 4.5Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M31.875 13.4998V34.8748H4.875V13.4998" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M35.25 7.875H1.5V13.5H35.25V7.875Z" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+      </g>
+    </symbol>
+      
+    <symbol id="love-card" viewBox="0 0 36 36" fill="none">
+      <path d="M23.6823 20.8693C24.3686 20.1831 24.7541 19.2523 24.7541 18.2818C24.7541 17.3113 24.3686 16.3806 23.6823 15.6943C22.9961 15.0081 22.0653 14.6226 21.0948 14.6226C20.1243 14.6226 19.1936 15.0081 18.5073 15.6943L18.5006 15.7016L18.0011 16.2056L17.4993 15.7039L17.4948 15.6943C16.8086 15.0081 15.8778 14.6226 14.9073 14.6226C13.9368 14.6226 13.0061 15.0081 12.3198 15.6943C11.6336 16.3806 11.248 17.3113 11.248 18.2818C11.248 19.2523 11.6336 20.1831 12.3198 20.8693L18.0011 26.5461L23.6823 20.8693Z" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M29.252 7.3125V1.6875L1.68945 7.3125V33.1875H34.3145V7.3125H1.68945" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M30.9395 10.6877H5.06445V29.8127H30.9395V10.6877Z" stroke-width="2" stroke-miterlimit="10"/>
+    </symbol>
+      
+
+  </svg>
+</div>
+
+<!-- hidden blocks -->
+<footer class="footer bg-accented-footer py-3 z-index--2p">
+	<div class="container">
+		<nav class="navbar navbar-expand-xl navbar-light align-items-center justify-content-between">
+			<ul class="navbar-nav">
+				<li>
+					<a href="index.html" class="navbar-brand me-4" aria-current="page">
+						<img src="./images/icons/logo-small.png" alt="Logo">
+					</a>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+				<li class="nav-item"><a href="how-it-work.html" class="nav-link">How it works</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="navbar-nav align-self-stretch">
+				<li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+				<li class="vr d-xl-block">&nbsp;</li>
+				<li class="nav-item d-flex align-items-center">
+					<span class="text-muted nav-link">Handcrafted in London © 2021 - All rights reserved.</span>
+				</li>
+				<li class="d-flex align-items-center">
+					<a class="text-muted ms-xl-3 ms-2" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M13.331 3.32083H15.1568V0.140833C14.8418 0.0975 13.7585 0 12.4968 0C9.86434 0 8.06101 1.65583 8.06101 4.69917V7.5H5.15601V11.055H8.06101V20H11.6227V11.0558H14.4102L14.8527 7.50083H11.6218V5.05167C11.6227 4.02417 11.8993 3.32083 13.331 3.32083Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					<a class="text-muted ms-xl-3" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

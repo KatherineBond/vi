@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gift</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Make gifts">
+  <link rel="shortcut icon" href="images/icons/fav.png" type="image/x-icon">
+  <link rel="icon" href="images/icons/fav.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body body-color">
+
+<header class="w-100">
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <img src="./images/icons/logo_white.png" alt="Logo" class="logo">
+                <img src="./images/icons/logo.png" alt="Logo" class="logo-scrolled">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse justify-content-end header__menu" id="navbarSupportedContent">
+				<ul class="navbar-nav align-items-center text-center text-uppercase">
+					<li class="nav-item"><a href="how-it-work.html" class="nav-link header__link px-2">How it works</a></li>
+					<li class="nav-item"><a href="#LoginModalToggle" class="nav-link btn header__link px-3 py-1 login ms-4"
+							data-bs-toggle="modal" role="button">LOGIN</a></li>
+					<li class="nav-item dropdown">
+                        <a href="#" class="nav-link header__link px-2 account-link d-flex align-items-center ms-4 dropdown-toggle" role="button" id="UserMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="user-img me-2"><img src="./images/icons/user.jpeg" alt="" class=" me-3"></div>
+                            Kate Batten
+                        </a>
+                        <ul class="dropdown-menu w-100 p-3 mt-3 border-0 border--rounded-26 shadow--regular-sm dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item danger-color" href="#">Logout</a></li>
+                          </ul>
+                    </li>
+				</ul>
+			</div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-bg-lg position-absolute w-100 top-0 start-0" style="background-image: url('./images/bg-elements/bg-new-occasion.svg');"></div>
+
+    <div class="mt-5">
+        <section class="new_occasion mt-4">
+            <div class="container-lg position-relative">
+                <!-- uncomment for show step -->
+                <div class="just-for-demo">
+                    <h2>demo navigation</h2>
+                    <button class="demo-prev">PREV</button>
+                    <button class="demo-next">NEXT</button>
+    
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed mb-4">
+                <div class="mb-4">
+                    <label for="occasionMessage" class="form-label mb-1">My message</label>
+                    <textarea class="form-control" id="occasionMessage" required=""
+                        placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="occasionSignature" class="form-label mb-1">Signature</label>
+                    <input type="text" class="form-control" id="occasionSignature" required=""
+                        placeholder="E.G. Best regards, John">
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMoney" class="form-label mb-1">Money Contribution (optional)</label>
+                <div class="input-group occasionMoney">
+                    <input type="text" class="form-control" id="occasionMoney" aria-label="Amount (to the nearest dollar)" placeholder="E.G. £5.00">
+                    <span class="input-group-text">£</span>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed mb-4">
+                <div class="mb-4">
+                    <label for="occasionMessage2" class="form-label mb-1">My message</label>
+                    <textarea class="form-control" id="occasionMessage2" required=""
+                        placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="occasionSignature2" class="form-label mb-1">Signature</label>
+                    <input type="text" class="form-control" id="occasionSignature2" required=""
+                        placeholder="E.G. Best regards, John">
+                </div>
+            </div>
+            <div class="mb-3">
+                Money Contribution — <b>Suggested amount is £3.00</b>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMoney" class="form-label mb-1">Money Contribution (optional)</label>
+                <div class="input-group occasionMoney">
+                    <input type="text" class="form-control" id="occasionMoney2" aria-label="Amount (to the nearest dollar)" placeholder="E.G. £5.00">
+                    <span class="input-group-text">£</span>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed mb-3">
+                <div class="d-flex justify-content-between mb-3">
+                    <b>Personal Data</b>
+                    <p class="mb-0 fs-075">Already have an account? <a href="#LoginModalToggle" data-bs-toggle="modal"
+                            role="button" class="primary-color fw-bolder">Log In</a></p>
+                </div>
+                <div class="row mb-4 g-4">
+                    <div class="col-12 col-sm-6">
+                        <label for="occasionName" class="form-label mb-1">First Name</label>
+                        <input type="text" class="form-control" id="occasionName" required="" placeholder="John">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="occasionSurname" class="form-label mb-1">Surname</label>
+                        <input type="text" class="form-control" id="occasionSurname" required="" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="occasionEmail" class="form-label mb-1">Email</label>
+                    <input type="email" class="form-control" id="occasionEmail" required=""
+                        placeholder="john_doe@mail.com">
+                </div>
+            </div>
+            <div class="bb-dashed mb-4">
+                <div class="mb-2">
+                    <b>Message for Joanna Lord</b>
+                </div>
+                <div class="mb-4">
+                    <label for="occasionMessage3" class="form-label mb-1">My message</label>
+                    <textarea class="form-control" id="occasionMessage3" required=""
+                        placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="occasionSignature3" class="form-label mb-1">Signature</label>
+                    <input type="text" class="form-control" id="occasionSignature3" required=""
+                        placeholder="E.G. Best regards, John">
+                </div>
+            </div>
+            <div class="mb-3">
+                Money Contribution — <b>Suggested amount is £3.00</b>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMoney" class="form-label mb-1">Money Contribution (optional)</label>
+                <div class="input-group occasionMoney">
+                    <input type="text" class="form-control" id="occasionMoney3" aria-label="Amount (to the nearest dollar)" placeholder="E.G. £5.00">
+                    <span class="input-group-text">£</span>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed mb-3">
+                <p class="mb-1 fw-bold">Preview Message</p>
+                <div class="preview-message gray-bg fs-0875 p-3 pb-4 mb-4">
+                    <p class="mb-2">It's been amazing working with you over the years. I'm glad we got to see out your
+                        time at COS in style with a little event together (ODF!). Wishing you all the best for the
+                        future</p>
+                    <span class="primary-color pb-3">best wishes, Kate</span>
+                </div>
+            </div>
+            <div class="bb-dashed mb-3">
+                <div class="mb-4">
+                    <label for="occasionCardholder" class="form-label mb-1">Cardholder</label>
+                    <input type="text" class="form-control" id="occasionCardholder" required="" placeholder="John Doe">
+                </div>
+                <div class="mb-4">
+                    <label for="occasionCardNumber" class="form-label mb-1">Card Number</label>
+                    <input type="text" class="form-control" id="occasionCardNumber" required=""
+                        placeholder="0000 0000 0000 0000">
+                </div>
+                <div class="row mb-4 g-4">
+                    <div class="col-12 col-sm-6">
+                        <label for="occasionExpirationDate" class="form-label mb-1">Expiration Date</label>
+                        <input type="text" class="form-control" id="occasionExpirationDate" required=""
+                            placeholder="MM / YY">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="occasionCVC" class="form-label mb-1">CVC</label>
+                        <input type="text" class="form-control" id="occasionCVC" required="" placeholder="***">
+                    </div>
+                </div>
+            </div>
+            <div class="bb-dashed mb-3">
+                <div class="form-check form-switch d-flex align-items-center justify-content-between mb-3">
+                    <label class="form-check-label d-flex flex-column w-100" for="Signup">
+                        <b>New at Viing?</b>
+                        <span>Sign up for a 1-click checkout next time.</span>
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="Signup">
+                </div>
+            </div>
+            <div class="bb-dashed mb-5">
+                <div class="mb-3 d-flex justify-content-between">
+                    <b>Total</b>
+                    <b class="primary-color">£25.00</b>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+
+            <div class="mt-5 d-flex flex-wrap justify-content-between">
+                <div class="d-flex g-1 powered-by">
+                    <img src="./images/brands/americanexpress.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/discover.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/mastercard.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/visa.jpg" alt="" class="d-block">
+                </div>
+                <p class="mb-0 opacity-05">Powered by <b>Stripe</b></p>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed mb-3">
+                <p class="mb-1 fw-bold">Preview Message</p>
+                <div class="preview-message gray-bg fs-0875 p-3 pb-4 mb-4">
+                    <p class="mb-2">It's been amazing working with you over the years. I'm glad we got to see out your
+                        time at COS in style with a little event together (ODF!). Wishing you all the best for the
+                        future</p>
+                    <span class="primary-color pb-3">best wishes, Kate</span>
+                </div>
+            </div>
+            <div class="bb-dashed mb-3">
+                <div class="mb-4">
+                    <label for="occasionCardholder2" class="form-label mb-1">Cardholder</label>
+                    <input type="text" class="form-control" id="occasionCardholder2" required="" placeholder="John Doe">
+                </div>
+                <div class="mb-4">
+                    <label for="occasionCardNumber2" class="form-label mb-1">Card Number</label>
+                    <input type="text" class="form-control" id="occasionCardNumber2" required=""
+                        placeholder="0000 0000 0000 0000">
+                </div>
+                <div class="row mb-4 g-4">
+                    <div class="col-12 col-sm-6">
+                        <label for="occasionExpirationDate2" class="form-label mb-1">Expiration Date</label>
+                        <input type="text" class="form-control" id="occasionExpirationDate2" required=""
+                            placeholder="MM / YY">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="occasionCVC2" class="form-label mb-1">CVC</label>
+                        <input type="text" class="form-control" id="occasionCVC2" required="" placeholder="***">
+                    </div>
+                </div>
+            </div>
+            <div class="bb-dashed mb-3">
+                <div class="form-check form-switch d-flex align-items-center justify-content-between mb-3">
+                    <label class="form-check-label d-flex flex-column w-100" for="Signup2">
+                        <b>New at Viing?</b>
+                        <span>Sign up for a 1-click checkout next time.</span>
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="Signup2" checked>
+                </div>
+                <div class="mb-3">
+                    <label for="SignUpPass" class="form-label mb-1">Enter password to Sign Up</label>
+                    <input type="password" class="form-control" id="SignUpPass" required="" placeholder="********">
+                </div>
+            </div>
+            <div class="bb-dashed mb-5">
+                <div class="mb-3 d-flex justify-content-between">
+                    <b>Total</b>
+                    <b class="primary-color">£25.00</b>
+                </div>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+
+            <div class="mt-5 d-flex flex-wrap justify-content-between">
+                <div class="d-flex g-1 powered-by">
+                    <img src="./images/brands/americanexpress.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/discover.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/mastercard.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/visa.jpg" alt="" class="d-block">
+                </div>
+                <p class="mb-0 opacity-05">Powered by <b>Stripe</b></p>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-7 col-lg-5 col-xl-4 mx-auto">
+    <div class="white-bg p-4 mt-5">
+        <div class="steps steps-head d-flex justify-content-between mb-4 flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none fs-075">
+                <svg class="d-block me-1" width="5" height="9" viewBox="0 0 5 9" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.175092 4.9321C-0.0583641 4.69346 -0.0583641 4.30654 0.175092 4.0679L3.97949 0.178982C4.21294 -0.0596608 4.59145 -0.0596608 4.82491 0.178982C5.05836 0.417626 5.05836 0.804543 4.82491 1.04319L1.44322 4.5L4.82491 7.95681C5.05836 8.19546 5.05836 8.58237 4.82491 8.82102C4.59145 9.05966 4.21294 9.05966 3.97949 8.82102L0.175092 4.9321Z"
+                        fill="#00C0C3" />
+                </svg>
+                Back to card detaials
+            </a>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="text-center mb-4">
+                <h2 class="mb-1 fw-bold fs-125">Contribute to “Name”</h2>
+                <p class="opacity-07">Organizes by Chris Makx</p>
+            </div>
+            <div class="gray-bg p-4 d-flex justify-content-center mb-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.5">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2 8C2 5.79086 3.79086 4 6 4H18C20.2091 4 22 5.79086 22 8V16C22 18.2091 20.2091 20 18 20H6C3.79086 20 2 18.2091 2 16V8ZM6 6C4.89543 6 4 6.89543 4 8V16C4 17.1046 4.89543 18 6 18H18C19.1046 18 20 17.1046 20 16V8C20 6.89543 19.1046 6 18 6H6Z"
+                            fill="#33353D" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 11H3V9H21V11Z" fill="#33353D" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 15C13 14.4477 13.4477 14 14 14L17 14C17.5523 14 18 14.4477 18 15C18 15.5523 17.5523 16 17 16L14 16C13.4477 16 13 15.5523 13 15Z"
+                            fill="#33353D" />
+                    </g>
+                </svg>
+                <p class="mb-0 fs-125 opacity-05 ms-2">0000 0000 0000 0000</p>
+            </div>
+            <div class="text-center mb-5">
+                <button type="submit" class="text-capitalize btn main-cta py-3 px-4 rounded-pill mt-2 mx-auto">Submit
+                    Payment of £25.00</button>
+            </div>
+            <div class="pt-1 d-flex flex-wrap justify-content-between">
+                <div class="d-flex g-1 powered-by">
+                    <img src="./images/brands/americanexpress.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/discover.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/mastercard.jpg" alt="" class="d-block me-1">
+                    <img src="./images/brands/visa.jpg" alt="" class="d-block">
+                </div>
+                <p class="mb-0 opacity-05">Powered by <b>Stripe</b></p>
+            </div>
+        </form>
+    </div>
+</div>
+            
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage4" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage4" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature4" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature4" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 primary-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#00C0C3" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+                <div class="gray-bg">
+                    <div class="d-flex justify-content-between align-items-center flex-md-row flex-column gap-2 px-3 py-4">
+                        <button type="submit"
+                            class="btn main-cta main-cta--small py-2 px-3 rounded-pill">Upload</button>
+                        <span class="opacity-05">Or</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control p-2 head-color fs-6"
+                                placeholder="Search on Unsplash..." aria-label="Search on Unsplash"
+                                aria-describedby="button-search">
+                            <button class="btn main-cta" type="button" id="button-search">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.16602 2.33073C4.94435 2.33073 2.33268 4.9424 2.33268 8.16406C2.33268 11.3857 4.94435 13.9974 8.16602 13.9974C11.3877 13.9974 13.9993 11.3857 13.9993 8.16406C13.9993 4.9424 11.3877 2.33073 8.16602 2.33073ZM0.666016 8.16406C0.666016 4.02193 4.02388 0.664062 8.16602 0.664062C12.3082 0.664062 15.666 4.02193 15.666 8.16406C15.666 12.3062 12.3082 15.6641 8.16602 15.6641C4.02388 15.6641 0.666016 12.3062 0.666016 8.16406Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.5771 12.5761C12.9025 12.2507 13.4302 12.2507 13.7556 12.5761L17.0889 15.9094C17.4144 16.2349 17.4144 16.7625 17.0889 17.088C16.7635 17.4134 16.2359 17.4134 15.9104 17.088L12.5771 13.7546C12.2516 13.4292 12.2516 12.9015 12.5771 12.5761Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage5" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage5" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature5" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature5" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 primary-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#00C0C3" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+                <div class="gray-bg">
+                    <div class="d-flex justify-content-between align-items-center flex-md-row flex-column gap-2 px-3 py-4">
+                        <button type="submit"
+                            class="btn main-cta main-cta--small py-2 px-3 rounded-pill">Upload</button>
+                        <span class="opacity-05">Or</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control p-2 head-color fs-6" value="smile"
+                                placeholder="Search on Unsplash..." aria-label="Search on Unsplash"
+                                aria-describedby="button-search2">
+                            <button class="btn main-cta" type="button" id="button-search2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.16602 2.33073C4.94435 2.33073 2.33268 4.9424 2.33268 8.16406C2.33268 11.3857 4.94435 13.9974 8.16602 13.9974C11.3877 13.9974 13.9993 11.3857 13.9993 8.16406C13.9993 4.9424 11.3877 2.33073 8.16602 2.33073ZM0.666016 8.16406C0.666016 4.02193 4.02388 0.664062 8.16602 0.664062C12.3082 0.664062 15.666 4.02193 15.666 8.16406C15.666 12.3062 12.3082 15.6641 8.16602 15.6641C4.02388 15.6641 0.666016 12.3062 0.666016 8.16406Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.5771 12.5761C12.9025 12.2507 13.4302 12.2507 13.7556 12.5761L17.0889 15.9094C17.4144 16.2349 17.4144 16.7625 17.0889 17.088C16.7635 17.4134 16.2359 17.4134 15.9104 17.088L12.5771 13.7546C12.2516 13.4292 12.2516 12.9015 12.5771 12.5761Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bt-dashed pt-4">
+                        <div class="upload-block container">
+                            <div class="row g-2 pb-3">
+                                <div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-6 col-sm-4 col-lg-3">
+    <div class="upload-item upload-item-photo position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage6" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage6" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature6" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature6" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 primary-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#00C0C3" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+                <div class="gray-bg">
+                    <div class="px-3 py-4">
+                        <div class="progress position-relative">
+                            <span
+                                class="d-none d-md-block position-absolute top-50 start-50 translate-middle fs-075 ff-accent opacity-07">Uploading
+                                smile.jpg</span>
+                            <div class="progress-bar" style="width: 55%" role="progressbar" aria-valuenow="55"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage7" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage7" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature7" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature7" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 primary-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#00C0C3" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+                <div class="gray-bg">
+                    <div class="d-flex justify-content-between align-items-center flex-md-row flex-column gap-2 px-3 py-4">
+                        <button type="submit"
+                            class="btn main-cta main-cta--small py-2 px-3 rounded-pill">Upload</button>
+                        <span class="opacity-05">Or</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control p-2 head-color fs-6" value="Smile"
+                                placeholder="Search on Unsplash..." aria-label="Search on Unsplash"
+                                aria-describedby="button-search3">
+                            <button class="btn main-cta" type="button" id="button-search3">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.16602 2.33073C4.94435 2.33073 2.33268 4.9424 2.33268 8.16406C2.33268 11.3857 4.94435 13.9974 8.16602 13.9974C11.3877 13.9974 13.9993 11.3857 13.9993 8.16406C13.9993 4.9424 11.3877 2.33073 8.16602 2.33073ZM0.666016 8.16406C0.666016 4.02193 4.02388 0.664062 8.16602 0.664062C12.3082 0.664062 15.666 4.02193 15.666 8.16406C15.666 12.3062 12.3082 15.6641 8.16602 15.6641C4.02388 15.6641 0.666016 12.3062 0.666016 8.16406Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.5771 12.5761C12.9025 12.2507 13.4302 12.2507 13.7556 12.5761L17.0889 15.9094C17.4144 16.2349 17.4144 16.7625 17.0889 17.088C16.7635 17.4134 16.2359 17.4134 15.9104 17.088L12.5771 13.7546C12.2516 13.4292 12.2516 12.9015 12.5771 12.5761Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bt-dashed pt-4">
+                        <div class="upload-block container">
+                            <div class="row g-2 pb-3">
+                                <div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-gif position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-onhover'><button class='btn rounded-pill main-cta main-cta--inverse main-cta--small py-1 px-2' type='button'>Attach</button></div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage8" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage8" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature8" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature8" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 primary-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#00C0C3" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+                <div class="gray-bg">
+                    <div class="d-flex justify-content-between align-items-center flex-md-row flex-column gap-2 px-3 py-4">
+                        <button type="submit"
+                            class="btn main-cta main-cta--small py-2 px-3 rounded-pill">Upload</button>
+                        <button type="submit" class="btn main-cta main-cta--small py-2 px-3 rounded-pill">Embed</button>
+                        <span class="opacity-05">Or</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control p-2 head-color fs-6"
+                                placeholder="Search on Unsplash..." aria-label="Search on Unsplash"
+                                aria-describedby="button-search4">
+                            <button class="btn main-cta" type="button" id="button-search4">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.16602 2.33073C4.94435 2.33073 2.33268 4.9424 2.33268 8.16406C2.33268 11.3857 4.94435 13.9974 8.16602 13.9974C11.3877 13.9974 13.9993 11.3857 13.9993 8.16406C13.9993 4.9424 11.3877 2.33073 8.16602 2.33073ZM0.666016 8.16406C0.666016 4.02193 4.02388 0.664062 8.16602 0.664062C12.3082 0.664062 15.666 4.02193 15.666 8.16406C15.666 12.3062 12.3082 15.6641 8.16602 15.6641C4.02388 15.6641 0.666016 12.3062 0.666016 8.16406Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.5771 12.5761C12.9025 12.2507 13.4302 12.2507 13.7556 12.5761L17.0889 15.9094C17.4144 16.2349 17.4144 16.7625 17.0889 17.088C16.7635 17.4134 16.2359 17.4134 15.9104 17.088L12.5771 13.7546C12.2516 13.4292 12.2516 12.9015 12.5771 12.5761Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage9" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage9" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature9" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature9" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z" fill="#00C0C3"/>
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button" class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z" fill="#454B63"/>
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>    
+                    </button>
+                    <button type="button" class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z" fill="#454B63"/>
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>   
+                    </button>
+                    <button type="button" class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 primary-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z" fill="#00C0C3"/>
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Video</span> 
+                    </button>
+                </div>
+                <div class="gray-bg">
+                    <div class="d-flex justify-content-between align-items-center flex-md-row flex-column gap-2 px-3 py-4">
+                        <button type="submit" class="btn main-cta main-cta--small py-2 px-3 rounded-pill">Upload</button>
+                        <button type="submit" class="btn main-cta main-cta--small py-2 px-3 rounded-pill">Embed</button>
+                        <span class="opacity-05">Or</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control p-2 head-color fs-6" placeholder="Search on Unsplash..." aria-label="Search on Unsplash" aria-describedby="button-search5">
+                            <button class="btn main-cta" type="button" id="button-search5">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.16602 2.33073C4.94435 2.33073 2.33268 4.9424 2.33268 8.16406C2.33268 11.3857 4.94435 13.9974 8.16602 13.9974C11.3877 13.9974 13.9993 11.3857 13.9993 8.16406C13.9993 4.9424 11.3877 2.33073 8.16602 2.33073ZM0.666016 8.16406C0.666016 4.02193 4.02388 0.664062 8.16602 0.664062C12.3082 0.664062 15.666 4.02193 15.666 8.16406C15.666 12.3062 12.3082 15.6641 8.16602 15.6641C4.02388 15.6641 0.666016 12.3062 0.666016 8.16406Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5771 12.5761C12.9025 12.2507 13.4302 12.2507 13.7556 12.5761L17.0889 15.9094C17.4144 16.2349 17.4144 16.7625 17.0889 17.088C16.7635 17.4134 16.2359 17.4134 15.9104 17.088L12.5771 13.7546C12.2516 13.4292 12.2516 12.9015 12.5771 12.5761Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bt-dashed pt-4">
+                        <div class="upload-block container">
+                            <div class="row g-2 pb-3">
+                                <div class="col-12 col-md-6">
+    <div class="upload-item upload-item-video position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-play'><button class='btn btn-link' type='button'><svg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 0.667969C8.87511 0.667969 0.666992 8.87608 0.666992 19.0013C0.666992 29.1265 8.87511 37.3346 19.0003 37.3346C29.1255 37.3346 37.3337 29.1265 37.3337 19.0013C37.3337 8.87608 29.1255 0.667969 19.0003 0.667969ZM25.8753 21.3828C27.7087 20.3243 27.7087 17.6782 25.8753 16.6197L17.6253 11.8565C15.792 10.7981 13.5003 12.1212 13.5003 14.2381V23.7644C13.5003 25.8813 15.792 27.2044 17.6253 26.146L25.8753 21.3828Z' fill='white'/></svg></button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-video position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-play'><button class='btn btn-link' type='button'><svg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 0.667969C8.87511 0.667969 0.666992 8.87608 0.666992 19.0013C0.666992 29.1265 8.87511 37.3346 19.0003 37.3346C29.1255 37.3346 37.3337 29.1265 37.3337 19.0013C37.3337 8.87608 29.1255 0.667969 19.0003 0.667969ZM25.8753 21.3828C27.7087 20.3243 27.7087 17.6782 25.8753 16.6197L17.6253 11.8565C15.792 10.7981 13.5003 12.1212 13.5003 14.2381V23.7644C13.5003 25.8813 15.792 27.2044 17.6253 26.146L25.8753 21.3828Z' fill='white'/></svg></button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-video position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-play'><button class='btn btn-link' type='button'><svg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 0.667969C8.87511 0.667969 0.666992 8.87608 0.666992 19.0013C0.666992 29.1265 8.87511 37.3346 19.0003 37.3346C29.1255 37.3346 37.3337 29.1265 37.3337 19.0013C37.3337 8.87608 29.1255 0.667969 19.0003 0.667969ZM25.8753 21.3828C27.7087 20.3243 27.7087 17.6782 25.8753 16.6197L17.6253 11.8565C15.792 10.7981 13.5003 12.1212 13.5003 14.2381V23.7644C13.5003 25.8813 15.792 27.2044 17.6253 26.146L25.8753 21.3828Z' fill='white'/></svg></button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-video position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-play'><button class='btn btn-link' type='button'><svg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 0.667969C8.87511 0.667969 0.666992 8.87608 0.666992 19.0013C0.666992 29.1265 8.87511 37.3346 19.0003 37.3346C29.1255 37.3346 37.3337 29.1265 37.3337 19.0013C37.3337 8.87608 29.1255 0.667969 19.0003 0.667969ZM25.8753 21.3828C27.7087 20.3243 27.7087 17.6782 25.8753 16.6197L17.6253 11.8565C15.792 10.7981 13.5003 12.1212 13.5003 14.2381V23.7644C13.5003 25.8813 15.792 27.2044 17.6253 26.146L25.8753 21.3828Z' fill='white'/></svg></button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-video position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-play'><button class='btn btn-link' type='button'><svg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 0.667969C8.87511 0.667969 0.666992 8.87608 0.666992 19.0013C0.666992 29.1265 8.87511 37.3346 19.0003 37.3346C29.1255 37.3346 37.3337 29.1265 37.3337 19.0013C37.3337 8.87608 29.1255 0.667969 19.0003 0.667969ZM25.8753 21.3828C27.7087 20.3243 27.7087 17.6782 25.8753 16.6197L17.6253 11.8565C15.792 10.7981 13.5003 12.1212 13.5003 14.2381V23.7644C13.5003 25.8813 15.792 27.2044 17.6253 26.146L25.8753 21.3828Z' fill='white'/></svg></button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-video position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-play'><button class='btn btn-link' type='button'><svg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 0.667969C8.87511 0.667969 0.666992 8.87608 0.666992 19.0013C0.666992 29.1265 8.87511 37.3346 19.0003 37.3346C29.1255 37.3346 37.3337 29.1265 37.3337 19.0013C37.3337 8.87608 29.1255 0.667969 19.0003 0.667969ZM25.8753 21.3828C27.7087 20.3243 27.7087 17.6782 25.8753 16.6197L17.6253 11.8565C15.792 10.7981 13.5003 12.1212 13.5003 14.2381V23.7644C13.5003 25.8813 15.792 27.2044 17.6253 26.146L25.8753 21.3828Z' fill='white'/></svg></button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-video position-relative" data-img="" style="background-image: url(./images/cards/smile.png);">
+        <div class='upload-play'><button class='btn btn-link' type='button'><svg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 0.667969C8.87511 0.667969 0.666992 8.87608 0.666992 19.0013C0.666992 29.1265 8.87511 37.3346 19.0003 37.3346C29.1255 37.3346 37.3337 29.1265 37.3337 19.0013C37.3337 8.87608 29.1255 0.667969 19.0003 0.667969ZM25.8753 21.3828C27.7087 20.3243 27.7087 17.6782 25.8753 16.6197L17.6253 11.8565C15.792 10.7981 13.5003 12.1212 13.5003 14.2381V23.7644C13.5003 25.8813 15.792 27.2044 17.6253 26.146L25.8753 21.3828Z' fill='white'/></svg></button></div>
+    </div>
+</div><div class="col-12 col-md-6">
+    <div class="upload-item upload-item-video position-relative" data-img="" style="background-image: url(./images/cards/smile2.png);">
+        <div class='upload-play'><button class='btn btn-link' type='button'><svg width='38' height='38' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M19.0003 0.667969C8.87511 0.667969 0.666992 8.87608 0.666992 19.0013C0.666992 29.1265 8.87511 37.3346 19.0003 37.3346C29.1255 37.3346 37.3337 29.1265 37.3337 19.0013C37.3337 8.87608 29.1255 0.667969 19.0003 0.667969ZM25.8753 21.3828C27.7087 20.3243 27.7087 17.6782 25.8753 16.6197L17.6253 11.8565C15.792 10.7981 13.5003 12.1212 13.5003 14.2381V23.7644C13.5003 25.8813 15.792 27.2044 17.6253 26.146L25.8753 21.3828Z' fill='white'/></svg></button></div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage10" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage10" required="" placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature10" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature10" required="" placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit" class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit" class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 danger-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#F43636" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+                <div class="alert alert-danger border-0 head-color alert-dismissible fade show rounded-3 p-0"
+                    role="alert">
+                    <div class="d-flex align-items-center justify-content-between py-2 ps-3 pe-2">
+                        <div>
+                            <span class="opacity-07">You’ll need to </span>
+                            <a href="#" class="head-color opacity-1">remove the media</a>
+                            <span class="opacity-07">before you can add something else.</span>
+                        </div>
+                        <button type="button" class="btn btn-link p-0" data-bs-dismiss="alert" aria-label="Close">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.2"
+                                    d="M15.0004 5.00044C14.6579 4.65791 14.1026 4.65791 13.76 5.00044L10.6697 8.09081C10.2791 8.48133 9.64597 8.48133 9.25544 8.09081L6.14628 4.98164C5.83481 4.67018 5.32982 4.67018 5.01836 4.98164C4.70689 5.29311 4.70689 5.7981 5.01836 6.10956L8.12752 9.21873C8.51805 9.60925 8.51805 10.2424 8.12752 10.6329L4.99956 13.7609C4.65702 14.1034 4.65702 14.6588 4.99956 15.0013C5.34209 15.3439 5.89744 15.3439 6.23998 15.0013L9.36794 11.8734C9.75847 11.4828 10.3916 11.4828 10.7822 11.8734L13.8913 14.9825C14.2028 15.294 14.7078 15.294 15.0192 14.9825C15.3307 14.6711 15.3307 14.1661 15.0192 13.8546L11.9101 10.7454C11.5196 10.3549 11.5196 9.72175 11.9101 9.33123L15.0004 6.24086C15.343 5.89833 15.343 5.34297 15.0004 5.00044Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="playbox-video position-relative d-flex align-items-center justify-content-center">
+                    <img src="./images/cards/smile2.png" alt="" class="w-100">
+                    <button class="btn btn-link position-absolute top-50 start-50 translate-middle" type="button">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.0003 0.667969C11.1137 0.667969 0.666992 11.1147 0.666992 24.0013C0.666992 36.8879 11.1137 47.3346 24.0003 47.3346C36.887 47.3346 47.3337 36.8879 47.3337 24.0013C47.3337 11.1147 36.887 0.667969 24.0003 0.667969ZM32.7503 27.0323C35.0837 25.6852 35.0837 22.3173 32.7503 20.9701L22.2503 14.908C19.917 13.5608 17.0003 15.2448 17.0003 17.9391V30.0634C17.0003 32.7577 19.917 34.4417 22.2503 33.0945L32.7503 27.0323Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-link position-absolute top-0 end-0 p-2" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM15.76 7.00044C16.1026 6.65791 16.6579 6.65791 17.0004 7.00044C17.343 7.34298 17.343 7.89833 17.0004 8.24086L13.9101 11.3312C13.5196 11.7218 13.5196 12.3549 13.9101 12.7454L17.0192 15.8546C17.3307 16.1661 17.3307 16.6711 17.0192 16.9825C16.7078 17.294 16.2028 17.294 15.8913 16.9825L12.7822 13.8734C12.3916 13.4828 11.7585 13.4828 11.3679 13.8734L8.23998 17.0013C7.89744 17.3439 7.34209 17.3439 6.99956 17.0013C6.65702 16.6588 6.65702 16.1034 6.99956 15.7609L10.1275 12.6329C10.518 12.2424 10.518 11.6093 10.1275 11.2187L7.01836 8.10956C6.70689 7.7981 6.70689 7.29311 7.01836 6.98164C7.32982 6.67018 7.83481 6.67018 8.14628 6.98164L11.2554 10.0908C11.646 10.4813 12.2791 10.4813 12.6697 10.0908L15.76 7.00044Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="occasionMessage11" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage11" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature11" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature11" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 primary-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#00C0C3" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+                <div class="gray-bg py-4 px-3">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <p class="fs-0875 fw-bold mb-0">Embed</p>
+                            <span class="fs-075">Paste embed code or video link</span>
+                        </div>
+                        <button type="submit"
+                            class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2">Cancel</button>
+                    </div>
+                    <div class="bt-dashed pt-4">
+                        <textarea class="form-control" name="link" rows="3"
+                            placeholder=" Paste your code or link here..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="occasionMessage12" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage12" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature12" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature12" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <div class="d-flex flex-wrap align-items-center mb-2">
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10.2902 2C8.49207 2 6.89571 3.15059 6.3271 4.85641C6.26345 5.04736 6.10666 5.19256 5.91139 5.24138L5.10615 5.44269C3.28064 5.89906 2 7.53928 2 9.42097V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V9.42097C22 7.53928 20.7194 5.89906 18.8938 5.44268L18.0886 5.24138C17.8933 5.19256 17.7365 5.04736 17.6729 4.85641C17.1043 3.15059 15.5079 2 13.7098 2H10.2902ZM12 11C10.8954 11 10 11.8954 10 13C10 14.1046 10.8954 15 12 15C13.1046 15 14 14.1046 14 13C14 11.8954 13.1046 11 12 11ZM8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Photo</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 primary-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 7C2 4.23858 4.23858 2 7 2H17C19.7614 2 22 4.23858 22 7V17C22 19.7614 19.7614 22 17 22H7C4.23858 22 2 19.7614 2 17V7ZM6.952 18.96C5.992 18.96 5.26 18.69 4.756 18.15C4.252 17.598 4 16.812 4 15.792V9.168C4 8.148 4.252 7.368 4.756 6.828C5.26 6.276 5.992 6 6.952 6C7.912 6 8.644 6.276 9.148 6.828C9.652 7.368 9.904 8.148 9.904 9.168V10.248H8.032V9.042C8.032 8.214 7.69 7.8 7.006 7.8C6.322 7.8 5.98 8.214 5.98 9.042V15.936C5.98 16.752 6.322 17.16 7.006 17.16C7.69 17.16 8.032 16.752 8.032 15.936V13.47H7.042V11.67H9.904V15.792C9.904 16.812 9.652 17.598 9.148 18.15C8.644 18.69 7.912 18.96 6.952 18.96ZM11.1753 6.18H13.1553V18.78H11.1753V6.18ZM19.8761 6.18H14.6381V18.78H16.6181V13.29H19.1741V11.49H16.6181V7.98H19.8761V6.18Z"
+                                    fill="#00C0C3" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Gif</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-link text-decoration-none d-flex align-items-center p-0 pe-4 head-color m-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4C3.79086 4 2 5.79086 2 8V16C2 18.2091 3.79086 20 6 20H13C15.2091 20 17 18.2091 17 16V15.7454L18.6621 17.2412C19.9491 18.3996 22 17.4862 22 15.7547V8.24538C22 6.51384 19.9491 5.60045 18.6621 6.75879L17 8.25466V8C17 5.79086 15.2091 4 13 4H6Z"
+                                    fill="#454B63" />
+                            </g>
+                        </svg>
+                        <span class="d-block mb-0 ms-2">Add Video</span>
+                    </button>
+                </div>
+                <div class="gray-bg py-4 px-3">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <p class="fs-0875 fw-bold mb-0">Embed</p>
+                            <span class="fs-075">Paste embed code or video link</span>
+                        </div>
+                        <button type="submit"
+                            class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2">Cancel</button>
+                    </div>
+                    <div class="bt-dashed pt-4">
+                        <textarea class="form-control" name="link" rows="3"
+                            placeholder=" Paste your code or link here..."></textarea>
+                        <div
+                            class="playbox-video position-relative d-flex align-items-center justify-content-center mt-3">
+                            <img src="./images/cards/smile2.png" alt="" class="w-100">
+                            <button class="btn btn-link position-absolute top-50 start-50 translate-middle"
+                                type="button">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.0003 0.667969C11.1137 0.667969 0.666992 11.1147 0.666992 24.0013C0.666992 36.8879 11.1137 47.3346 24.0003 47.3346C36.887 47.3346 47.3337 36.8879 47.3337 24.0013C47.3337 11.1147 36.887 0.667969 24.0003 0.667969ZM32.7503 27.0323C35.0837 25.6852 35.0837 22.3173 32.7503 20.9701L22.2503 14.908C19.917 13.5608 17.0003 15.2448 17.0003 17.9391V30.0634C17.0003 32.7577 19.917 34.4417 22.2503 33.0945L32.7503 27.0323Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="occasionMessage13" class="form-label mb-1">My message</label>
+                <textarea class="form-control" id="occasionMessage13" required=""
+                    placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="occasionSignature13" class="form-label mb-1">Signature</label>
+                <input type="text" class="form-control" id="occasionSignature13" required=""
+                    placeholder="E.G. Best regards, John">
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+                <div class="col-12 col-sm-8 col-lg-6 mx-auto">
+    <div class="text-center text-white mb-4">
+        <h1>Add your message</h1>
+    </div>
+    <div class="white-bg p-4">
+        <div class="steps steps-head d-flex justify-content-between bb-dashed flex-wrap">
+            <a href="#" class="primary-color d-flex align-items-center text-decoration-none mb-3 me-3">
+                <svg class="d-block me-1" width="9" height="15" viewBox="0 0 9 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.292893 8.07107C-0.0976311 7.68054 -0.0976311 7.04738 0.292893 6.65685L6.65685 0.292893C7.04738 -0.0976311 7.68054 -0.0976311 8.07107 0.292893C8.46159 0.683418 8.46159 1.31658 8.07107 1.70711L2.41421 7.36396L8.07107 13.0208C8.46159 13.4113 8.46159 14.0445 8.07107 14.435C7.68054 14.8256 7.04738 14.8256 6.65685 14.435L0.292893 8.07107Z"
+                        fill="#00C0C3" />
+                </svg>
+                Occasion
+            </a>
+            <p class="mb-3">John’s 30th Birthday!</p>
+        </div>
+        <form action="#" class="pt-4 pb-2">
+            <div class="bb-dashed pb-4 mb-4">
+                <p class="fw-bold mb-3">Preview Message</p>
+                <div class="gray-bg p-3 fs-0875">
+                    <div class="playbox-video position-relative d-flex align-items-center justify-content-center mb-3">
+                        <img src="./images/cards/smile2.png" alt="" class="w-100">
+                        <button class="btn btn-link position-absolute top-50 start-50 translate-middle" type="button">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.0003 0.667969C11.1137 0.667969 0.666992 11.1147 0.666992 24.0013C0.666992 36.8879 11.1137 47.3346 24.0003 47.3346C36.887 47.3346 47.3337 36.8879 47.3337 24.0013C47.3337 11.1147 36.887 0.667969 24.0003 0.667969ZM32.7503 27.0323C35.0837 25.6852 35.0837 22.3173 32.7503 20.9701L22.2503 14.908C19.917 13.5608 17.0003 15.2448 17.0003 17.9391V30.0634C17.0003 32.7577 19.917 34.4417 22.2503 33.0945L32.7503 27.0323Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="mb-1">It's been amazing working with you over the years. I'm glad we got to see out your
+                        time at COS in style with a little event together (ODF!). Wishing you all the best for the
+                        future</p>
+                    <p class="primary-color ff-accent">best wishes, Robert</p>
+                </div>
+            </div>
+            <div class="bb-dashed pb-4 mb-4">
+                <p class="fw-bold mb-3">Money Contribution</p>
+                <div>
+                    <label for="occasionMoney" class="form-label mb-1">Money Contribution (optional)</label>
+                    <div class="input-group occasionMoney">
+                        <input type="text" class="form-control" id="occasionMoney4" aria-label="Amount (to the nearest dollar)" placeholder="E.G. £5.00">
+                        <span class="input-group-text">£</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bb-dashed pb-4 mb-4">
+                <p class="fw-bold mb-3">Card Details</p>
+                <div class="mb-4">
+                    <label for="occasionCardholder3" class="form-label mb-1">Cardholder</label>
+                    <input type="text" class="form-control" id="occasionCardholder3" required="" placeholder="John Doe">
+                </div>
+                <div class="mb-4">
+                    <label for="occasionCardNumber3" class="form-label mb-1">Card Number</label>
+                    <input type="text" class="form-control" id="occasionCardNumber3" required=""
+                        placeholder="0000 0000 0000 0000">
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6">
+                        <label for="occasionExpirationDate3" class="form-label mb-1">Expiration Date</label>
+                        <input type="text" class="form-control" id="occasionExpirationDate3" required=""
+                            placeholder="MM / YY">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="occasionCVC3" class="form-label mb-1">CVC</label>
+                        <input type="text" class="form-control" id="occasionCVC3" required="" placeholder="***">
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4 d-flex justify-content-between">
+                <b>Total</b>
+                <b class="primary-color">£25.00</b>
+            </div>
+            <div class="d-flex flex-wrap justify-content-end">
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2 me-4">Cancel</button>
+                <button type="submit"
+                    class="text-capitalize btn main-cta main-cta--small py-1 px-3 rounded-pill mb-2">Contribute</button>
+            </div>
+        </form>
+    </div>
+</div>
+    
+                <div class="col-12 col-sm-7 col-lg-5 col-xl-4 mx-auto">
+    <div class="white-bg px-4 py-5 mt-5">
+        <div class="d-flex align-items-center flex-column mb-3">
+            <svg class="d-block mb-4" width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M82.7866 10.4352C84.4045 12.3487 84.4045 15.4513 82.7866 17.3648L49.6437 56.5648C48.0258 58.4784 45.4027 58.4784 43.7848 56.5648L27.2134 36.9648C25.5955 35.0513 25.5955 31.9487 27.2134 30.0352C28.8313 28.1216 31.4544 28.1216 33.0723 30.0352L46.7143 46.1704L76.9277 10.4352C78.5456 8.52161 81.1687 8.52161 82.7866 10.4352Z" fill="#00C0C3"/>
+                <path d="M84 44C84 52.5058 81.2886 60.7901 76.2596 67.6499C71.2306 74.5097 64.1458 79.5878 56.0341 82.1468C47.9224 84.7058 39.2062 84.6124 31.1512 81.8802C23.0962 79.1479 16.1218 73.9192 11.241 66.9532C6.36014 59.9871 3.82691 51.6466 4.00919 43.1428C4.19146 34.639 7.07975 26.4147 12.2546 19.6642C17.4295 12.9137 24.6215 7.98861 32.7861 5.60405C40.9508 3.21948 49.663 3.49966 57.6576 6.40387" stroke="#00C0C3" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <h2 class="fs-125">Success</h2>
+        </div>
+        <p class="opacity-07 text-center">You have successfully contributed £25.00 toward <a href="#" class="primary-color fw-bold">Name</a></p>
+        <p class="opacity-07 text-center mb-4">We’re continuously working hard to improve your Viing experience. Help spread the word by liking us on <a href="#" class="primary-color fw-bold">Facebook</a>, telling friends, family and colleagues!</p>
+        <div class="d-flex justify-content-center gap-3 mb-4">
+            <a href="#" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M13.3309 3.32083H15.1567V0.140833C14.8417 0.0975 13.7584 0 12.4967 0C9.86422 0 8.06088 1.65583 8.06088 4.69917V7.5H5.15588V11.055H8.06088V20H11.6226V11.0558H14.4101L14.8526 7.50083H11.6217V5.05167C11.6226 4.02417 11.8992 3.32083 13.3309 3.32083Z" fill="#00C0C3"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z" fill="#00C0C3"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M10.2717 0C4.78917 0.000833333 1.875 3.51333 1.875 7.34333C1.875 9.11917 2.8675 11.335 4.45667 12.0375C4.91 12.2417 4.85 11.9925 5.24 10.5008C5.27083 10.3767 5.255 10.2692 5.155 10.1533C2.88333 7.52583 4.71167 2.12417 9.9475 2.12417C17.525 2.12417 16.1092 12.6092 11.2658 12.6092C10.0175 12.6092 9.0875 11.6292 9.38167 10.4167C9.73833 8.9725 10.4367 7.42 10.4367 6.37917C10.4367 3.75583 6.52833 4.145 6.52833 7.62083C6.52833 8.695 6.90833 9.42 6.90833 9.42C6.90833 9.42 5.65083 14.5 5.4175 15.4492C5.0225 17.0558 5.47083 19.6567 5.51 19.8808C5.53417 20.0042 5.6725 20.0433 5.75 19.9417C5.87417 19.7792 7.39417 17.6108 7.82 16.0433C7.975 15.4725 8.61083 13.1558 8.61083 13.1558C9.03 13.9125 10.2383 14.5458 11.5258 14.5458C15.3558 14.5458 18.1242 11.1792 18.1242 7.00167C18.1108 2.99667 14.6833 0 10.2717 0V0Z" fill="#00C0C3"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.4444 3.3335C2.91028 3.3335 1.66663 4.61268 1.66663 6.19064V13.8097C1.66663 15.3876 2.91028 16.6668 4.4444 16.6668H15.5555C17.0896 16.6668 18.3333 15.3876 18.3333 13.8097V6.19064C18.3333 4.61268 17.0896 3.3335 15.5555 3.3335H4.4444ZM6.35387 6.84944C5.99449 6.56193 5.47008 6.6202 5.18257 6.97958C4.89506 7.33897 4.95333 7.86338 5.31271 8.15089L9.47938 11.4842L9.99996 11.9007L10.5205 11.4842L14.6872 8.15089C15.0466 7.86338 15.1049 7.33897 14.8173 6.97958C14.5298 6.6202 14.0054 6.56193 13.646 6.84944L9.99996 9.76631L6.35387 6.84944Z" fill="#00C0C3"/>
+                </svg>
+            </a>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="text-capitalize btn main-cta main-cta--small main-cta--outline py-1 px-3 rounded-pill mb-2">Home</button>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+   <!-- just demo , remove it  -->
+   <script> 
+    console.error('that errors only for demo navigation' );
+    const step= document.querySelectorAll(".just-for-demo>div");
+    const next= document.querySelector(".demo-next");
+    const prev= document.querySelector(".demo-prev");
+
+   let  i=0;
+   const render = ()=>{
+       step.forEach((st)=>{
+           st.style.display='none';
+       })
+       step[i].style.display='block'
+   }
+   render();
+   next.addEventListener('click', ()=>{
+       i++
+       if(i>step.length-1){
+            i=step.length-1;
+        }
+    render();
+   })
+   prev.addEventListener('click', ()=>{
+       i--;
+        if(i<1){
+            i=0;
+        }
+    render();
+   })
+</script>
+   <!-- just demo , remove it  -->
+
+
+<div class="modal m-modal fade p-2" id="LoginModalToggle" aria-hidden="true" aria-labelledby="LoginModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog flex-column justify-content-center modal-dialog-centered">
+    <div class="modal-content mb-3 ps-3 pe-3 border-0 position-relative m-modal__content">				
+			<button type="button" class="position-absolute btn-close btn-close-white m-0 p-0 rounded-circle top-0 start-100 translate-middle m-modal__close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      <div class="modal-header ps-0 pe-0 mb-4 justify-content-center m-modal__header">
+        <h5 class="modal-title fs-2" id="LoginModalToggleLabel">Login</h5>
+      </div>
+
+      <div class="modal-body ps-0 pe-0 pb-3">
+        <form action="/">
+					<div class="mb-3">
+						<label for="modalLoginEmail" class="form-label mb-1">E-Mail</label>
+						<input type="email" class="form-control" id="modalLoginEmail" required autocomplete="email" placeholder="Enter your email">
+					</div>
+					<div class="mb-4">
+						<label for="modalLoginPassword" class="form-label mb-1">Password</label>
+						<input type="password" class="form-control" id="modalLoginPassword" required autocomplete="current-password" placeholder="Enter your password">
+					</div>
+
+					<div class="text-center">
+						<button type="submit" class="btn main-cta main-cta--small py-2 px-5 rounded-pill">LOGIN</button>
+					</div>
+				</form>
+      </div>
+      <div class="modal-footer ps-0 pe-0 mb-4 d-block text-center border-0">
+				Forgot your password? <a class="primary-link" href="#">Click Here To Reset</a>
+      </div>
+    </div>
+
+		<div class="modal-content d-block text-center p-3 border-0 m-modal__content">
+			New to Viing? <a class="primary-link" href="#RegisterModalToggle" data-bs-target="#RegisterModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up!</a>
+		</div>
+  </div>
+</div>
+<footer class="footer bg-accented-footer py-3 z-index--2p">
+	<div class="container">
+		<nav class="navbar navbar-expand-xl navbar-light align-items-center justify-content-between">
+			<ul class="navbar-nav">
+				<li>
+					<a href="index.html" class="navbar-brand me-4" aria-current="page">
+						<img src="./images/icons/logo-small.png" alt="Logo">
+					</a>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+				<li class="nav-item"><a href="how-it-work.html" class="nav-link">How it works</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="navbar-nav align-self-stretch">
+				<li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+				<li class="vr d-xl-block">&nbsp;</li>
+				<li class="nav-item d-flex align-items-center">
+					<span class="text-muted nav-link">Handcrafted in London © 2021 - All rights reserved.</span>
+				</li>
+				<li class="d-flex align-items-center">
+					<a class="text-muted ms-xl-3 ms-2" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M13.331 3.32083H15.1568V0.140833C14.8418 0.0975 13.7585 0 12.4968 0C9.86434 0 8.06101 1.65583 8.06101 4.69917V7.5H5.15601V11.055H8.06101V20H11.6227V11.0558H14.4102L14.8527 7.50083H11.6218V5.05167C11.6227 4.02417 11.8993 3.32083 13.331 3.32083Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					<a class="text-muted ms-xl-3" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

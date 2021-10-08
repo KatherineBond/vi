@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gift</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Make gifts">
+  <link rel="shortcut icon" href="images/icons/fav.png" type="image/x-icon">
+  <link rel="icon" href="images/icons/fav.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body body-color">
+
+<header class="w-100">
+    <div class="container-lg">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <img src="./images/icons/logo_white.png" alt="Logo" class="logo">
+                <img src="./images/icons/logo.png" alt="Logo" class="logo-scrolled">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse justify-content-end header__menu" id="navbarSupportedContent">
+				<ul class="navbar-nav align-items-center text-center text-uppercase">
+					<li class="nav-item"><a href="how-it-work.html" class="nav-link header__link px-2">How it works</a></li>
+					<li class="nav-item"><a href="#LoginModalToggle" class="nav-link btn header__link px-3 py-1 login ms-4"
+							data-bs-toggle="modal" role="button">LOGIN</a></li>
+					<li class="nav-item dropdown">
+                        <a href="#" class="nav-link header__link px-2 account-link d-flex align-items-center ms-4 dropdown-toggle" role="button" id="UserMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="user-img me-2"><img src="./images/icons/user.jpeg" alt="" class=" me-3"></div>
+                            Kate Batten
+                        </a>
+                        <ul class="dropdown-menu w-100 p-3 mt-3 border-0 border--rounded-26 shadow--regular-sm dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item danger-color" href="#">Logout</a></li>
+                          </ul>
+                    </li>
+				</ul>
+			</div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-bg-lg position-absolute w-100 top-0 start-0" style="background-image: url('./images/contribution_header.svg');"></div>
+
+    <div class="position-relative z-index-1 empty-box">
+        <div class="container-lg">
+            <section class="section-invite container-fluid mt-3 white-bg py-3 px-4 d-flex justify-content-between position-relative">
+    <div class="row w-100">
+        <div class="col-12 col-lg-6 d-flex align-items-lg-center mb-3 mb-lg-0">
+            <p class="section-invite-title fs-125 m-0 mt-2 me-4 mt-lg-0">Occasions</p>
+            <div class="d-flex section-invite-users flex-wrap">
+                <button type="button" name="add-user" class="dashedBox add-btn user-img m-1 me-lg-4"></button>
+                <div class="user-img position-relative m-1">
+                    <img src="./images/icons/user2.png" alt="">
+                </div>
+                <div class="user-img position-relative m-1">
+                    <img src="./images/icons/user2.png" alt="">
+                </div>
+                <div class="user-img position-relative m-1">
+                    <img src="./images/icons/user2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex align-items-lg-center justify-content-lg-end">
+            <span class="vr d-xl-block"></span>
+            <p class="section-invite-title fs-125 m-0 mt-2 me-4 mt-lg-0">Invited</p>
+            <div class="d-flex section-invite-users flex-wrap">
+                <div class="item position-relative m-1">
+                    <div class="user-img">
+                        <img src="./images/icons/user1.png" alt="">
+                    </div>
+                    <div class="section-invite-action position-absolute left-0 w-100">
+                        <button type="button" class="btn-check">
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.82426 1.84243L2.65901 5.00746C2.42462 5.2419 2.0444 5.2419 1.80979 5.00746L0.17586 3.37342C-0.0586199 3.13898 -0.0586199 2.75872 0.17586 2.52424C0.410384 2.28972 0.790573 2.28972 1.02499 2.52415L2.23452 3.7337L4.97499 0.993209C5.20952 0.758685 5.58974 0.758863 5.82417 0.993209C6.05861 1.22769 6.05861 1.60782 5.82426 1.84243Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="btn-dell">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.94922 4.24264L6.71699 2.47487C6.91225 2.27961 7.22883 2.27961 7.42409 2.47487C7.61935 2.67014 7.61935 2.98672 7.42409 3.18198L5.65633 4.94975L7.42409 6.71751C7.61935 6.91278 7.61935 7.22936 7.42409 7.42462C7.22883 7.61988 6.91225 7.61988 6.71699 7.42462L4.94922 5.65685L3.18145 7.42462C2.98619 7.61988 2.66961 7.61988 2.47435 7.42462C2.27908 7.22936 2.27908 6.91278 2.47435 6.71751L4.24211 4.94975L2.47435 3.18198C2.27908 2.98672 2.27908 2.67014 2.47435 2.47487C2.66961 2.27961 2.98619 2.27961 3.18145 2.47487L4.94922 4.24264Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="item position-relative m-1">
+                    <div class="user-img">
+                        <img src="./images/icons/user2.png" alt="">
+                    </div>
+                    <div class="section-invite-action position-absolute left-0 w-100">
+                        <button type="button" class="btn-check">
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.82426 1.84243L2.65901 5.00746C2.42462 5.2419 2.0444 5.2419 1.80979 5.00746L0.17586 3.37342C-0.0586199 3.13898 -0.0586199 2.75872 0.17586 2.52424C0.410384 2.28972 0.790573 2.28972 1.02499 2.52415L2.23452 3.7337L4.97499 0.993209C5.20952 0.758685 5.58974 0.758863 5.82417 0.993209C6.05861 1.22769 6.05861 1.60782 5.82426 1.84243Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="btn-dell">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.94922 4.24264L6.71699 2.47487C6.91225 2.27961 7.22883 2.27961 7.42409 2.47487C7.61935 2.67014 7.61935 2.98672 7.42409 3.18198L5.65633 4.94975L7.42409 6.71751C7.61935 6.91278 7.61935 7.22936 7.42409 7.42462C7.22883 7.61988 6.91225 7.61988 6.71699 7.42462L4.94922 5.65685L3.18145 7.42462C2.98619 7.61988 2.66961 7.61988 2.47435 7.42462C2.27908 7.22936 2.27908 6.91278 2.47435 6.71751L4.24211 4.94975L2.47435 3.18198C2.27908 2.98672 2.27908 2.67014 2.47435 2.47487C2.66961 2.27961 2.98619 2.27961 3.18145 2.47487L4.94922 4.24264Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="item position-relative m-1">
+                    <div class="user-img">
+                        <img src="./images/icons/user3.png" alt="">
+                    </div>
+                    <div class="section-invite-action position-absolute left-0 w-100">
+                        <button type="button" class="btn-check">
+                            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.82426 1.84243L2.65901 5.00746C2.42462 5.2419 2.0444 5.2419 1.80979 5.00746L0.17586 3.37342C-0.0586199 3.13898 -0.0586199 2.75872 0.17586 2.52424C0.410384 2.28972 0.790573 2.28972 1.02499 2.52415L2.23452 3.7337L4.97499 0.993209C5.20952 0.758685 5.58974 0.758863 5.82417 0.993209C6.05861 1.22769 6.05861 1.60782 5.82426 1.84243Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <button type="button" class="btn-dell">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.94922 4.24264L6.71699 2.47487C6.91225 2.27961 7.22883 2.27961 7.42409 2.47487C7.61935 2.67014 7.61935 2.98672 7.42409 3.18198L5.65633 4.94975L7.42409 6.71751C7.61935 6.91278 7.61935 7.22936 7.42409 7.42462C7.22883 7.61988 6.91225 7.61988 6.71699 7.42462L4.94922 5.65685L3.18145 7.42462C2.98619 7.61988 2.66961 7.61988 2.47435 7.42462C2.27908 7.22936 2.27908 6.91278 2.47435 6.71751L4.24211 4.94975L2.47435 3.18198C2.27908 2.98672 2.27908 2.67014 2.47435 2.47487C2.66961 2.27961 2.98619 2.27961 3.18145 2.47487L4.94922 4.24264Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </div>
+    </div>
+        
+    <div class="container-lg position-relative zindex-1">
+        <div class="row">
+            <div class="col-parent position-relative col-lg-3 col-xxl-2 col-12 mb-5 mb-xl-0">
+                <div class="column-left column-left-vertical">
+    <div class="row">
+        <div class="gift-option col-12 col-sm-6 col-lg-12 ">
+            <div class="white-bg h-100 position-relative">
+                <img src="./images/icons/gift.svg" alt="">
+                <span class="gift-option-name">Julie will be leaving us to go on a new adventure in Australia</span>
+                <button type="button" name="edit" class="btn-edit" data-bs-target="#UploadModalToggle" data-bs-toggle="modal">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path
+                                d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z" />
+                            <path
+                                d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="10.623" height="10.623" fill="white"
+                                    transform="translate(0.410156 0.966797)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="contributions-wrapper col-12 col-sm-6 col-lg-12">
+            <div class="white-bg contributions-block text-uppercase position-relative">
+                <div class="container-fluid position-relative">
+                    <div class="row contributions-price-wrapper">
+                        <div class="col-12 text-center contributions-top">
+                            <div class="contributions-price-block">
+                                <div class="contributions-total-price mb-2">£ 23.00</div>
+                                <p class="mb-0">contributed</p>
+                            </div>
+                            <button type="button" class="btn main-cta">contribute</button>
+                        </div>
+                        <div class="col-12 contributions-bottom">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="contributions-info">
+                                <div class=" fs-0875 d-flex align-items-center">
+                                    <span class="icon me-1"><img src="./images/icons/clock.svg" alt=""></span>
+                                    3d
+                                </div>
+                                <span class="vr d-block"></span>
+                                <div class="fs-0875 d-flex align-items-center">
+                                    <span class="icon me-1"><img src="./images/icons/users.svg" alt=""></span>
+                                    12
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="social-share d-flex justify-content-center">
+                <button type="button" class="social-share-link bg-accented-red rounded-circle me-2">
+                    <img src="./images/icons/copy-link.svg" alt="">
+                </button>
+                <button type="button" class="social-share-link rounded-circle me-2">
+                    <img src="./images/icons/facebook-black.svg" alt="">
+                </button>
+                <button type="button" class="social-share-link rounded-circle me-2">
+                    <img src="./images/icons/twitter-black.svg" alt="">
+                </button>
+                <button type="button" class="social-share-link rounded-circle">
+                    <img src="./images/icons/email.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+    
+            <div class="col-xxl-10 col-12 col-lg-9">
+                <section class="white-bg section-gift-organizer mb-4 py-4 px-3 py-xl-5 px-xl-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 col-xl-9 mb-3 mb-lg-0 d-flex position-relative section-gift-organizer-title">
+                                <h1>
+                                    Julie will be leaving us to go on a new adventure in Australia
+                                    <button type="button" class="like-btn d-inline-flex align-items-center ms-1 fs-1r ff-primary">
+                                        <img src="./images/icons/like-full.svg" alt="" class="me-1">
+                                        123
+                                    </button>
+                                </h1>
+                                
+                            </div>
+                            <div class="d-flex flex-lg-column justify-content-lg-center justify-content-around align-items-end col-12 col-lg-4 col-xl-3">
+                                <button type="button" class="btn main-cta py-3 px-4 w-100 w-lg-auto">contribute</button>
+                            </div>
+                            <div class="col-12"><span class="hr d-block my-4"></span></div>
+                        </div>
+                        <div class="row flex-column-reverse flex-lg-row">
+                            <div class="col-12 col-lg-7 section-gift-organizer-text">
+                                Hey guys, as you know our dear friend will be leaving us at the end of the month abs will be sorely missed. Please leave a message for her card and contribute what you can to her leaving gift. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            </div>
+                            <div class="col-12 col-lg-4 section-gift-organizer-block d-flex align-items-center offset-lg-1 justify-content-center mb-4 mb-lg-0 py-4 py-lg-0">
+                                <div class="d-flex align-items-center flex-column flex-xl-row">
+                                    <div class="user-img me-xl-2 mb-2 mb-xl-0">
+                                        <img src="./images/icons/avatar-1.svg" alt="">
+                                    </div>
+                                    <div class="text-center text-xl-start">
+                                        <p class="section-gift-organizer-position m-0">Organizer</p>
+                                        <p class="section-gift-organizer-name m-0">John Maxwell</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-messages">
+                    <div class="container-lg mb-5 p-0">
+                        <div class="row row-cols-1 row-cols-lg-3 g-3">
+                            <div class="col">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-3">
+                                    <div class="col">
+                                        <button type="button" class="flex-column-reverse dashedBox add-btn d-flex justify-content-center align-items-center w-100" data-bs-target="#MessageModalToggle" data-bs-toggle="modal">
+                                            Send your message now
+                                        </button>
+                                    </div>
+                                    <div class="col">
+    <div class="section-messages-item position-relative white-bg ">
+        <div class="section-messages-item-img">
+            
+        </div>
+        <div class="p-4">
+            <div class='section-messages-item-text mb-3'>It's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!). Wishing you all the best for the future</div>
+            <div class="section-messages-item-user_name">best wishes, Victor</div>
+            <span class="hr d-block my-3"></span>
+            <div class="d-flex justify-content-between">
+                <div class="section-messages-item-data-post d-flex align-items-center">
+                    <div class="user-img me-2">
+                        <img src="./images/icons/avatar-2.svg" alt="">
+                    </div>
+                    <div>
+                        Posted<br>
+                        7 months ago
+                    </div>
+                </div>
+                <button type="button" class="like-btn d-flex align-items-center like-btn-liked">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.56633 2.61583L7.99999 3.37151L8.43366 2.61585C8.67688 2.19204 9.08301 1.62306 9.68091 1.18215L9.38648 0.782882L9.68091 1.18215C10.297 0.727861 10.989 0.5 11.75 0.5C13.881 0.5 15.5 2.1498 15.5 4.3955C15.5 5.58757 15.0055 6.6153 14.0516 7.71288C13.0851 8.82484 11.6919 9.95903 9.95478 11.3706L9.95478 11.3706L9.95413 11.3711C9.36819 11.8473 8.70188 12.3887 8.00891 12.9665C8.00942 12.9661 8.00655 12.9683 8 12.9683C7.99382 12.9683 7.99095 12.9664 7.9911 12.9665L7.99108 12.9665C7.29843 12.3889 6.63232 11.8477 6.04687 11.3719L6.0456 11.3709L6.04559 11.3709C4.30824 9.95917 2.91496 8.82491 1.94847 7.71291C0.994481 6.6153 0.5 5.58756 0.5 4.3955C0.5 2.1498 2.119 0.5 4.25 0.5C5.01095 0.5 5.70305 0.727861 6.31909 1.18215C6.917 1.62306 7.32312 2.19202 7.56633 2.61583Z" fill="#FF8675" stroke="#FF8374"/>
+                    </svg>
+                    <span class="d-block mb-0 ms-1">123</span>
+                </button>
+            </div>
+            <button type="button" name="edit" class="btn-edit">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z"/>
+                    <path d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+                                    <div class="col">
+    <div class="section-messages-item position-relative white-bg ">
+        <div class="section-messages-item-img">
+            
+        </div>
+        <div class="p-4">
+            <div class='section-messages-item-text mb-3'>It's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!). Wishing you all the best for the futuret's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!).  time at COS in style with a little event together (ODF!). </div>
+            <div class="section-messages-item-user_name">best wishes, Devid</div>
+            <span class="hr d-block my-3"></span>
+            <div class="d-flex justify-content-between">
+                <div class="section-messages-item-data-post d-flex align-items-center">
+                    <div class="user-img me-2">
+                        <img src="./images/icons/avatar-2.svg" alt="">
+                    </div>
+                    <div>
+                        Posted<br>
+                        7 months ago
+                    </div>
+                </div>
+                <button type="button" class="like-btn d-flex align-items-center ">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.56633 2.61583L7.99999 3.37151L8.43366 2.61585C8.67688 2.19204 9.08301 1.62306 9.68091 1.18215L9.38648 0.782882L9.68091 1.18215C10.297 0.727861 10.989 0.5 11.75 0.5C13.881 0.5 15.5 2.1498 15.5 4.3955C15.5 5.58757 15.0055 6.6153 14.0516 7.71288C13.0851 8.82484 11.6919 9.95903 9.95478 11.3706L9.95478 11.3706L9.95413 11.3711C9.36819 11.8473 8.70188 12.3887 8.00891 12.9665C8.00942 12.9661 8.00655 12.9683 8 12.9683C7.99382 12.9683 7.99095 12.9664 7.9911 12.9665L7.99108 12.9665C7.29843 12.3889 6.63232 11.8477 6.04687 11.3719L6.0456 11.3709L6.04559 11.3709C4.30824 9.95917 2.91496 8.82491 1.94847 7.71291C0.994481 6.6153 0.5 5.58756 0.5 4.3955C0.5 2.1498 2.119 0.5 4.25 0.5C5.01095 0.5 5.70305 0.727861 6.31909 1.18215C6.917 1.62306 7.32312 2.19202 7.56633 2.61583Z" fill="#FF8675" stroke="#FF8374"/>
+                    </svg>
+                    <span class="d-block mb-0 ms-1">123</span>
+                </button>
+            </div>
+            <button type="button" name="edit" class="btn-edit">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z"/>
+                    <path d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-3">
+                                    <div class="col">
+    <div class="section-messages-item position-relative white-bg ">
+        <div class="section-messages-item-img">
+            
+        </div>
+        <div class="p-4">
+            <div class='section-messages-item-text mb-3'>It's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!). Wishing you all the best for the future</div>
+            <div class="section-messages-item-user_name">best wishes, Marcus</div>
+            <span class="hr d-block my-3"></span>
+            <div class="d-flex justify-content-between">
+                <div class="section-messages-item-data-post d-flex align-items-center">
+                    <div class="user-img me-2">
+                        <img src="./images/icons/avatar-2.svg" alt="">
+                    </div>
+                    <div>
+                        Posted<br>
+                        7 months ago
+                    </div>
+                </div>
+                <button type="button" class="like-btn d-flex align-items-center like-btn-liked">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.56633 2.61583L7.99999 3.37151L8.43366 2.61585C8.67688 2.19204 9.08301 1.62306 9.68091 1.18215L9.38648 0.782882L9.68091 1.18215C10.297 0.727861 10.989 0.5 11.75 0.5C13.881 0.5 15.5 2.1498 15.5 4.3955C15.5 5.58757 15.0055 6.6153 14.0516 7.71288C13.0851 8.82484 11.6919 9.95903 9.95478 11.3706L9.95478 11.3706L9.95413 11.3711C9.36819 11.8473 8.70188 12.3887 8.00891 12.9665C8.00942 12.9661 8.00655 12.9683 8 12.9683C7.99382 12.9683 7.99095 12.9664 7.9911 12.9665L7.99108 12.9665C7.29843 12.3889 6.63232 11.8477 6.04687 11.3719L6.0456 11.3709L6.04559 11.3709C4.30824 9.95917 2.91496 8.82491 1.94847 7.71291C0.994481 6.6153 0.5 5.58756 0.5 4.3955C0.5 2.1498 2.119 0.5 4.25 0.5C5.01095 0.5 5.70305 0.727861 6.31909 1.18215C6.917 1.62306 7.32312 2.19202 7.56633 2.61583Z" fill="#FF8675" stroke="#FF8374"/>
+                    </svg>
+                    <span class="d-block mb-0 ms-1">123</span>
+                </button>
+            </div>
+            <button type="button" name="edit" class="btn-edit">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z"/>
+                    <path d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+                                    <div class="col">
+    <div class="section-messages-item position-relative white-bg ">
+        <div class="section-messages-item-img">
+            
+        </div>
+        <div class="p-4">
+            <div class='section-messages-item-text mb-3'>It's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!). Wishing you all the best for the futuret's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!).  time at COS in style with a little event together (ODF!). </div>
+            <div class="section-messages-item-user_name">best wishes, Marcus</div>
+            <span class="hr d-block my-3"></span>
+            <div class="d-flex justify-content-between">
+                <div class="section-messages-item-data-post d-flex align-items-center">
+                    <div class="user-img me-2">
+                        <img src="./images/icons/avatar-2.svg" alt="">
+                    </div>
+                    <div>
+                        Posted<br>
+                        7 months ago
+                    </div>
+                </div>
+                <button type="button" class="like-btn d-flex align-items-center ">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.56633 2.61583L7.99999 3.37151L8.43366 2.61585C8.67688 2.19204 9.08301 1.62306 9.68091 1.18215L9.38648 0.782882L9.68091 1.18215C10.297 0.727861 10.989 0.5 11.75 0.5C13.881 0.5 15.5 2.1498 15.5 4.3955C15.5 5.58757 15.0055 6.6153 14.0516 7.71288C13.0851 8.82484 11.6919 9.95903 9.95478 11.3706L9.95478 11.3706L9.95413 11.3711C9.36819 11.8473 8.70188 12.3887 8.00891 12.9665C8.00942 12.9661 8.00655 12.9683 8 12.9683C7.99382 12.9683 7.99095 12.9664 7.9911 12.9665L7.99108 12.9665C7.29843 12.3889 6.63232 11.8477 6.04687 11.3719L6.0456 11.3709L6.04559 11.3709C4.30824 9.95917 2.91496 8.82491 1.94847 7.71291C0.994481 6.6153 0.5 5.58756 0.5 4.3955C0.5 2.1498 2.119 0.5 4.25 0.5C5.01095 0.5 5.70305 0.727861 6.31909 1.18215C6.917 1.62306 7.32312 2.19202 7.56633 2.61583Z" fill="#FF8675" stroke="#FF8374"/>
+                    </svg>
+                    <span class="d-block mb-0 ms-1">123</span>
+                </button>
+            </div>
+            <button type="button" name="edit" class="btn-edit">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z"/>
+                    <path d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+                                    <div class="col">
+    <div class="section-messages-item position-relative white-bg ">
+        <div class="section-messages-item-img">
+            
+        </div>
+        <div class="p-4">
+            <div class='section-messages-item-text mb-3'>It's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!). Wishing you all the best for the future</div>
+            <div class="section-messages-item-user_name">best wishes, Marcus</div>
+            <span class="hr d-block my-3"></span>
+            <div class="d-flex justify-content-between">
+                <div class="section-messages-item-data-post d-flex align-items-center">
+                    <div class="user-img me-2">
+                        <img src="./images/icons/avatar-2.svg" alt="">
+                    </div>
+                    <div>
+                        Posted<br>
+                        7 months ago
+                    </div>
+                </div>
+                <button type="button" class="like-btn d-flex align-items-center like-btn-liked">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.56633 2.61583L7.99999 3.37151L8.43366 2.61585C8.67688 2.19204 9.08301 1.62306 9.68091 1.18215L9.38648 0.782882L9.68091 1.18215C10.297 0.727861 10.989 0.5 11.75 0.5C13.881 0.5 15.5 2.1498 15.5 4.3955C15.5 5.58757 15.0055 6.6153 14.0516 7.71288C13.0851 8.82484 11.6919 9.95903 9.95478 11.3706L9.95478 11.3706L9.95413 11.3711C9.36819 11.8473 8.70188 12.3887 8.00891 12.9665C8.00942 12.9661 8.00655 12.9683 8 12.9683C7.99382 12.9683 7.99095 12.9664 7.9911 12.9665L7.99108 12.9665C7.29843 12.3889 6.63232 11.8477 6.04687 11.3719L6.0456 11.3709L6.04559 11.3709C4.30824 9.95917 2.91496 8.82491 1.94847 7.71291C0.994481 6.6153 0.5 5.58756 0.5 4.3955C0.5 2.1498 2.119 0.5 4.25 0.5C5.01095 0.5 5.70305 0.727861 6.31909 1.18215C6.917 1.62306 7.32312 2.19202 7.56633 2.61583Z" fill="#FF8675" stroke="#FF8374"/>
+                    </svg>
+                    <span class="d-block mb-0 ms-1">123</span>
+                </button>
+            </div>
+            <button type="button" name="edit" class="btn-edit">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z"/>
+                    <path d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-3">
+                                    <div class="col">
+    <div class="section-messages-item position-relative white-bg ">
+        <div class="section-messages-item-img">
+            
+        </div>
+        <div class="p-4">
+            <div class='section-messages-item-text mb-3'>It's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!). Wishing you all the best for the futuret's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!).  time at COS in style with a little event together (ODF!). </div>
+            <div class="section-messages-item-user_name">best wishes, Thomas</div>
+            <span class="hr d-block my-3"></span>
+            <div class="d-flex justify-content-between">
+                <div class="section-messages-item-data-post d-flex align-items-center">
+                    <div class="user-img me-2">
+                        <img src="./images/icons/avatar-2.svg" alt="">
+                    </div>
+                    <div>
+                        Posted<br>
+                        7 months ago
+                    </div>
+                </div>
+                <button type="button" class="like-btn d-flex align-items-center ">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.56633 2.61583L7.99999 3.37151L8.43366 2.61585C8.67688 2.19204 9.08301 1.62306 9.68091 1.18215L9.38648 0.782882L9.68091 1.18215C10.297 0.727861 10.989 0.5 11.75 0.5C13.881 0.5 15.5 2.1498 15.5 4.3955C15.5 5.58757 15.0055 6.6153 14.0516 7.71288C13.0851 8.82484 11.6919 9.95903 9.95478 11.3706L9.95478 11.3706L9.95413 11.3711C9.36819 11.8473 8.70188 12.3887 8.00891 12.9665C8.00942 12.9661 8.00655 12.9683 8 12.9683C7.99382 12.9683 7.99095 12.9664 7.9911 12.9665L7.99108 12.9665C7.29843 12.3889 6.63232 11.8477 6.04687 11.3719L6.0456 11.3709L6.04559 11.3709C4.30824 9.95917 2.91496 8.82491 1.94847 7.71291C0.994481 6.6153 0.5 5.58756 0.5 4.3955C0.5 2.1498 2.119 0.5 4.25 0.5C5.01095 0.5 5.70305 0.727861 6.31909 1.18215C6.917 1.62306 7.32312 2.19202 7.56633 2.61583Z" fill="#FF8675" stroke="#FF8374"/>
+                    </svg>
+                    <span class="d-block mb-0 ms-1">123</span>
+                </button>
+            </div>
+            <button type="button" name="edit" class="btn-edit">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z"/>
+                    <path d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+                                    <div class="col">
+    <div class="section-messages-item position-relative white-bg ">
+        <div class="section-messages-item-img">
+            
+        </div>
+        <div class="p-4">
+            <div class='section-messages-item-text mb-3'>It's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!). Wishing you all the best for the future</div>
+            <div class="section-messages-item-user_name">best wishes, Chris</div>
+            <span class="hr d-block my-3"></span>
+            <div class="d-flex justify-content-between">
+                <div class="section-messages-item-data-post d-flex align-items-center">
+                    <div class="user-img me-2">
+                        <img src="./images/icons/avatar-2.svg" alt="">
+                    </div>
+                    <div>
+                        Posted<br>
+                        7 months ago
+                    </div>
+                </div>
+                <button type="button" class="like-btn d-flex align-items-center like-btn-liked">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.56633 2.61583L7.99999 3.37151L8.43366 2.61585C8.67688 2.19204 9.08301 1.62306 9.68091 1.18215L9.38648 0.782882L9.68091 1.18215C10.297 0.727861 10.989 0.5 11.75 0.5C13.881 0.5 15.5 2.1498 15.5 4.3955C15.5 5.58757 15.0055 6.6153 14.0516 7.71288C13.0851 8.82484 11.6919 9.95903 9.95478 11.3706L9.95478 11.3706L9.95413 11.3711C9.36819 11.8473 8.70188 12.3887 8.00891 12.9665C8.00942 12.9661 8.00655 12.9683 8 12.9683C7.99382 12.9683 7.99095 12.9664 7.9911 12.9665L7.99108 12.9665C7.29843 12.3889 6.63232 11.8477 6.04687 11.3719L6.0456 11.3709L6.04559 11.3709C4.30824 9.95917 2.91496 8.82491 1.94847 7.71291C0.994481 6.6153 0.5 5.58756 0.5 4.3955C0.5 2.1498 2.119 0.5 4.25 0.5C5.01095 0.5 5.70305 0.727861 6.31909 1.18215C6.917 1.62306 7.32312 2.19202 7.56633 2.61583Z" fill="#FF8675" stroke="#FF8374"/>
+                    </svg>
+                    <span class="d-block mb-0 ms-1">123</span>
+                </button>
+            </div>
+            <button type="button" name="edit" class="btn-edit">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z"/>
+                    <path d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+                                    <div class="col">
+    <div class="section-messages-item position-relative white-bg ">
+        <div class="section-messages-item-img">
+            
+        </div>
+        <div class="p-4">
+            <div class='section-messages-item-text mb-3'>It's been amazing working with you over the years. I'm glad we got to see out your time at COS in style with a little event together (ODF!). Wishing you all the best for the future</div>
+            <div class="section-messages-item-user_name">best wishes, Elena</div>
+            <span class="hr d-block my-3"></span>
+            <div class="d-flex justify-content-between">
+                <div class="section-messages-item-data-post d-flex align-items-center">
+                    <div class="user-img me-2">
+                        <img src="./images/icons/avatar-2.svg" alt="">
+                    </div>
+                    <div>
+                        Posted<br>
+                        7 months ago
+                    </div>
+                </div>
+                <button type="button" class="like-btn d-flex align-items-center like-btn-liked">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.56633 2.61583L7.99999 3.37151L8.43366 2.61585C8.67688 2.19204 9.08301 1.62306 9.68091 1.18215L9.38648 0.782882L9.68091 1.18215C10.297 0.727861 10.989 0.5 11.75 0.5C13.881 0.5 15.5 2.1498 15.5 4.3955C15.5 5.58757 15.0055 6.6153 14.0516 7.71288C13.0851 8.82484 11.6919 9.95903 9.95478 11.3706L9.95478 11.3706L9.95413 11.3711C9.36819 11.8473 8.70188 12.3887 8.00891 12.9665C8.00942 12.9661 8.00655 12.9683 8 12.9683C7.99382 12.9683 7.99095 12.9664 7.9911 12.9665L7.99108 12.9665C7.29843 12.3889 6.63232 11.8477 6.04687 11.3719L6.0456 11.3709L6.04559 11.3709C4.30824 9.95917 2.91496 8.82491 1.94847 7.71291C0.994481 6.6153 0.5 5.58756 0.5 4.3955C0.5 2.1498 2.119 0.5 4.25 0.5C5.01095 0.5 5.70305 0.727861 6.31909 1.18215C6.917 1.62306 7.32312 2.19202 7.56633 2.61583Z" fill="#FF8675" stroke="#FF8374"/>
+                    </svg>
+                    <span class="d-block mb-0 ms-1">123</span>
+                </button>
+            </div>
+            <button type="button" name="edit" class="btn-edit">
+                <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <path d="M6.9704 2.75098L1.1255 8.5963C1.0961 8.62579 1.07487 8.66303 1.06476 8.70305L0.416904 11.3034C0.397525 11.3817 0.420527 11.4649 0.477653 11.522C0.520877 11.5653 0.579773 11.5892 0.640016 11.5892C0.658469 11.5892 0.677342 11.5869 0.69571 11.5823L3.29605 10.9343C3.33657 10.9242 3.37339 10.9031 3.4028 10.8737L9.2482 5.02878L6.9704 2.75098Z"/>
+                    <path d="M10.6968 1.95415L10.0461 1.30352C9.6113 0.868669 8.8534 0.86909 8.41906 1.30352L7.62207 2.1005L9.89979 4.37822L10.6968 3.58123C10.914 3.3641 11.0336 3.0751 11.0336 2.76773C11.0336 2.46036 10.914 2.17136 10.6968 1.95415Z"/>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="d-block btn main-cta mx-auto py-3 px-5">Load More</button>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="modal c-modal fade p-2" id="MessageModalToggle" aria-hidden="true" aria-labelledby="MessageModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog flex-column justify-content-center modal-dialog-centered">
+        <div class="modal-content mb-3 ps-3 pe-3 border-0 m-modal__content">
+            <div class="modal-header py-4 ps-0 pe-0 mb-4 justify-content-center c-modal__header position-relative">
+                <h5 class="modal-title" id="MessageModalToggleLabel">Add your message</h5>
+                <button type="button" class="position-absolute btn-close m-0 p-0 top-50 end-0 translate-middle c-modal__close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body ps-0 pe-0 pb-5">
+                <form action="/">
+                    <div class="mb-3">
+                        <label for="modalMessageText" class="form-label mb-1">My message</label>
+                        <textarea cols="5" class="form-control" id="modalMessageText"></textarea>
+                    </div>
+                    <div class="mb-5">
+                        <label for="modalMessageSignature" class="form-label mb-1">Signature</label>
+                        <input type="text" class="form-control" id="modalMessageSignature">
+                    </div>
+
+                    <div class="btns d-flex justify-content-center flex-wrap">
+                        <button type="button" class="btn main-cta main-cta--inverse-red py-2 px-3 m-2" data-bs-dismiss="modal" aria-label="Close">DISCARD</button>
+                        <button type="submit" class="btn main-cta main-cta--small py-2 px-3 m-2">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal m-modal fade p-2" id="LoginModalToggle" aria-hidden="true" aria-labelledby="LoginModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog flex-column justify-content-center modal-dialog-centered">
+    <div class="modal-content mb-3 ps-3 pe-3 border-0 position-relative m-modal__content">				
+			<button type="button" class="position-absolute btn-close btn-close-white m-0 p-0 rounded-circle top-0 start-100 translate-middle m-modal__close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      <div class="modal-header ps-0 pe-0 mb-4 justify-content-center m-modal__header">
+        <h5 class="modal-title fs-2" id="LoginModalToggleLabel">Login</h5>
+      </div>
+
+      <div class="modal-body ps-0 pe-0 pb-3">
+        <form action="/">
+					<div class="mb-3">
+						<label for="modalLoginEmail" class="form-label mb-1">E-Mail</label>
+						<input type="email" class="form-control" id="modalLoginEmail" required autocomplete="email" placeholder="Enter your email">
+					</div>
+					<div class="mb-4">
+						<label for="modalLoginPassword" class="form-label mb-1">Password</label>
+						<input type="password" class="form-control" id="modalLoginPassword" required autocomplete="current-password" placeholder="Enter your password">
+					</div>
+
+					<div class="text-center">
+						<button type="submit" class="btn main-cta main-cta--small py-2 px-5 rounded-pill">LOGIN</button>
+					</div>
+				</form>
+      </div>
+      <div class="modal-footer ps-0 pe-0 mb-4 d-block text-center border-0">
+				Forgot your password? <a class="primary-link" href="#">Click Here To Reset</a>
+      </div>
+    </div>
+
+		<div class="modal-content d-block text-center p-3 border-0 m-modal__content">
+			New to Viing? <a class="primary-link" href="#RegisterModalToggle" data-bs-target="#RegisterModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up!</a>
+		</div>
+  </div>
+</div>
+<footer class="footer bg-accented-footer py-3 z-index--2p">
+	<div class="container">
+		<nav class="navbar navbar-expand-xl navbar-light align-items-center justify-content-between">
+			<ul class="navbar-nav">
+				<li>
+					<a href="index.html" class="navbar-brand me-4" aria-current="page">
+						<img src="./images/icons/logo-small.png" alt="Logo">
+					</a>
+				</li>
+				<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+				<li class="nav-item"><a href="how-it-work.html" class="nav-link">How it works</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="navbar-nav align-self-stretch">
+				<li class="nav-item"><a href="#" class="nav-link">Terms</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+				<li class="vr d-xl-block">&nbsp;</li>
+				<li class="nav-item d-flex align-items-center">
+					<span class="text-muted nav-link">Handcrafted in London © 2021 - All rights reserved.</span>
+				</li>
+				<li class="d-flex align-items-center">
+					<a class="text-muted ms-xl-3 ms-2" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M13.331 3.32083H15.1568V0.140833C14.8418 0.0975 13.7585 0 12.4968 0C9.86434 0 8.06101 1.65583 8.06101 4.69917V7.5H5.15601V11.055H8.06101V20H11.6227V11.0558H14.4102L14.8527 7.50083H11.6218V5.05167C11.6227 4.02417 11.8993 3.32083 13.331 3.32083Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					<a class="text-muted ms-xl-3" href="#" target="_blank">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g><path d="M20 3.79875C19.2563 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4412 2.18C18.6488 2.6525 17.7738 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5763 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7913 2.23375 11.7362C2.765 13.36 4.2725 14.5538 6.065 14.5925C4.67 15.6838 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3263 0 16.285C1.81625 17.4563 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9538 6.10125 17.945 5.9275C18.7588 5.35 19.4425 4.62875 20 3.79875Z"
+									fill="#00C0C3" /></g>
+						</svg>
+					</a>
+					
+				</li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
